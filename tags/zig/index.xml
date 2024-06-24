@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zig on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/zig/</link>
+    <description>Recent content in Zig on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>susmitislam31@gmail.com (Entropic Legos)</managingEditor>
+    <webMaster>susmitislam31@gmail.com (Entropic Legos)</webMaster>
+    <lastBuildDate>Mon, 24 Jun 2024 23:36:33 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/zig/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zigshaw</title>
+      <link>http://localhost:1313/posts/zigshaw/</link>
+      <pubDate>Mon, 24 Jun 2024 23:36:33 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
+      <guid>http://localhost:1313/posts/zigshaw/</guid>
+      <description>Writing a simple &amp;ldquo;shell&amp;rdquo; in Zig This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the Zig programming language. After having been exposed to it for around 5 days, I&amp;rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&amp;rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the standard library, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever.</description>
+    </item>
+  </channel>
+</rss>

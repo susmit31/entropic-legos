@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Zigshaw | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.127.0">
+
+
+<link rel="canonical" href="http://localhost:1313/posts/zigshaw/" >
+
+
+
+
+<link href="/css/style.min.d23c1980faa61c0d6b331a0cd9dbc34fb7dade9e294067f1108fb8f26bd7796c.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="http://localhost:1313/">
+                <span>entropiclegos@github.io ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="http://localhost:1313/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Zigshaw</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/tags/programming/">#Programming</a><span></span>
+    <a href="/tags/zig/">#Zig</a><span></span>
+    <a href="/tags/computer-science/">#Computer-Science</a></dd>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2024-06-24">June 24, 2024</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>6 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h1 id="writing-a-simple-shell-in-zig">Writing a simple &ldquo;shell&rdquo; in Zig</h1>
+<p>This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the <em>Zig</em> programming language. After having been exposed to it for around 5 days, I&rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the <a href="https://ziglang.org/documentation/master/std/">standard library</a>, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever. Existing tutorials are often out-of-date owing to the fact that the language is still hasn&rsquo;t had a full 1.x release, and &ldquo;old&rdquo; unwanted features are apparently being dropped by the devs every now and then.</p>
+<p>My troubles notwithstanding, after giving up a couple of times, I decided to dive into the source code and try figuring things out by myself. What follows is the product of my adventures into this uncharted territory. But be warned, at the time you&rsquo;re reading, even this code might have become outdated. This code was written and tested with Zig verion 0.14 on Debian 12, so keep that at the back of your head as you go through this. (Much of the code should stay the same regardless your OS, as long as you use a POSIX-compliant shell such as Git Bash, for example.)</p>
+<h1 id="the-basics">The basics</h1>
+<p>Of course, we start by importing the standard library.</p>
+<pre tabindex="0"><code>const std = @import(&#34;std&#34;);
+</code></pre><p>Note that all lines in Zig code, like C and C++, must end in a semicolon.</p>
+<p>Next up, we make available the standard input (for receiving user input) and the standard output (for printing stuff, obviously).</p>
+<pre tabindex="0"><code>const stdin = std.io.getStdIn();
+const stdout = std.io.getStdOut();
+</code></pre><h1 id="the-main-function">The main function</h1>
+<p>Now we head over to the main function. By the way, I named my shell &ldquo;Zigshaw&rdquo;. Hope that&rsquo;s not too corny.</p>
+<pre tabindex="0"><code>pub fn main() !void{
+	try stdout.writer().print(&#34;Welcome to Zigshaw v0.1.0\n&#34;,.{});
+</code></pre><p>The <code>!void</code> return type means that the function will either return nothing (<code>void</code>), or an error (<code>!</code>). This is known as an <em>error union</em> datatype in Zig.</p>
+<p>As we execute our shell commands, the programme will need to allocate memory dynamically on the heap. So we initialize a general-purpose allocator that Zig provides.</p>
+<pre tabindex="0"><code>	var gpa = std.heap.GeneralPurposeAllocator(.{}){};
+	const allocator = gpa.allocator();
+</code></pre><p>For taking input, we will also need an input buffer. Recall that Zig has no built-in string support, and what we use instead are arrays of unsigned 8-bit integers.</p>
+<pre tabindex="0"><code>	var buffer: [1024]u8 = undefined;
+</code></pre><p>Now after our introductory greeting, like any other good programme, I want to remind my user of how many days it&rsquo;s been since he/she last stepped outside. So we create a child process for running the <em>date</em> command.</p>
+<pre tabindex="0"><code>	// The following command &#34;inits&#34; a child process struct.
+	// It takes in a slice (sort-of an array) of &#34;strings&#34; that make up the argument vector,
+	// and a memory allocator for the purposes of running the command.
+	var date_child = std.process.Child.init(&amp;[_][]const u8{&#34;date&#34;, &#34;+%d-%m-%Y||%T&#34;}, allocator);
+	_ = try date_child.spawnAndWait();
+</code></pre><p>Note that in Zig, you can&rsquo;t compile a programme if you have an unused variable. Similar to Go, if something a function returns is to be discarded, we store it in an underscore (_). In case of the argument vector containing the command, the underscore means that the array length is to be inferred, which in this case is 2.</p>
+<h1 id="the-protagonist-shows-up">The protagonist shows up</h1>
+<p>Our next task, the meat of our work, is in the next line of code.</p>
+<pre tabindex="0"><code>	try looper(&amp;buffer, allocator);
+}
+</code></pre><p>This call to the <code>looper</code> function ends our main function. What does <code>looper</code> do? It will basically run a REPL, i.e. a Read-Eval-Print Loop. In other words, it will</p>
+<ol>
+<li>Receive user input.</li>
+<li>Parse it in any way necessary.</li>
+<li>Evaluate the parsed expression.</li>
+<li>Print the output.</li>
+</ol>
+<p>And repeat. For the purposes of running commands from child processes, we need to supply <code>looper</code> with a memory allocator. And for receiving user input, we supply the string buffer we defined earlier. Here&rsquo;s the code.</p>
+<pre tabindex="0"><code>fn looper (buffer: *[1024]u8, allocator: std.mem.Allocator) !void{
+	var input: []const u8 = undefined;
+	var splitted: [][]const u8 = undefined;
+</code></pre><p>As we&rsquo;ve seen earlier, the child process takes an <em>argument vector</em>, i.e. a list of strings in which the first is the command to be run, and the following strings are the arguments of said command. For this, we need to split the user input up by whitespaces. And that is what we will be storing in the <code>splitted</code> variable.</p>
+<p>Next up, the &ldquo;infinite&rdquo; loop.</p>
+<pre tabindex="0"><code>	while (true) {
+		// Prompt
+		try stdout.writer().print(&#34;&gt;&gt; &#34;, .{});
+
+		// Input
+		input = (try stdin.reader().readUntilDelimiterOrEof(buffer, &#39;\n&#39;)).?;
+		if (input.len &lt; 1) {
+			continue;
+		}
+		// Programming a way out of the loop (apart from CTRL + C)
+		else if (std.mem.eql(u8, &#34;exit&#34;, input) or std.mem.eql(u8, &#34;quit&#34;, input)){
+			try stdout.writer().print(&#34;Goodbye, my friend.\n&#34;, .{});
+			return;
+		}
+
+		// Splitting the input line
+		splitted = split(input);
+
+		// Spawn child process
+		var child = std.process.Child.init(splitted, allocator);
+		_ = child.spawnAndWait() catch |err| {
+			std.debug.print(&#34;{}\n&#34;, .{err});
+			continue;
+		}
+		return;
+	}
+}
+</code></pre><p>Now the function <code>split</code> we used to split the input line is yet to be implemented. Let&rsquo;s do that now.</p>
+<pre tabindex="0"><code>fn split (str: []const u8) [][]const u8 {
+	var splitted_arr: [1024][]const u8 = undefined;
+
+	var curr_start: usize = 0;
+	var curr_loc: usize = 0;
+	var i: usize = 0;
+	var closed_quotes: bool = true;
+</code></pre><p>The other variables will be self-explanatory as you see the rest of the code. The <code>closed_quotes</code> variable has another purpose. As we will be splitting by whitespaces, there will be cases when a string, surrounded by quotes, will be split into separate arguments. For example, <code>echo &quot;Hello world!&quot;</code> will be interpreted as: run the command <code>echo</code> with two arguments: <code>&quot;Hello</code> and <code>world!&quot;</code>. However, this is not how the <code>echo</code> command works - the entire sentence to be printed has to be interpreted as one language. So we use the <em>boolean</em> variable <code>closed_quotes</code> to tell ourselves whether we have any &ldquo;unclosed quotes&rdquo; or not - if <code>closed_quotes</code> is <code>true</code>, it means all quotes have been closed so far, and it&rsquo;s OK to split at whitespaces. If it&rsquo;s <code>false</code>, then we have an unclosed quote, and until we encounter the next quote (&quot;), we cannot split this string at a whitespace.</p>
+<p>Okay, let&rsquo;s continue our speedrun through the rest of the code. We&rsquo;re in the endgame now.</p>
+<pre tabindex="0"><code>	while (curr_loc &lt; str.len) : (curr_loc += 1) {
+		if (std.mem.eql(u8, str[curr_loc..curr_loc+1], &#34; &#34;)){
+			if (closed_quotes) {
+				splitted_arr[i] = str[curr_start..curr_loc];
+				curr_start = curr_loc + 1;
+				i += 1;
+			}
+			// Flipping the boolean each time we encounter a quote
+			else if (std.mem.eql(u8, str[curr_loc..curr_loc+1], &#34;\&#34;&#34;)){
+				closed_quotes = !closed_quotes;
+			}
+		}
+
+	}
+	splitted_arr[i] = str[curr_start..curr_loc];
+	i+=1;
+
+	return splitted_arr[0..i];
+}
+</code></pre><p>This has obviously been a rather basic implementation, but it&rsquo;s good enough for me to call it a day. Once you&rsquo;ve written the entire code, compile it into a binary and enjoy.</p>
+<pre tabindex="0"><code>$--&gt; zig build-exe zigshaw.zig
+$--&gt; ./zigshaw
+</code></pre><p>And you should see something like the following image:</p>
+<p><img src="../../zigshaw.png" alt="Zigshaw in action"></p>
+<p>So that&rsquo;s all for today. Hope this has been of help. Goodbye, my friend!</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>&copy; Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>
