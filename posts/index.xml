@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>https://example.org/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on Entropic Legos</title>
+    <link>https://susmit31.github.io/entropic-legos/posts/</link>
+    <description>Recent content in Posts on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>susmitislam31@gmail.com (Entropic Legos)</managingEditor>
     <webMaster>susmitislam31@gmail.com (Entropic Legos)</webMaster>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://susmit31.github.io/entropic-legos/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
