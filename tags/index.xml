@@ -8,6 +8,28 @@
     <language>en-us</language>
     <managingEditor>susmitislam31@gmail.com (Entropic Legos)</managingEditor>
     <webMaster>susmitislam31@gmail.com (Entropic Legos)</webMaster>
+    <lastBuildDate>Mon, 24 Jun 2024 23:36:33 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computer-Science</title>
+      <link>https://susmit31.github.io/entropic-legos/tags/computer-science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/tags/computer-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://susmit31.github.io/entropic-legos/tags/programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zig</title>
+      <link>https://susmit31.github.io/entropic-legos/tags/zig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/tags/zig/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
