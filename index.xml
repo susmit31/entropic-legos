@@ -11,11 +11,11 @@
     <lastBuildDate>Mon, 24 Jun 2024 23:36:33 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Zigshaw</title>
+      <title>Writing a Simple UNIX-like Shell in Zig</title>
       <link>https://susmit31.github.io/entropic-legos/posts/zigshaw/</link>
       <pubDate>Mon, 24 Jun 2024 23:36:33 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/posts/zigshaw/</guid>
-      <description>Writing a simple &amp;ldquo;shell&amp;rdquo; in Zig This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the Zig programming language. After having been exposed to it for around 5 days, I&amp;rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&amp;rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the standard library, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever.</description>
+      <description>This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the Zig programming language. After having been exposed to it for around 5 days, I&amp;rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&amp;rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the standard library, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever.</description>
     </item>
   </channel>
 </rss>
