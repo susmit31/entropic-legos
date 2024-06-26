@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+How Fast is Zig? | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.127.0">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/speed-test/" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.d23c1980faa61c0d6b331a0cd9dbc34fb7dade9e294067f1108fb8f26bd7796c.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="https://susmit31.github.io/entropic-legos/">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>How Fast is Zig?</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/entropic-legos/tags/programming/">#Programming</a><span></span>
+    <a href="/entropic-legos/tags/computer-science/">#Computer-Science</a><span></span>
+    <a href="/entropic-legos/tags/zig/">#Zig</a><span></span>
+    <a href="/entropic-legos/tags/c-cpp/">#C-Cpp</a><span></span>
+    <a href="/entropic-legos/tags/golang/">#Golang</a><span></span>
+    <a href="/entropic-legos/tags/python/">#Python</a></dd>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2024-06-26">June 26, 2024</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>4 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <p>Zig is certainly one of the more fun languages I&rsquo;ve coded in. But how fast is it? Let&rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.</p>
+<h1 id="but-how-do-we-measure-their-speed">But How Do We Measure Their Speed?</h1>
+<p>As computers are stupendously fast these days, they perform most tasks in the blink of an eye. It&rsquo;s hard to write a piece of code that will be both small (i.e. can be written within a few minutes) and computationally intensive (i.e. require a noticeable amount of execution time). A hack we can use, though, is using a stupid algorithm for a simple task. For example, for our purposes, I&rsquo;ve chosen the recursive computation of the Fibonacci sequence, which has an exponential time complexity (compare this to the dynamic programming approach, which has a linear time complexity). This means, for example, the execution time for calculating the <em>N</em>-th Fibonacci number with this algorithm will be, say, <em>x</em> times that of the <em>(N-1)</em>-th Fibonacci number, and <em>x^2</em> times that of <em>(N-2)</em>-th Fibonacci number, and so on. So as we scale the problem upwards, the execution time increases geometrically.</p>
+<h1 id="the-code">The Code</h1>
+<p>We will compute the 45-th Fibonacci number as our speed test, using the algorithm mentioned above. We calculate it a total of 5 times and take the average execution time as our comparison metric. Here&rsquo;s the code in Zig.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zig" data-lang="zig"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> std <span style="color:#f92672">=</span> @import(<span style="color:#e6db74">&#34;std&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> stdout <span style="color:#f92672">=</span> std.io.getStdOut();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> main() <span style="color:#f92672">!</span><span style="color:#66d9ef">void</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> start_time<span style="color:#f92672">:</span> <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.microTimestamp();
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> N<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">45</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> loop_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> last<span style="color:#f92672">:</span> <span style="color:#66d9ef">u64</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>;
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	last <span style="color:#f92672">=</span> loop(loop_count, N);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> end_time<span style="color:#f92672">:</span> <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.microTimestamp();
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> duration<span style="color:#f92672">:</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">=</span> @as(<span style="color:#66d9ef">f32</span>,@floatFromInt(end_time <span style="color:#f92672">-</span> start_time)) <span style="color:#f92672">/</span> std.math.pow(<span style="color:#66d9ef">f32</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">6</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> avg<span style="color:#f92672">:</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">=</span> duration <span style="color:#f92672">/</span> @as(<span style="color:#66d9ef">f32</span>, @floatFromInt(loop_count));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">try</span> stdout.writer().print(<span style="color:#e6db74">&#34;Completed recursive calculation of the first {d} Fibonacci numbers using ZIGLANG.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">{d}-th Fibonacci number: {d}.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Algorithm time complexity: exponential.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Iterated {d} times. Total required time: {d:.3}s. Average required time: {d:.3}s.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, .{N, N, last, loop_count, duration, avg});
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> fib_recursive(n<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (n<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">or</span> n<span style="color:#f92672">==</span><span style="color:#ae81ff">2</span>) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>	} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> fib_recursive(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> fib_recursive(n<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> loop(n_loop<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>, n_fib<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> (<span style="color:#ae81ff">1</span>..n_loop<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">|</span>_<span style="color:#f92672">|</span>{
+</span></span><span style="display:flex;"><span>		_ <span style="color:#f92672">=</span> fib_recursive(n_fib);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> fib_recursive(n_fib);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The exact same algorithm was implemented in C, Rust, Go, and Python for the sake of comparison. And what were the results?</p>
+<h1 id="the-results">The Results</h1>
+<p>I was kind of surprised with the results. I&rsquo;d expected either <code>Rust</code> or <code>C</code> to top the list, but neither did. And I expected <code>Zig</code> to do <em>at least</em> better than <code>Go</code>, but that also didn&rsquo;t happen. See the outputs for yourselves.</p>
+<p><img src="../../speed.png" alt="speed-tests"></p>
+<p><code>Zig</code> came in last, requiring just above 8 seconds on average to calculate the 45th Fibonacci number. <code>Rust</code> was 3rd, requiring about 7 seconds to do the same. <code>C</code> was 2nd, taking about 6 seconds. And most surprisingly, <code>Go</code> came in <em>first</em>, beating the likes of <code>Zig</code> and <code>Rust</code> by <em>nearly a factor of 2</em> - taking less than 4 seconds to calculate the 45th Fibonacci number! Wow!<br>
+By the way, I tried the same thing out with <code>Python</code>, one of the most popular interpreted languages out there. I couldn&rsquo;t wait long enough to run the <code>Python</code> code for 10 iterations, as a single iteration took the <code>Python</code> code more than 2 minutes (135.182s), several times slower than even the slowest compiled binary by <code>Zig</code>. I am a <code>Python</code> stan, but interpreted languages are no match for compiled languages, sorry!</p>
+<h1 id="does-it-matter-tho">Does It Matter, Tho?</h1>
+<p>Modern compilers make a lot of optimizations under the hood to generate highly performant machine code, to the point that if you manually wrote a programme to do the same in <code>Assembly</code>, your code is almost <em>guaranteed</em> to be slower than that written using any of <code>C</code>, <code>Go</code>, <code>Rust</code>, or <code>Zig</code>. The point I&rsquo;m trying to make here is that the compiler plays a big role in determining the execution time. If you compile the code with different compilers, you will get different machine code output, often with significant performance differences. So while you interpret the results, keep in mind that the speed differences reflect under-the-hood optimisations that you and I do not, and need not, know about. For most real-world applications, we hardly ever use an exponential-time algorithm, even when there are no other exact solution algorithms. The essence of computer science is not necessarily in doing things <em>the right way</em>, but in <em>getting things done</em>. In the Fibonacci number problem, fortunately, a trick called memoization or caching changes the exponential runtime algorithm into a linear runtime algorithm. This turns the calculation into something <em>orders of magnitude</em> faster - <code>Python</code>, which couldn&rsquo;t calculate even the 45th Fibonacci in 2 minutes, can now calculate the 100th Fibonacci number in <em>less than 6 microseconds</em>!</p>
+<p>So our take home message today: <em>it doesn&rsquo;t matter</em> which language is the &ldquo;fastest&rdquo;. What matters is your <em>algorithms</em>.</p>
+<p>That&rsquo;s all for today folks. Have a great day, thanks for reading!</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>&copy; Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>
