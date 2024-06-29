@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
+<head><script src="/entropic-legos/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=entropic-legos/livereload" data-no-instant defer></script>
     <title>
 How Fast is Zig? | Entropic Legos
 </title>
@@ -10,10 +10,10 @@ How Fast is Zig? | Entropic Legos
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 
-<meta name="generator" content="Hugo 0.127.0">
+<meta name="generator" content="Hugo 0.128.0">
 
 
-<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/speed-test/" >
+<link rel="canonical" href="http://localhost:1313/entropic-legos/posts/speed-test/" >
 
 
 
@@ -31,7 +31,7 @@ How Fast is Zig? | Entropic Legos
         <header class="headerWrapper">
     <div class="header">
         <div>
-            <a class="terminal" href="https://susmit31.github.io/entropic-legos/">
+            <a class="terminal" href="http://localhost:1313/entropic-legos/">
                 <span>entropic-legos@susmit31 ~ $</span>
             </a>
         </div>
@@ -41,7 +41,7 @@ How Fast is Zig? | Entropic Legos
             <ul>
                 
                 <li>
-                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                    <a href="http://localhost:1313/entropic-legos/posts" title="" >
                         ~/posts</a>
                 </li>
                 
@@ -134,6 +134,7 @@ How Fast is Zig? | Entropic Legos
 <p>By the way, I tried the same thing out with <code>Python</code>, one of the most popular interpreted languages out there. I couldn&rsquo;t wait long enough to run the <code>Python</code> code for 10 iterations, as a single iteration took the <code>Python</code> code more than 2 minutes (135.182s), several times slower than even the slowest compiled binary by <code>Zig</code>. I am a <code>Python</code> stan, but interpreted languages are no match for compiled languages, sorry!</p>
 <h1 id="does-it-matter-tho">Does It Matter, Tho?</h1>
 <p>Modern compilers make a lot of optimizations under the hood to generate highly performant machine code, to the point that if you manually wrote a programme to do the same in <code>Assembly</code>, your code is almost <em>guaranteed</em> to be slower than that written using any of <code>C</code>, <code>Go</code>, <code>Rust</code>, or <code>Zig</code>. The point I&rsquo;m trying to make here is that the compiler plays a big role in determining the execution time. If you compile the code with different compilers, you will get different machine code output, often with significant performance differences. So while you interpret the results, keep in mind that the speed differences reflect under-the-hood optimisations that you and I do not, and need not, know about. For most real-world applications, we hardly ever use an exponential-time algorithm, even when there are no other exact solution algorithms. The essence of computer science is not necessarily in doing things <em>the right way</em>, but in <em>getting things done</em>. In the Fibonacci number problem, fortunately, a trick called memoization or caching changes the exponential runtime algorithm into a linear runtime algorithm. This turns the calculation into something <em>orders of magnitude</em> faster - <code>Python</code>, which couldn&rsquo;t calculate even the 45th Fibonacci in 2 minutes, can now calculate the 100th Fibonacci number in <em>less than 6 microseconds</em>!</p>
+<p><img src="../../pyspeed.png" alt="Speed testing with an algorithmic upgrade"></p>
 <p>So our take home message today: <em>it doesn&rsquo;t matter</em> which language is the &ldquo;fastest&rdquo;. What matters is your <em>algorithms</em>.</p>
 <p>That&rsquo;s all for today folks. Have a great day, thanks for reading!</p>
 

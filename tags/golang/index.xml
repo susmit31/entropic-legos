@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/golang/</link>
+    <link>http://localhost:1313/entropic-legos/tags/golang/</link>
     <description>Recent content in Golang on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>susmitislam31@gmail.com (Entropic Legos)</managingEditor>
     <webMaster>susmitislam31@gmail.com (Entropic Legos)</webMaster>
     <lastBuildDate>Wed, 26 Jun 2024 23:15:37 +0600</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/entropic-legos/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Fast is Zig?</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/speed-test/</link>
+      <link>http://localhost:1313/entropic-legos/posts/speed-test/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/speed-test/</guid>
+      <guid>http://localhost:1313/entropic-legos/posts/speed-test/</guid>
       <description>Zig is certainly one of the more fun languages I&amp;rsquo;ve coded in. But how fast is it? Let&amp;rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.&#xA;But How Do We Measure Their Speed? As computers are stupendously fast these days, they perform most tasks in the blink of an eye.</description>
     </item>
   </channel>
