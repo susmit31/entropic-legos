@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Entropic Legos</title>
-    <link>http://localhost:1313/entropic-legos/posts/</link>
+    <link>https://susmit31.github.io/entropic-legos/posts/</link>
     <description>Recent content in Posts on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>susmitislam31@gmail.com (Entropic Legos)</managingEditor>
     <webMaster>susmitislam31@gmail.com (Entropic Legos)</webMaster>
     <lastBuildDate>Fri, 02 Aug 2024 15:13:44 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/entropic-legos/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://susmit31.github.io/entropic-legos/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Plato&#39;s Republic In a Nutshell - Book 1</title>
-      <link>http://localhost:1313/entropic-legos/posts/republic-1/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/republic-1/</link>
       <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/republic-1/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/republic-1/</guid>
       <description>What is the Republic? Plato&amp;rsquo;s Republic is one of the most renowned pieces of Greek philosophy and remains to be one of the most instructive ones of the Socratic dialogues. It delves into the what justice means, in the precise sense. In this post I will try delivering the essence of what goes down in Book 1 of the Republic.&#xA;What&amp;rsquo;s it about? Book 1 serves as a setup chapter for what is to come.</description>
     </item>
     <item>
       <title>How Fast is Zig?</title>
-      <link>http://localhost:1313/entropic-legos/posts/speed-test/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/speed-test/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/speed-test/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/speed-test/</guid>
       <description>Zig is certainly one of the more fun languages I&amp;rsquo;ve coded in. But how fast is it? Let&amp;rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.&#xA;But How Do We Measure Their Speed? As computers are stupendously fast these days, they perform most tasks in the blink of an eye.</description>
     </item>
     <item>
       <title>Writing a Simple UNIX-like Shell in Zig</title>
-      <link>http://localhost:1313/entropic-legos/posts/zigshaw/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/zigshaw/</link>
       <pubDate>Mon, 24 Jun 2024 23:36:33 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/zigshaw/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/zigshaw/</guid>
       <description>This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the Zig programming language. After having been exposed to it for around 5 days, I&amp;rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&amp;rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the standard library, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever.</description>
     </item>
   </channel>
