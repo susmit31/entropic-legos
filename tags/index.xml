@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/</link>
+    <link>http://localhost:1313/entropic-legos/tags/</link>
     <description>Recent content in Tags on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>susmitislam31@gmail.com (Entropic Legos)</managingEditor>
     <webMaster>susmitislam31@gmail.com (Entropic Legos)</webMaster>
     <lastBuildDate>Wed, 26 Jun 2024 23:15:37 +0600</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C-Cpp</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/c-cpp/</link>
+      <link>http://localhost:1313/entropic-legos/tags/c-cpp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/c-cpp/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/c-cpp/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer-Science</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/computer-science/</link>
+      <link>http://localhost:1313/entropic-legos/tags/computer-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/computer-science/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/computer-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Golang</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/golang/</link>
+      <link>http://localhost:1313/entropic-legos/tags/golang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/golang/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/golang/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/programming/</link>
+      <link>http://localhost:1313/entropic-legos/tags/programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/programming/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/python/</link>
+      <link>http://localhost:1313/entropic-legos/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/python/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/rust/</link>
+      <link>http://localhost:1313/entropic-legos/tags/rust/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/rust/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>Zig</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/zig/</link>
+      <link>http://localhost:1313/entropic-legos/tags/zig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/zig/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/zig/</guid>
       <description></description>
     </item>
   </channel>
