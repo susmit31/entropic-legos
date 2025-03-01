@@ -1,7 +1,196 @@
-<!doctype html><html lang=en-us><head><title>Posts | Entropic Legos
-</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=generator content="Hugo 0.145.0"><link rel=canonical href=https://susmit31.github.io/entropic-legos/posts/><link href=https://susmit31.github.io/entropic-legos/posts/index.xml rel=alternate type=application/rss+xml title="Entropic Legos"><link href=https://susmit31.github.io/entropic-legos/posts/index.xml rel=feed type=application/rss+xml title="Entropic Legos"><link href=/entropic-legos/css/style.min.d23c1980faa61c0d6b331a0cd9dbc34fb7dade9e294067f1108fb8f26bd7796c.css rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css integrity=sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js integrity=sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js integrity=sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk crossorigin=anonymous onload=renderMathInElement(document.body)></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><div class=flexWrapper><header class=headerWrapper><div class=header><div><a class=terminal href=/entropic-legos><span>entropic-legos@susmit31 ~ $</span></a></div><input class=side-menu type=checkbox id=side-menu>
-<label class=hamb for=side-menu><span class=hamb-line></span></label><nav class=headerLinks><ul><li><a href=https://susmit31.github.io/entropic-legos/posts title>~/posts</a></li></ul></nav></div></header><div class=content><main class=main><div><div class=listHeader><h1>Posts</h1></div><div><a class=postListLink href=https://susmit31.github.io/entropic-legos/posts/mind-theory-update/><div class=postListItem role=listitem><div class=postHeader><span class=postTitle>Mind Theory Update</span>
-<time class=postDate datetime=2025-02-17>February 17, 2025</time></div><div class=postExcerpt><p><h2 id=the-consciousness-conundrum>The Consciousness Conundrum</h2><p>I&rsquo;ve been gone from the blog for months. In the meantime, my country has witnessed a successful overthrowing of a tyrant called Sheikh Hasina, among other things. The last time I posted it was about <em>the Zig programming language</em> and about <em>Plato&rsquo;s Republic</em>. Because I have the attention span of a little child, I&rsquo;ve obviously still <em>not finished</em> learning Zig, nor have I finished going through <em>The Republic</em>. I&rsquo;ve been bouncing from one interest to another like a pinball in a pinball machine - from working with Arduino and ESP32 to building raw logic gates with transistors on a breadboard, from Plato to Wittgenstein, from Hodgkin-Huxley to Hopfield, and from graph theory to category theory - I&rsquo;ve been exploring quite a vast terrain over these past months. And as rare as this may be, I for the first time in my life feel that I&rsquo;m finding a common thread running through all my interests. And it&rsquo;s the consciousness conundrum.</p></p></div></div></a><a class=postListLink href=https://susmit31.github.io/entropic-legos/posts/republic-part-1/><div class=postListItem role=listitem><div class=postHeader><span class=postTitle>Understanding Plato's Republic</span>
-<time class=postDate datetime=2024-08-02>August 2, 2024</time></div><div class=postExcerpt><p><h1 id=understanding-platos-republic---e1>Understanding Plato&rsquo;s Republic - E1</h1><h2 id=introduction>Introduction</h2><p>This the first episode in (hopefully) a series of several articles where I narrate my own understanding of <em>The Republic</em>, the magnum opus of <em>Plato</em>. In this episode, I discuss about the very initial parts of chapter 1 of the book. I give an overview of what transpires before Thrasymachus (while Socrates&rsquo; dialogues contain a lot of different characters much like a play, the exact names of them are not so important to take note of except for a few prominent figures that play a crucial role in Socrates&rsquo; arguments), the most vocal and prominent interlocutor of Socrates in chapter 1, starts engaging with Socrates. (This covers up to page 14 of the <em>Penguin Classics</em> translation.)</p></p></div></div></a><a class=postListLink href=https://susmit31.github.io/entropic-legos/posts/speed-test/><div class=postListItem role=listitem><div class=postHeader><span class=postTitle>How Fast is Zig?</span>
-<time class=postDate datetime=2024-06-26>June 26, 2024</time></div><div class=postExcerpt><p><p>Zig is certainly one of the more fun languages I&rsquo;ve coded in. But how fast is it? Let&rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.</p><h1 id=but-how-do-we-measure-their-speed>But How Do We Measure Their Speed?</h1><p>As computers are stupendously fast these days, they perform most tasks in the blink of an eye. It&rsquo;s hard to write a piece of code that will be both small (i.e. can be written within a few minutes) and computationally intensive (i.e. require a noticeable amount of execution time). A hack we can use, though, is using a stupid algorithm for a simple task. For example, for our purposes, I&rsquo;ve chosen the recursive computation of the Fibonacci sequence, which has an exponential time complexity (compare this to the dynamic programming approach, which has a linear time complexity). This means, for example, the execution time for calculating the <em>N</em>-th Fibonacci number with this algorithm will be, say, <em>x</em> times that of the <em>(N-1)</em>-th Fibonacci number, and <em>x^2</em> times that of <em>(N-2)</em>-th Fibonacci number, and so on. So as we scale the problem upwards, the execution time increases geometrically.</p></p></div></div></a><a class=postListLink href=https://susmit31.github.io/entropic-legos/posts/zigshaw/><div class=postListItem role=listitem><div class=postHeader><span class=postTitle>Writing a Simple UNIX-like Shell in Zig</span>
-<time class=postDate datetime=2024-06-24>June 24, 2024</time></div><div class=postExcerpt><p><p>This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the <em>Zig</em> programming language. After having been exposed to it for around 5 days, I&rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the <a href=https://ziglang.org/documentation/master/std/>standard library</a>, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever. Existing tutorials are often out-of-date owing to the fact that the language is still hasn&rsquo;t had a full 1.x release, and &ldquo;old&rdquo; unwanted features are apparently being dropped by the devs every now and then.</p></p></div></div></a></div></div></main></div><footer class=footer><span>© Susmit Islam. Built with <a href=https://gohugo.io class=footerLink>Hugo</a> and <a href=https://github.com/LordMathis/hugo-theme-nightfall class=footerLink>Nightfall</a> theme</span></footer></div></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+Posts | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/" >
+  <link href="https://susmit31.github.io/entropic-legos/posts/index.xml" rel="alternate" type="application/rss+xml" title="Entropic Legos" >
+  <link href="https://susmit31.github.io/entropic-legos/posts/index.xml" rel="feed" type="application/rss+xml" title="Entropic Legos" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.d23c1980faa61c0d6b331a0cd9dbc34fb7dade9e294067f1108fb8f26bd7796c.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/entropic-legos">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+
+<div>
+    <div class="listHeader">
+        <h1>Posts</h1>
+    </div>
+
+    
+
+    <div>
+        
+
+        <a class="postListLink" href="https://susmit31.github.io/entropic-legos/posts/correspond/">
+            
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">The Vicious Regress of Vicious Regresses</span>
+                    
+                    <time class="postDate" datetime="2025-02-28">February 28, 2025</time>
+                </div>
+                <div class="postExcerpt">
+                    <p><p>Philosophy, in my experience, is littered with imprecise articulation and the resulting confabulation by even its most prominent practitioners. This bugs me, and I&rsquo;ve started doing what I can to remedy this condition.</p>
+<h2 id="the-infinite-regress-argument">The Infinite Regress Argument</h2>
+<p>Take, for example, the infinite regress argument. This is the favourite toolkit in the philosopher&rsquo;s arsenal for a proof by contradiction. The general form taken by the argument is this: consider the claim that there are certain conditions a proposition P must fulfil to be valid, call them Q. Then the proposition &ldquo;Q validates P&rdquo; also requires a separate validator, and this goes on ad infinitum.</p></p>
+                </div>
+            </div>
+        </a>
+
+
+        
+
+        <a class="postListLink" href="https://susmit31.github.io/entropic-legos/posts/mind-theory-update/">
+            
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">Mind Theory Update</span>
+                    
+                    <time class="postDate" datetime="2025-02-17">February 17, 2025</time>
+                </div>
+                <div class="postExcerpt">
+                    <p><h2 id="the-consciousness-conundrum">The Consciousness Conundrum</h2>
+<p>I&rsquo;ve been gone from the blog for months. In the meantime, my country has witnessed a successful overthrowing of a tyrant called Sheikh Hasina, among other things. The last time I posted it was about <em>the Zig programming language</em> and about <em>Plato&rsquo;s Republic</em>. Because I have the attention span of a little child, I&rsquo;ve obviously still <em>not finished</em> learning Zig, nor have I finished going through <em>The Republic</em>. I&rsquo;ve been bouncing from one interest to another like a pinball in a pinball machine - from working with Arduino and ESP32 to building raw logic gates with transistors on a breadboard, from Plato to Wittgenstein, from Hodgkin-Huxley to Hopfield, and from graph theory to category theory - I&rsquo;ve been exploring quite a vast terrain over these past months. And as rare as this may be, I for the first time in my life feel that I&rsquo;m finding a common thread running through all my interests. And it&rsquo;s the consciousness conundrum.</p></p>
+                </div>
+            </div>
+        </a>
+
+
+        
+
+        <a class="postListLink" href="https://susmit31.github.io/entropic-legos/posts/republic-part-1/">
+            
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">Understanding Plato&#39;s Republic</span>
+                    
+                    <time class="postDate" datetime="2024-08-02">August 2, 2024</time>
+                </div>
+                <div class="postExcerpt">
+                    <p><h1 id="understanding-platos-republic---e1">Understanding Plato&rsquo;s Republic - E1</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This the first episode in (hopefully) a series of several articles where I narrate my own understanding of <em>The Republic</em>, the magnum opus of <em>Plato</em>. In this episode, I discuss about the very initial parts of chapter 1 of the book. I give an overview of what transpires before Thrasymachus (while Socrates&rsquo; dialogues contain a lot of different characters much like a play, the exact names of them are not so important to take note of except for a few prominent figures that play a crucial role in Socrates&rsquo; arguments), the most vocal and prominent interlocutor of Socrates in chapter 1, starts engaging with Socrates. (This covers up to page 14 of the <em>Penguin Classics</em> translation.)</p></p>
+                </div>
+            </div>
+        </a>
+
+
+        
+
+        <a class="postListLink" href="https://susmit31.github.io/entropic-legos/posts/speed-test/">
+            
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">How Fast is Zig?</span>
+                    
+                    <time class="postDate" datetime="2024-06-26">June 26, 2024</time>
+                </div>
+                <div class="postExcerpt">
+                    <p><p>Zig is certainly one of the more fun languages I&rsquo;ve coded in. But how fast is it? Let&rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.</p>
+<h1 id="but-how-do-we-measure-their-speed">But How Do We Measure Their Speed?</h1>
+<p>As computers are stupendously fast these days, they perform most tasks in the blink of an eye. It&rsquo;s hard to write a piece of code that will be both small (i.e. can be written within a few minutes) and computationally intensive (i.e. require a noticeable amount of execution time). A hack we can use, though, is using a stupid algorithm for a simple task. For example, for our purposes, I&rsquo;ve chosen the recursive computation of the Fibonacci sequence, which has an exponential time complexity (compare this to the dynamic programming approach, which has a linear time complexity). This means, for example, the execution time for calculating the <em>N</em>-th Fibonacci number with this algorithm will be, say, <em>x</em> times that of the <em>(N-1)</em>-th Fibonacci number, and <em>x^2</em> times that of <em>(N-2)</em>-th Fibonacci number, and so on. So as we scale the problem upwards, the execution time increases geometrically.</p></p>
+                </div>
+            </div>
+        </a>
+
+
+        
+
+        <a class="postListLink" href="https://susmit31.github.io/entropic-legos/posts/zigshaw/">
+            
+            <div class="postListItem" role="listitem">
+                <div class="postHeader">
+                    <span class="postTitle">Writing a Simple UNIX-like Shell in Zig</span>
+                    
+                    <time class="postDate" datetime="2024-06-24">June 24, 2024</time>
+                </div>
+                <div class="postExcerpt">
+                    <p><p>This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the <em>Zig</em> programming language. After having been exposed to it for around 5 days, I&rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the <a href="https://ziglang.org/documentation/master/std/">standard library</a>, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever. Existing tutorials are often out-of-date owing to the fact that the language is still hasn&rsquo;t had a full 1.x release, and &ldquo;old&rdquo; unwanted features are apparently being dropped by the devs every now and then.</p></p>
+                </div>
+            </div>
+        </a>
+
+
+        
+    </div>
+</div>
+
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>© Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>
