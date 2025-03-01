@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Metaphysics on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/metaphysics/</link>
-    <description>Recent content in Metaphysics on Entropic Legos</description>
+    <title>Philosophy of Mind on Entropic Legos</title>
+    <link>https://susmit31.github.io/entropic-legos/tags/philosophy-of-mind/</link>
+    <description>Recent content in Philosophy of Mind on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Fri, 28 Feb 2025 13:37:52 +0000</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/metaphysics/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Vicious Regress of Vicious Regresses</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/correspond/</link>
-      <pubDate>Fri, 28 Feb 2025 13:37:52 +0000</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/correspond/</guid>
-      <description>&lt;p&gt;Philosophy, in my experience, is littered with imprecise articulation and the resulting confabulation by even its most prominent practitioners. This bugs me, and I&amp;rsquo;ve started doing what I can to remedy this condition.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-infinite-regress-argument&#34;&gt;The Infinite Regress Argument&lt;/h2&gt;&#xA;&lt;p&gt;Take, for example, the infinite regress argument. This is the favourite toolkit in the philosopher&amp;rsquo;s arsenal for a proof by contradiction. The general form taken by the argument is this: consider the claim that there are certain conditions a proposition P must fulfil to be valid, call them Q. Then the proposition &amp;ldquo;Q validates P&amp;rdquo; also requires a separate validator, and this goes on ad infinitum.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Mon, 17 Feb 2025 23:40:49 +0600</lastBuildDate>
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/philosophy-of-mind/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mind Theory Update</title>
       <link>https://susmit31.github.io/entropic-legos/posts/mind-theory-update/</link>
