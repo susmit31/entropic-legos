@@ -6,28 +6,42 @@
     <description>Recent content in Posts on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <managingEditor>susmitislam31@gmail.com (Entropic Legos)</managingEditor>
-    <webMaster>susmitislam31@gmail.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Fri, 02 Aug 2024 15:13:44 +0600</lastBuildDate>
+    <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
+    <webMaster>hugo@example.com (Entropic Legos)</webMaster>
+    <lastBuildDate>Sun, 04 May 2025 16:48:41 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Castles in the Air: How Econ 101 Butchers Math - Part 1 </title>
+      <link>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</link>
+      <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</guid>
+      <description>&lt;h1 id=&#34;using-symmetry-to-expose-the-fraud-poster-child-of-economics&#34;&gt;Using Symmetry to Expose the Fraud Poster Child of Economics&lt;/h1&gt;&#xA;&lt;p&gt;Whenever we hear of the term &amp;ldquo;economics&amp;rdquo;, the first picture that comes to mind is that of money. The second picture, if you&amp;rsquo;ve been put through at least some sort of formal economic education as in high schools, is the famous supply-and-demand curves. They&amp;rsquo;re the ubiquitous poster-child of the field of economics, the same as $E = mc^2$ or the apocryphal &amp;ldquo;&lt;em&gt;apple falling on Sir Isaac&amp;rsquo;s head&lt;/em&gt;&amp;rdquo; in the field of physics. As a noneconomist, I don&amp;rsquo;t really know how much they&amp;rsquo;re used in advanced economic work, but in public discourse or in economic thinking, they have been proving so far to be invaluable assets, shedding light on everything starting from local egg prices and the exchange rates in a forex market to economic policymaking on a global level. To the economist, these curves are his bread-and-butter, maybe even wanting to make it his Swiss-Army knife. While inherently mathematical in nature, the mathematical underpinnings seem absurdly underexplored. This essay will be an outsider&amp;rsquo;s perspective into formalizing the rather nebulous hand-wavy tools, with the hope that this somehow contributes to practical economic modelling. If not, this essay will, at the very least, serve as a good demo of how simple mathematical principles can be applied to derive profound consequences. My starting point into the attack will be to postulate a very simple and reasonable condition: the supply curve can be viewed as a demand curve for money from the seller&amp;rsquo;s perspective. And if the traditional model of supply and demand holds true, this demand curve which we can obtain with asimple mathematical transformation, should look roughly the same as other demand curves. But first, let&amp;rsquo;s review a bit about the classical model and see where it shines rather dazzlingly.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mind Theory Update</title>
+      <link>https://susmit31.github.io/entropic-legos/posts/mind-theory-update/</link>
+      <pubDate>Mon, 17 Feb 2025 23:40:49 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/mind-theory-update/</guid>
+      <description>&lt;h2 id=&#34;the-consciousness-conundrum&#34;&gt;The Consciousness Conundrum&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been gone from the blog for months. In the meantime, my country has witnessed a successful overthrowing of a tyrant called Sheikh Hasina, among other things. The last time I posted it was about &lt;em&gt;the Zig programming language&lt;/em&gt; and about &lt;em&gt;Plato&amp;rsquo;s Republic&lt;/em&gt;. Because I have the attention span of a little child, I&amp;rsquo;ve obviously still &lt;em&gt;not finished&lt;/em&gt; learning Zig, nor have I finished going through &lt;em&gt;The Republic&lt;/em&gt;. I&amp;rsquo;ve been bouncing from one interest to another like a pinball in a pinball machine - from working with Arduino and ESP32 to building raw logic gates with transistors on a breadboard, from Plato to Wittgenstein, from Hodgkin-Huxley to Hopfield, and from graph theory to category theory - I&amp;rsquo;ve been exploring quite a vast terrain over these past months. And as rare as this may be, I for the first time in my life feel that I&amp;rsquo;m finding a common thread running through all my interests. And it&amp;rsquo;s the consciousness conundrum.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Understanding Plato&#39;s Republic</title>
       <link>https://susmit31.github.io/entropic-legos/posts/republic-part-1/</link>
-      <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
+      <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/posts/republic-part-1/</guid>
       <description>&lt;h1 id=&#34;understanding-platos-republic---e1&#34;&gt;Understanding Plato&amp;rsquo;s Republic - E1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This the first episode in (hopefully) a series of several articles where I narrate my own understanding of &lt;em&gt;The Republic&lt;/em&gt;, the magnum opus of &lt;em&gt;Plato&lt;/em&gt;. In this episode, I discuss about the very initial parts of chapter 1 of the book. I give an overview of what transpires before Thrasymachus (while Socrates&amp;rsquo; dialogues contain a lot of different characters much like a play, the exact names of them are not so important to take note of except for a few prominent figures that play a crucial role in Socrates&amp;rsquo; arguments), the most vocal and prominent interlocutor of Socrates in chapter 1, starts engaging with Socrates. (This covers up to page 14 of the &lt;em&gt;Penguin Classics&lt;/em&gt; translation.)&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Fast is Zig?</title>
       <link>https://susmit31.github.io/entropic-legos/posts/speed-test/</link>
-      <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
+      <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/posts/speed-test/</guid>
       <description>&lt;p&gt;Zig is certainly one of the more fun languages I&amp;rsquo;ve coded in. But how fast is it? Let&amp;rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.&lt;/p&gt;&#xA;&lt;h1 id=&#34;but-how-do-we-measure-their-speed&#34;&gt;But How Do We Measure Their Speed?&lt;/h1&gt;&#xA;&lt;p&gt;As computers are stupendously fast these days, they perform most tasks in the blink of an eye. It&amp;rsquo;s hard to write a piece of code that will be both small (i.e. can be written within a few minutes) and computationally intensive (i.e. require a noticeable amount of execution time). A hack we can use, though, is using a stupid algorithm for a simple task. For example, for our purposes, I&amp;rsquo;ve chosen the recursive computation of the Fibonacci sequence, which has an exponential time complexity (compare this to the dynamic programming approach, which has a linear time complexity). This means, for example, the execution time for calculating the &lt;em&gt;N&lt;/em&gt;-th Fibonacci number with this algorithm will be, say, &lt;em&gt;x&lt;/em&gt; times that of the &lt;em&gt;(N-1)&lt;/em&gt;-th Fibonacci number, and &lt;em&gt;x^2&lt;/em&gt; times that of &lt;em&gt;(N-2)&lt;/em&gt;-th Fibonacci number, and so on. So as we scale the problem upwards, the execution time increases geometrically.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Writing a Simple UNIX-like Shell in Zig</title>
       <link>https://susmit31.github.io/entropic-legos/posts/zigshaw/</link>
-      <pubDate>Mon, 24 Jun 2024 23:36:33 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
+      <pubDate>Mon, 24 Jun 2024 23:36:33 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/posts/zigshaw/</guid>
       <description>&lt;p&gt;This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the &lt;em&gt;Zig&lt;/em&gt; programming language. After having been exposed to it for around 5 days, I&amp;rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&amp;rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the &lt;a href=&#34;https://ziglang.org/documentation/master/std/&#34;&gt;standard library&lt;/a&gt;, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever. Existing tutorials are often out-of-date owing to the fact that the language is still hasn&amp;rsquo;t had a full 1.x release, and &amp;ldquo;old&amp;rdquo; unwanted features are apparently being dropped by the devs every now and then.&lt;/p&gt;</description>
     </item>

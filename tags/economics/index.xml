@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Economics on Entropic Legos</title>
+    <link>https://susmit31.github.io/entropic-legos/tags/economics/</link>
+    <description>Recent content in Economics on Entropic Legos</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
+    <webMaster>hugo@example.com (Entropic Legos)</webMaster>
+    <lastBuildDate>Sun, 04 May 2025 16:48:41 +0600</lastBuildDate>
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/economics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Castles in the Air: How Econ 101 Butchers Math - Part 1 </title>
+      <link>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</link>
+      <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</guid>
+      <description>&lt;h1 id=&#34;using-symmetry-to-expose-the-fraud-poster-child-of-economics&#34;&gt;Using Symmetry to Expose the Fraud Poster Child of Economics&lt;/h1&gt;&#xA;&lt;p&gt;Whenever we hear of the term &amp;ldquo;economics&amp;rdquo;, the first picture that comes to mind is that of money. The second picture, if you&amp;rsquo;ve been put through at least some sort of formal economic education as in high schools, is the famous supply-and-demand curves. They&amp;rsquo;re the ubiquitous poster-child of the field of economics, the same as $E = mc^2$ or the apocryphal &amp;ldquo;&lt;em&gt;apple falling on Sir Isaac&amp;rsquo;s head&lt;/em&gt;&amp;rdquo; in the field of physics. As a noneconomist, I don&amp;rsquo;t really know how much they&amp;rsquo;re used in advanced economic work, but in public discourse or in economic thinking, they have been proving so far to be invaluable assets, shedding light on everything starting from local egg prices and the exchange rates in a forex market to economic policymaking on a global level. To the economist, these curves are his bread-and-butter, maybe even wanting to make it his Swiss-Army knife. While inherently mathematical in nature, the mathematical underpinnings seem absurdly underexplored. This essay will be an outsider&amp;rsquo;s perspective into formalizing the rather nebulous hand-wavy tools, with the hope that this somehow contributes to practical economic modelling. If not, this essay will, at the very least, serve as a good demo of how simple mathematical principles can be applied to derive profound consequences. My starting point into the attack will be to postulate a very simple and reasonable condition: the supply curve can be viewed as a demand curve for money from the seller&amp;rsquo;s perspective. And if the traditional model of supply and demand holds true, this demand curve which we can obtain with asimple mathematical transformation, should look roughly the same as other demand curves. But first, let&amp;rsquo;s review a bit about the classical model and see where it shines rather dazzlingly.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

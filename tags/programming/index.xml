@@ -6,21 +6,21 @@
     <description>Recent content in Programming on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <managingEditor>susmitislam31@gmail.com (Entropic Legos)</managingEditor>
-    <webMaster>susmitislam31@gmail.com (Entropic Legos)</webMaster>
+    <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
+    <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Wed, 26 Jun 2024 23:15:37 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Fast is Zig?</title>
       <link>https://susmit31.github.io/entropic-legos/posts/speed-test/</link>
-      <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
+      <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/posts/speed-test/</guid>
       <description>&lt;p&gt;Zig is certainly one of the more fun languages I&amp;rsquo;ve coded in. But how fast is it? Let&amp;rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.&lt;/p&gt;&#xA;&lt;h1 id=&#34;but-how-do-we-measure-their-speed&#34;&gt;But How Do We Measure Their Speed?&lt;/h1&gt;&#xA;&lt;p&gt;As computers are stupendously fast these days, they perform most tasks in the blink of an eye. It&amp;rsquo;s hard to write a piece of code that will be both small (i.e. can be written within a few minutes) and computationally intensive (i.e. require a noticeable amount of execution time). A hack we can use, though, is using a stupid algorithm for a simple task. For example, for our purposes, I&amp;rsquo;ve chosen the recursive computation of the Fibonacci sequence, which has an exponential time complexity (compare this to the dynamic programming approach, which has a linear time complexity). This means, for example, the execution time for calculating the &lt;em&gt;N&lt;/em&gt;-th Fibonacci number with this algorithm will be, say, &lt;em&gt;x&lt;/em&gt; times that of the &lt;em&gt;(N-1)&lt;/em&gt;-th Fibonacci number, and &lt;em&gt;x^2&lt;/em&gt; times that of &lt;em&gt;(N-2)&lt;/em&gt;-th Fibonacci number, and so on. So as we scale the problem upwards, the execution time increases geometrically.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Writing a Simple UNIX-like Shell in Zig</title>
       <link>https://susmit31.github.io/entropic-legos/posts/zigshaw/</link>
-      <pubDate>Mon, 24 Jun 2024 23:36:33 +0600</pubDate><author>susmitislam31@gmail.com (Entropic Legos)</author>
+      <pubDate>Mon, 24 Jun 2024 23:36:33 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/posts/zigshaw/</guid>
       <description>&lt;p&gt;This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the &lt;em&gt;Zig&lt;/em&gt; programming language. After having been exposed to it for around 5 days, I&amp;rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&amp;rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the &lt;a href=&#34;https://ziglang.org/documentation/master/std/&#34;&gt;standard library&lt;/a&gt;, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever. Existing tutorials are often out-of-date owing to the fact that the language is still hasn&amp;rsquo;t had a full 1.x release, and &amp;ldquo;old&amp;rdquo; unwanted features are apparently being dropped by the devs every now and then.&lt;/p&gt;</description>
     </item>
