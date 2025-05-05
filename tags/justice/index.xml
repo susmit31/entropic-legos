@@ -2,19 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Justice on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/justice/</link>
+    <link>http://localhost:1313/entropic-legos/tags/justice/</link>
     <description>Recent content in Justice on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Fri, 02 Aug 2024 15:13:44 +0600</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/justice/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/entropic-legos/tags/justice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plato&#39;s Republic In a Nutshell - Book 1</title>
+      <link>http://localhost:1313/entropic-legos/posts/republic-1/</link>
+      <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>http://localhost:1313/entropic-legos/posts/republic-1/</guid>
+      <description>&lt;h2 id=&#34;what-is-the-republic&#34;&gt;What is the &lt;em&gt;Republic&lt;/em&gt;?&lt;/h2&gt;&#xA;&lt;p&gt;Plato&amp;rsquo;s &lt;em&gt;Republic&lt;/em&gt; is one of the most renowned pieces of Greek philosophy and remains to be one of the most instructive ones of the Socratic dialogues. It delves into the what &lt;em&gt;justice&lt;/em&gt; means, in the precise sense. It is comprised of 10 chapters, called &amp;ldquo;books&amp;rdquo; by Plato. In this post I will try delivering the essence of what goes down in &lt;em&gt;Book 1&lt;/em&gt; of the &lt;em&gt;Republic&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Understanding Plato&#39;s Republic</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/republic-part-1/</link>
+      <link>http://localhost:1313/entropic-legos/posts/republic-part-1/</link>
       <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/republic-part-1/</guid>
+      <guid>http://localhost:1313/entropic-legos/posts/republic-part-1/</guid>
       <description>&lt;h1 id=&#34;understanding-platos-republic---e1&#34;&gt;Understanding Plato&amp;rsquo;s Republic - E1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This the first episode in (hopefully) a series of several articles where I narrate my own understanding of &lt;em&gt;The Republic&lt;/em&gt;, the magnum opus of &lt;em&gt;Plato&lt;/em&gt;. In this episode, I discuss about the very initial parts of chapter 1 of the book. I give an overview of what transpires before Thrasymachus (while Socrates&amp;rsquo; dialogues contain a lot of different characters much like a play, the exact names of them are not so important to take note of except for a few prominent figures that play a crucial role in Socrates&amp;rsquo; arguments), the most vocal and prominent interlocutor of Socrates in chapter 1, starts engaging with Socrates. (This covers up to page 14 of the &lt;em&gt;Penguin Classics&lt;/em&gt; translation.)&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
+<head><script src="/entropic-legos/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=entropic-legos/livereload" data-no-instant defer></script>
     <title>
 Making Castles in the Air: How Econ 101 Butchers Math - Part 1  | Entropic Legos
 </title>
@@ -13,7 +13,7 @@ Making Castles in the Air: How Econ 101 Butchers Math - Part 1  | Entropic Legos
 <meta name="generator" content="Hugo 0.147.0">
 
 
-<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/symmetry-econ/" >
+<link rel="canonical" href="http://localhost:1313/entropic-legos/posts/symmetry-econ/" >
 
 
 
@@ -59,7 +59,7 @@ Making Castles in the Air: How Econ 101 Butchers Math - Part 1  | Entropic Legos
             <ul>
                 
                 <li>
-                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                    <a href="http://localhost:1313/entropic-legos/posts" title="" >
                         ~/posts</a>
                 </li>
                 
@@ -106,7 +106,7 @@ Making Castles in the Air: How Econ 101 Butchers Math - Part 1  | Entropic Legos
 <p>Whenever we hear of the term &ldquo;economics&rdquo;, the first picture that comes to mind is that of money. The second picture, if you&rsquo;ve been put through at least some sort of formal economic education as in high schools, is the famous supply-and-demand curves. They&rsquo;re the ubiquitous poster-child of the field of economics, the same as $E = mc^2$ or the apocryphal &ldquo;<em>apple falling on Sir Isaac&rsquo;s head</em>&rdquo; in the field of physics. Despite the provocative title, I know and appreciate these models within their scope of usage, and the intent of this essay remains more mathematical than economical. As a noneconomist, I don&rsquo;t really know how much they&rsquo;re used in advanced economic work, but in public discourse of economic policymaking, they have proven so far to be invaluable assets, shedding light on everything starting from local egg prices and the exchange rates in a forex market to economic policymaking on a global level. Yet its mathematical underpinnings seem woefully underexplored. This essay will be an outsider&rsquo;s journey into attempting to formalize the immensely influential yet rather nebulous hand-wavy tools. The goal is, at the very least, to serve as a good demo of how simple mathematical principles and &ldquo;gut feelings&rdquo;, pursued with determination, can lead to delightfully pleasant results. My starting point into the attack will be to a simple and seemingly reasonable hypothesis: <em>the supply curve can be viewed as a demand curve for money from the seller&rsquo;s perspective</em>. But first, let&rsquo;s review a bit about the classical model and see where it shines rather dazzlingly.</p>
 <h1 id="the-econ-101-model-of-supply-and-demand">The Econ 101 Model of Supply and Demand</h1>
 <h2 id="laws-of-supply-and-demand">Laws of Supply and Demand</h2>
-<p>First up, we should introduce the model we&rsquo;re trying to critique to a reasonable extent. As the price of an object goes up, the demand for it goes down, and its supply goes up. At any random price $p$, the seller will be willing to supply an amount $s$ of goods, while the buyer will demand an amount $d$. If $ d &gt; s $, we need to boost the supplies, and so the price goes up a bit to make the sellers supply at $ s&rsquo; = d $, at which point they both agree on the price of the exchange, and the amount of goods to be transferred. Similarly, if $ d &lt; s $, then the sellers drive the price down so that the supply is in locksteps with the demand, and where they meet is the <strong>equilibrium price of goods</strong> - this is a point at which the demand and the supply are such that no price modifications are necessary. All this is packaged into a neat little &ldquo;universal&rdquo; law - <em>the law of supply and demand</em>.</p>
+<p>First up, we should introduce the model we&rsquo;re trying to critique to a reasonable extent. If you are comfortable thinking about the economy in terms of them, you can safely <a href="#let-the-floodgates-open">skip ahead</a> (but I would recommend at least skimming through the <a href="#case-study-diagnosing-diseases-in-state-economy">case study</a> where I show a simple example of how and where the classical model shines). As the price of an object goes up, the demand for it goes down, and its supply goes up. At any random price $p$, the seller will be willing to supply an amount $s$ of goods, while the buyer will demand an amount $d$. If $ d &gt; s $, we need to boost the supplies, and so the price goes up a bit to make the sellers supply at $ s&rsquo; = d $, at which point they both agree on the price of the exchange, and the amount of goods to be transferred. Similarly, if $ d &lt; s $, then the sellers drive the price down so that the supply is in locksteps with the demand, and where they meet is the <strong>equilibrium price of goods</strong> - this is a point at which the demand and the supply are such that no price modifications are necessary. All this is packaged into a neat little &ldquo;universal&rdquo; law - <em>the law of supply and demand</em>.</p>
 <h2 id="the-graphical-summary">The Graphical Summary</h2>
 <p>Now comes the fun part. The laws of supply and demand are neat, but putting them up on a graph is sleek. Here&rsquo;s what it looks like.</p>
 <p><img src="../../demand-classical.png" alt="Classical Supply and Demand Curves"></p>
@@ -202,7 +202,7 @@ $$</p>
 <p>This is closer to an exponential curve than anything else. This tells us one of two things - <strong>either the principle of transactional symmetry is invalid, or the linear-form supply and demand curves are nothing but PURE FRAUD.</strong></p>
 <h1 id="ways-forward">Ways forward</h1>
 <p>As alluded to in the previous paragraph, our pursuit of symmetry has now led us to a fork in the road, and we must choose where to go from here. Assuming you, like myself, prefer staying in the comfort of your home while you do all your mathematical explorations, I take it that you too would agree that experimenting is not an option under consideration, not at least at this point. We could try coming up with an experimental design that would enable us to draw supply and demand curves for various goods including money itself, but if you&rsquo;re anything like myself, you&rsquo;d agree that unless we&rsquo;ve seen this theoretical thread to its very logical end where logic alone can no longer help us proceed, resorting to experiments would be a cop-out.</p>
-<p>So under these constraints, there is only one possible way for us to take - we call the classical model out on its bullshit and take the mathematical route. <strong>We assume the validity of the principle of transactional symmetry, and work out what sort of supply and demand curves respect that symmetry</strong>. And after we&rsquo;ve worked that out, we&rsquo;ll see if the resulting curves make sense empirically, possibly turning to an experimental study eventually. But for now, if you&rsquo;ve read it this far, let&rsquo;s call it a day and rest and recharge. We&rsquo;ll continue with our pursuit the next time, in shaa Allah. Till then, thank you and goodbye!</p>
+<p>So under these constraints, there is only one possible way for us to take - we call the classical model out on its bullshit and take the mathematical route. <strong>We assume the validity of the principle of transactional symmetry, and work out what sort of supply and demand curves respect that symmetry</strong>. And after we&rsquo;ve worked that out, we&rsquo;ll see if the resulting curves make sense empirically, possibly turning to an experimental study eventually. But for now, if you&rsquo;ve read it this far, let&rsquo;s call it a day and rest and recharge. Till then, thank you and goodbye!</p>
 
     </div>
 </div>

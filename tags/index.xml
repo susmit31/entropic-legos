@@ -2,131 +2,131 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/</link>
+    <link>http://localhost:1313/entropic-legos/tags/</link>
     <description>Recent content in Tags on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Sun, 04 May 2025 16:48:41 +0600</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Economics</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/economics/</link>
+      <link>http://localhost:1313/entropic-legos/tags/economics/</link>
       <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/economics/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/economics/</guid>
       <description></description>
     </item>
     <item>
       <title>Mathematical Modelling</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/mathematical-modelling/</link>
+      <link>http://localhost:1313/entropic-legos/tags/mathematical-modelling/</link>
       <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/mathematical-modelling/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/mathematical-modelling/</guid>
       <description></description>
     </item>
     <item>
       <title>Mathematics</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/mathematics/</link>
+      <link>http://localhost:1313/entropic-legos/tags/mathematics/</link>
       <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/mathematics/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/mathematics/</guid>
       <description></description>
     </item>
     <item>
       <title>Symmetry</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/symmetry/</link>
+      <link>http://localhost:1313/entropic-legos/tags/symmetry/</link>
       <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/symmetry/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/symmetry/</guid>
       <description></description>
     </item>
     <item>
       <title>Classics</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/classics/</link>
+      <link>http://localhost:1313/entropic-legos/tags/classics/</link>
       <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/classics/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/classics/</guid>
       <description></description>
     </item>
     <item>
       <title>Greek-Philosophy</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/greek-philosophy/</link>
+      <link>http://localhost:1313/entropic-legos/tags/greek-philosophy/</link>
       <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/greek-philosophy/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/greek-philosophy/</guid>
       <description></description>
     </item>
     <item>
       <title>Justice</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/justice/</link>
+      <link>http://localhost:1313/entropic-legos/tags/justice/</link>
       <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/justice/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/justice/</guid>
       <description></description>
     </item>
     <item>
       <title>Philosophy</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/philosophy/</link>
+      <link>http://localhost:1313/entropic-legos/tags/philosophy/</link>
       <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/philosophy/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/philosophy/</guid>
       <description></description>
     </item>
     <item>
       <title>Plato</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/plato/</link>
+      <link>http://localhost:1313/entropic-legos/tags/plato/</link>
       <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/plato/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/plato/</guid>
       <description></description>
     </item>
     <item>
       <title>Republic</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/republic/</link>
+      <link>http://localhost:1313/entropic-legos/tags/republic/</link>
       <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/republic/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/republic/</guid>
       <description></description>
     </item>
     <item>
       <title>C-Cpp</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/c-cpp/</link>
+      <link>http://localhost:1313/entropic-legos/tags/c-cpp/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/c-cpp/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/c-cpp/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer-Science</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/computer-science/</link>
+      <link>http://localhost:1313/entropic-legos/tags/computer-science/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/computer-science/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/computer-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Golang</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/golang/</link>
+      <link>http://localhost:1313/entropic-legos/tags/golang/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/golang/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/golang/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/programming/</link>
+      <link>http://localhost:1313/entropic-legos/tags/programming/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/programming/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/python/</link>
+      <link>http://localhost:1313/entropic-legos/tags/python/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/python/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/rust/</link>
+      <link>http://localhost:1313/entropic-legos/tags/rust/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/rust/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>Zig</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/zig/</link>
+      <link>http://localhost:1313/entropic-legos/tags/zig/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/zig/</guid>
+      <guid>http://localhost:1313/entropic-legos/tags/zig/</guid>
       <description></description>
     </item>
   </channel>
