@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head><script src="/entropic-legos/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=entropic-legos/livereload" data-no-instant defer></script>
+<head>
     <title>
 How Fast is Zig? | Entropic Legos
 </title>
@@ -10,10 +10,10 @@ How Fast is Zig? | Entropic Legos
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 
-<meta name="generator" content="Hugo 0.147.0">
+<meta name="generator" content="Hugo 0.147.8">
 
 
-<link rel="canonical" href="http://localhost:1313/entropic-legos/posts/speed-test/" >
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/speed-test/" >
 
 
 
@@ -59,7 +59,7 @@ How Fast is Zig? | Entropic Legos
             <ul>
                 
                 <li>
-                    <a href="http://localhost:1313/entropic-legos/posts" title="" >
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
                         ~/posts</a>
                 </li>
                 
@@ -112,37 +112,37 @@ How Fast is Zig? | Entropic Legos
 <p>We will compute the 45-th Fibonacci number as our speed test, using the algorithm mentioned above. We calculate it a total of 5 times and take the average execution time as our comparison metric. Here&rsquo;s the code in Zig.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zig" data-lang="zig"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> std <span style="color:#f92672">=</span> @import(<span style="color:#e6db74">&#34;std&#34;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> stdout <span style="color:#f92672">=</span> std.io.getStdOut();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> stdout <span style="color:#f92672">=</span> std.io.<span style="color:#a6e22e">getStdOut</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> main() <span style="color:#f92672">!</span><span style="color:#66d9ef">void</span>{
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> start_time<span style="color:#f92672">:</span> <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.microTimestamp();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() <span style="color:#f92672">!</span><span style="color:#66d9ef">void</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> start_time<span style="color:#f92672">:</span> <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.<span style="color:#a6e22e">microTimestamp</span>();
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> N<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">45</span>;
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> loop_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> last<span style="color:#f92672">:</span> <span style="color:#66d9ef">u64</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>;
 </span></span><span style="display:flex;"><span>	
-</span></span><span style="display:flex;"><span>	last <span style="color:#f92672">=</span> loop(loop_count, N);
+</span></span><span style="display:flex;"><span>	last <span style="color:#f92672">=</span> <span style="color:#a6e22e">loop</span>(loop_count, N);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> end_time<span style="color:#f92672">:</span> <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.microTimestamp();
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> duration<span style="color:#f92672">:</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">=</span> @as(<span style="color:#66d9ef">f32</span>,@floatFromInt(end_time <span style="color:#f92672">-</span> start_time)) <span style="color:#f92672">/</span> std.math.pow(<span style="color:#66d9ef">f32</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">6</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> end_time<span style="color:#f92672">:</span> <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.<span style="color:#a6e22e">microTimestamp</span>();
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> duration<span style="color:#f92672">:</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">=</span> @as(<span style="color:#66d9ef">f32</span>,@floatFromInt(end_time <span style="color:#f92672">-</span> start_time)) <span style="color:#f92672">/</span> std.math.<span style="color:#a6e22e">pow</span>(<span style="color:#66d9ef">f32</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">6</span>);
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> avg<span style="color:#f92672">:</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">=</span> duration <span style="color:#f92672">/</span> @as(<span style="color:#66d9ef">f32</span>, @floatFromInt(loop_count));
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">try</span> stdout.writer().print(<span style="color:#e6db74">&#34;Completed recursive calculation of the first {d} Fibonacci numbers using ZIGLANG.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">{d}-th Fibonacci number: {d}.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Algorithm time complexity: exponential.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Iterated {d} times. Total required time: {d:.3}s. Average required time: {d:.3}s.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, .{N, N, last, loop_count, duration, avg});
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">try</span> stdout.<span style="color:#a6e22e">writer</span>().<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Completed recursive calculation of the first {d} Fibonacci numbers using ZIGLANG.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">{d}-th Fibonacci number: {d}.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Algorithm time complexity: exponential.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Iterated {d} times. Total required time: {d:.3}s. Average required time: {d:.3}s.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, .{N, N, last, loop_count, duration, avg});
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> fib_recursive(n<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">fib_recursive</span>(n<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (n<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">or</span> n<span style="color:#f92672">==</span><span style="color:#ae81ff">2</span>) {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span>	} <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> fib_recursive(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> fib_recursive(n<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fib_recursive</span>(n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">fib_recursive</span>(n<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>);
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> loop(n_loop<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>, n_fib<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">loop</span>(n_loop<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>, n_fib<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> (<span style="color:#ae81ff">1</span>..n_loop<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">|</span>_<span style="color:#f92672">|</span>{
-</span></span><span style="display:flex;"><span>		_ <span style="color:#f92672">=</span> fib_recursive(n_fib);
+</span></span><span style="display:flex;"><span>		_ <span style="color:#f92672">=</span> <span style="color:#a6e22e">fib_recursive</span>(n_fib);
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> fib_recursive(n_fib);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fib_recursive</span>(n_fib);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The exact same algorithm was implemented in C, Rust, Go, and Python for the sake of comparison. And what were the results?</p>
 <h1 id="the-results">The Results</h1>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mechanism on Entropic Legos</title>
+    <link>http://localhost:1313/entropic-legos/tags/mechanism/</link>
+    <description>Recent content in Mechanism on Entropic Legos</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
+    <webMaster>hugo@example.com (Entropic Legos)</webMaster>
+    <lastBuildDate>Sat, 10 May 2025 00:17:17 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/entropic-legos/tags/mechanism/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blue Blood: &#34;Central&#34; vs &#34;Peripheral&#34; Cyanosis</title>
+      <link>http://localhost:1313/entropic-legos/posts/cyanosis-diff/</link>
+      <pubDate>Sat, 10 May 2025 00:17:17 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>http://localhost:1313/entropic-legos/posts/cyanosis-diff/</guid>
+      <description>&lt;h1 id=&#34;blue-blood-central-vs-peripheral-cyanosis&#34;&gt;Blue Blood: &amp;ldquo;Central&amp;rdquo; vs &amp;ldquo;Peripheral&amp;rdquo; Cyanosis&lt;/h1&gt;&#xA;&lt;p&gt;In the beginning of our clinical years, a fairly high-yield topic is that of cyanosis. And teachers LOVE to ask about the various causes of cyanosis, especially divided by the categories of &amp;ldquo;central&amp;rdquo; and &amp;ldquo;peripheral&amp;rdquo;. It might be a pain in the neck to remember all those causes, but understanding the basic pathophys will work better than morphine for that pain. So let&amp;rsquo;s get to it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
