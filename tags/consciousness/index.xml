@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consciousness on Entropic Legos</title>
+    <link>https://susmit31.github.io/entropic-legos/tags/consciousness/</link>
+    <description>Recent content in Consciousness on Entropic Legos</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
+    <webMaster>hugo@example.com (Entropic Legos)</webMaster>
+    <lastBuildDate>Mon, 17 Feb 2025 23:40:49 +0600</lastBuildDate>
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/consciousness/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mind Theory Update</title>
+      <link>https://susmit31.github.io/entropic-legos/posts/mind-theory-update/</link>
+      <pubDate>Mon, 17 Feb 2025 23:40:49 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/mind-theory-update/</guid>
+      <description>&lt;h1 id=&#34;the-consciousness-conundrum&#34;&gt;The Consciousness Conundrum&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been gone from the blog for months. In the meantime, my country has witnessed a successful overthrowing of a tyrant called Sheikh Hasina, among other things. The last time I posted it was about &lt;em&gt;the Zig programming language&lt;/em&gt; and about &lt;em&gt;Plato&amp;rsquo;s Republic&lt;/em&gt;. Because I have the attention span of a little child, I&amp;rsquo;ve obviously still &lt;em&gt;not finished&lt;/em&gt; learning Zig, nor have I finished going through &lt;em&gt;The Republic&lt;/em&gt;. I&amp;rsquo;ve been bouncing from one interest to another like a pinball in a pinball machine - from working with Arduino and ESP32 to building raw logic gates with transistors on a breadboard, from Plato to Wittgenstein, from Hodgkin-Huxley to Hopfield, and from graph theory to category theory - I&amp;rsquo;ve been exploring quite a vast terrain over these past months. And as rare as this may be, I for the first time in my life feel that I&amp;rsquo;m finding a common thread running through all my interests. And it&amp;rsquo;s the consciousness conundrum.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

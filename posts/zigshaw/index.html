@@ -3,7 +3,7 @@
 
 <head>
     <title>
-Writing a Simple UNIX-like Shell in Zig | Entropic Legos
+Exploring the Zig Programming Language: Part 1 | Entropic Legos
 </title>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -73,7 +73,7 @@ Writing a Simple UNIX-like Shell in Zig | Entropic Legos
             <main class="main">
                 
 <div class="postWrapper">
-    <h1>Writing a Simple UNIX-like Shell in Zig</h1>
+    <h1>Exploring the Zig Programming Language: Part 1</h1>
     
     
     <section class="postMetadata">
@@ -101,7 +101,8 @@ Writing a Simple UNIX-like Shell in Zig | Entropic Legos
     </section>
     
     <div>
-        <p>This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the <em>Zig</em> programming language. After having been exposed to it for around 5 days, I&rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the <a href="https://ziglang.org/documentation/master/std/">standard library</a>, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever. Existing tutorials are often out-of-date owing to the fact that the language is still hasn&rsquo;t had a full 1.x release, and &ldquo;old&rdquo; unwanted features are apparently being dropped by the devs every now and then.</p>
+        <h1 id="writing-a-unix-like-shell-in-zig">Writing a UNIX-like Shell in Zig</h1>
+<p>This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the <em>Zig</em> programming language. After having been exposed to it for around 5 days, I&rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the standard library, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever. Existing tutorials are often out-of-date owing to the fact that the language is still hasn&rsquo;t had a full 1.x release, and &ldquo;old&rdquo; unwanted features are apparently being dropped by the devs every now and then.</p>
 <p>My troubles notwithstanding, after giving up a couple of times, I decided to dive into the source code and try figuring things out by myself. What follows is the product of my adventures into this uncharted territory. But be warned, at the time you&rsquo;re reading, even this code might have become outdated. This code was written and tested with Zig verion 0.14 on Debian 12, so keep that at the back of your head as you go through this. (Much of the code should stay the same regardless your OS, as long as you use a POSIX-compliant shell such as Git Bash, for example.)</p>
 <h1 id="the-basics">The basics</h1>
 <p>Of course, we start by importing the standard library.</p>

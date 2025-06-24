@@ -3,7 +3,7 @@
 
 <head>
     <title>
-How Fast is Zig? | Entropic Legos
+Exploring the Zig Programming Language: Part 2 | Entropic Legos
 </title>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -73,7 +73,7 @@ How Fast is Zig? | Entropic Legos
             <main class="main">
                 
 <div class="postWrapper">
-    <h1>How Fast is Zig?</h1>
+    <h1>Exploring the Zig Programming Language: Part 2</h1>
     
     
     <section class="postMetadata">
@@ -105,7 +105,8 @@ How Fast is Zig? | Entropic Legos
     </section>
     
     <div>
-        <p>Zig is certainly one of the more fun languages I&rsquo;ve coded in. But how fast is it? Let&rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.</p>
+        <h1 id="zig-is-said-to-be-blazingly-fast-but-what-exactly-is-blazingly-fast">Zig is said to be &ldquo;blazingly fast&rdquo;. But what exactly is &ldquo;blazingly fast&rdquo;?</h1>
+<p>Zig is certainly one of the more fun languages I&rsquo;ve coded in. But how fast is it? Let&rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.</p>
 <h1 id="but-how-do-we-measure-their-speed">But How Do We Measure Their Speed?</h1>
 <p>As computers are stupendously fast these days, they perform most tasks in the blink of an eye. It&rsquo;s hard to write a piece of code that will be both small (i.e. can be written within a few minutes) and computationally intensive (i.e. require a noticeable amount of execution time). A hack we can use, though, is using a stupid algorithm for a simple task. For example, for our purposes, I&rsquo;ve chosen the recursive computation of the Fibonacci sequence, which has an exponential time complexity (compare this to the dynamic programming approach, which has a linear time complexity). This means, for example, the execution time for calculating the <em>N</em>-th Fibonacci number with this algorithm will be, say, <em>x</em> times that of the <em>(N-1)</em>-th Fibonacci number, and <em>x^2</em> times that of <em>(N-2)</em>-th Fibonacci number, and so on. So as we scale the problem upwards, the execution time increases geometrically.</p>
 <h1 id="the-code">The Code</h1>
