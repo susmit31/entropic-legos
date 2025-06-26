@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
+<head><script src="/entropic-legos/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=entropic-legos/livereload" data-no-instant defer></script>
     <title>
 Exploring the Zig Programming Language: Part 1 | Entropic Legos
 </title>
@@ -13,7 +13,7 @@ Exploring the Zig Programming Language: Part 1 | Entropic Legos
 <meta name="generator" content="Hugo 0.147.8">
 
 
-<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/zigshaw/" >
+<link rel="canonical" href="http://localhost:1313/entropic-legos/posts/zigshaw/" >
 
 
 
@@ -59,7 +59,7 @@ Exploring the Zig Programming Language: Part 1 | Entropic Legos
             <ul>
                 
                 <li>
-                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                    <a href="http://localhost:1313/entropic-legos/posts" title="" >
                         ~/posts</a>
                 </li>
                 
@@ -101,17 +101,17 @@ Exploring the Zig Programming Language: Part 1 | Entropic Legos
     </section>
     
     <div>
-        <h1 id="writing-a-unix-like-shell-in-zig">Writing a UNIX-like Shell in Zig</h1>
+        <h2 id="writing-a-unix-like-shell-in-zig">Writing a UNIX-like Shell in Zig</h2>
 <p>This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the <em>Zig</em> programming language. After having been exposed to it for around 5 days, I&rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the standard library, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever. Existing tutorials are often out-of-date owing to the fact that the language is still hasn&rsquo;t had a full 1.x release, and &ldquo;old&rdquo; unwanted features are apparently being dropped by the devs every now and then.</p>
 <p>My troubles notwithstanding, after giving up a couple of times, I decided to dive into the source code and try figuring things out by myself. What follows is the product of my adventures into this uncharted territory. But be warned, at the time you&rsquo;re reading, even this code might have become outdated. This code was written and tested with Zig verion 0.14 on Debian 12, so keep that at the back of your head as you go through this. (Much of the code should stay the same regardless your OS, as long as you use a POSIX-compliant shell such as Git Bash, for example.)</p>
-<h1 id="the-basics">The basics</h1>
+<h2 id="the-basics">The basics</h2>
 <p>Of course, we start by importing the standard library.</p>
 <pre tabindex="0"><code>const std = @import(&#34;std&#34;);
 </code></pre><p>Note that all lines in Zig code, like C and C++, must end in a semicolon.</p>
 <p>Next up, we make available the standard input (for receiving user input) and the standard output (for printing stuff, obviously).</p>
 <pre tabindex="0"><code>const stdin = std.io.getStdIn();
 const stdout = std.io.getStdOut();
-</code></pre><h1 id="the-main-function">The main function</h1>
+</code></pre><h2 id="the-main-function">The main function</h2>
 <p>Now we head over to the main function. By the way, I named my shell &ldquo;Zigshaw&rdquo;. Hope that&rsquo;s not too corny.</p>
 <pre tabindex="0"><code>pub fn main() !void{
 	try stdout.writer().print(&#34;Welcome to Zigshaw v0.1.0\n&#34;,.{});
@@ -128,7 +128,7 @@ const stdout = std.io.getStdOut();
 	var date_child = std.process.Child.init(&amp;[_][]const u8{&#34;date&#34;, &#34;+%d-%m-%Y||%T&#34;}, allocator);
 	_ = try date_child.spawnAndWait();
 </code></pre><p>Note that in Zig, you can&rsquo;t compile a programme if you have an unused variable. Similar to Go, if something a function returns is to be discarded, we store it in an underscore (_). In case of the argument vector containing the command, the underscore means that the array length is to be inferred, which in this case is 2.</p>
-<h1 id="the-protagonist-shows-up">The protagonist shows up</h1>
+<h2 id="the-protagonist-shows-up">The protagonist shows up</h2>
 <p>Our next task, the meat of our work, is in the next line of code.</p>
 <pre tabindex="0"><code>	try looper(&amp;buffer, allocator);
 }
@@ -206,7 +206,7 @@ const stdout = std.io.getStdOut();
 $--&gt; ./zigshaw
 </code></pre><p>And you should see something like the following image:</p>
 <p><img src="../../zigshaw.png" alt="Zigshaw in action"></p>
-<p>So that&rsquo;s all for today. Hope this has been of help. Goodbye, my friend!</p>
+<p>So that&rsquo;s all for today. Hope this has been of help. Goodbye, my fri</p>
 
     </div>
 </div>
