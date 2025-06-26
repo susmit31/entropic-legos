@@ -2,10 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/curvature/</loc>
+    <lastmod>2025-06-27T00:00:00+06:00</lastmod>
+  </url><url>
     <loc>https://susmit31.github.io/entropic-legos/</loc>
     <lastmod>2025-06-27T00:00:00+06:00</lastmod>
   </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/gravity/</loc>
+    <lastmod>2025-06-27T00:00:00+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/posts/newton-curved/</loc>
+    <lastmod>2025-06-27T00:00:00+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/physics/</loc>
+    <lastmod>2025-06-27T00:00:00+06:00</lastmod>
+  </url><url>
     <loc>https://susmit31.github.io/entropic-legos/posts/</loc>
+    <lastmod>2025-06-27T00:00:00+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/</loc>
     <lastmod>2025-06-27T00:00:00+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</loc>
@@ -15,9 +30,6 @@
     <lastmod>2025-06-26T22:05:59+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/tags/mathematics/</loc>
-    <lastmod>2025-06-26T22:05:59+06:00</lastmod>
-  </url><url>
-    <loc>https://susmit31.github.io/entropic-legos/tags/</loc>
     <lastmod>2025-06-26T22:05:59+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/tags/topology/</loc>
