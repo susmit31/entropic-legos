@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+A (Wannabe) Topologist&#39;s Apology - Let&#39;s Bake a Cake! | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.147.9">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/topo-cake/" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.d08330d16e88347153c019b7ad53cac683c12cf5e6207a901990efa563db6ff8.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/entropic-legos">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>A (Wannabe) Topologist&#39;s Apology - Let&#39;s Bake a Cake!</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/entropic-legos/tags/mathematics/">#Mathematics</a><span></span>
+    <a href="/entropic-legos/tags/differential-geometry/">#Differential Geometry</a><span></span>
+    <a href="/entropic-legos/tags/topology/">#Topology</a></dd>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2025-06-26">June 26, 2025</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>6 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="gen-topology-brig-connection-maj-manifold">Gen. Topology, Brig. Connection, Maj. Manifold</h2>
+<p>The first issue you run into when you&rsquo;re trying to learn topology and differential geometry, if you&rsquo;ve never taken a class in &ldquo;advanced&rdquo; maths before, is the fact that it&rsquo;s studded with definitions, often with no clear motivation. Now of course this wasn&rsquo;t the case when these ideas were being worked out, they just didn&rsquo;t make things up as they pleased. In this series of articles, we&rsquo;ll take a step back from rigorous mathematics and try to come up with intuitive notions that best convey these ideas. Today we&rsquo;ll give a big picture overview of topologies, manifolds, and connections. Intended audience includes those who&rsquo;ve already had some exposure to these but can&rsquo;t quite internalise the ideas and tie them together with a concrete example. If you have no idea at all about any of these things, you might still try reading, but I wouldn&rsquo;t encourage you to, at least before you&rsquo;ve had some proper exposure from any book or lecture.</p>
+<h2 id="lets-bake">Let&rsquo;s Bake!</h2>
+<h3 id="step-0-the-baking-powder">Step 0: The Baking Powder</h3>
+<p>One of the most primitive notions in maths is that of a set. What is a set? I can try to say that it’s a “collection of elements”, but then I haven’t really solved the problem - in defining one undefined idea, set, I’ve brought in another undefined idea, collection. How do you define a collection? You’ll probably just fall back to the concept of a set, saying “it’s a set of objects” (or use some other English synonym of set, e.g. aggregate) - a circular definition. Indeed, this motivates us to take sets for granted as basic entities like numbers. Assume you’ve got a bowl of flour. It has probably several thousands of flour particles. This is a set of flour particles. Each particle within the bowl is an element of the set. Keep the image at the back of your mind, we’ll need it for the rest of this article.</p>
+<h3 id="step-1-making-a-dough">Step 1: Making a Dough</h3>
+<p>A set in and of itself isn’t probably that interesting - there is nothing notable going on between the elements. If we turn the bowl upside down, the flour particles will start falling, each following a separate, isolated path. To start talking about continuity and stuff like that, we need to somehow define neighbourhoods. How do we define neighbourhoods in the bowl of flour? We can add water to the bowl to make a dough - this “connects” different elements (flour particles) of the set. Now when you turn the bowl upside down, the entire thing falls together as a dough. A topology on a set does just this - it defines neighbourhoods within that set. It adds water to the bowl of flour to make dough out of it. A set with a topology is known as a topological space. In short, a topological space is a pair (set, topology). So our dough is a topological space.</p>
+<h3 id="step-2-filling-up-holes-in-the-dough">Step 2: Filling Up &ldquo;Holes&rdquo; In The Dough</h3>
+<p>What shape does a dough have? It doesn’t have a definite shape, it’s malleable. However, when you give a dough a particular shape, unless you’ve added too much water, the dough will stay in that shape until you change the shape again. So in a topological space, we can talk about continuity, but there is no notion of shape. In differential geometry we’re interested about the shape of space, so we’re interested in equipping our sets with a notion of shape. How do we do it? Let’s start with a 1-dimensional curved space. How do we detect whether a curve, y(x), is straight? We take its derivative - that tells us how the slope changes as a at different points in space. If the derivative is constant, there is no change in the slope, and hence the “curve” is straight. So we need to somehow differentiate on this dough. But if you took your calc classes seriously, you’ll have noticed that we only know how to do calculus on an n-dimensional Euclidean space. What do we do for arbitrary spaces?</p>
+<h3 id="step-3-making-the-dough-shapable">Step 3: Making The Dough &ldquo;Shapable&rdquo;</h3>
+<p>Well if we can map that arbitrary space into an n-dimensional Euclidean space, Rn, we can do calculus easily. We take the the dough, &ldquo;deform&rdquo; it into an n-D Euclid, do calculus, and then go back to the dough. So when we have a continuous map from the topological space to Rn and back, we can talk about differentiability on the space. This is an important quality to have, and so we give a special name to those topological spaces that have such a structure - we call them manifolds. The functions we use to map the manifold into Rn comprise an atlas. So in other words, a manifold is a triple of (set, topology, atlas). This merely means that we now know how to do calculus on the dough. It&rsquo;s &ldquo;shape-giveable&rdquo;, loosely speaking. But we haven&rsquo;t exactly given it a definite shape yet. However we choose to deform it, the structure (set, topology, atlas) doesn&rsquo;t get changed. We have to add a new level of structure that differs based on the exact shape of the dough, i.e. that exactly describes the shape of the dough.</p>
+<h3 id="step-4-shaping-the-dough">Step 4: Shaping the Dough</h3>
+<p>To encode mathematically notion of curvature in a manifold, notice that in Rn we have the same unit vectors everywhere. On the other hand, on a curved surface like the earth, we can define locally flat coordinate systems, but each such region will have unit vectors pointing in different directions. So we notice that how the unit vectors on a manifold change can tell us the shape of the manifold. How do we measure their change? We differentiate them. The derivative of the unit vectors at each point in the manifold define the connection component functions on that manifold. For different choices of these functions, we get different derivative fields, and hence different shapes. So when we fix a particular connection on the manifold, we thus also fix its shape. So the dough isn&rsquo;t malleable anymore. We&rsquo;ve put it into the oven and baked a cake out of it. The quadruple (set, topology, atlas, connection) is thus a cake.</p>
+<h2 id="your-topology-cake-is-now-ready-to-be-served">Your Topology Cake is Now Ready To Be Served!</h2>
+<p>Before you head off to enjoy the freshly baked cake, let&rsquo;s summarise. We started with powder - which is just a set. We added water (equip with a topology) in it to make dough - a topological space. We make sure the dough looks okay (equip with a continuous atlas) - a manifold. And finally we mould it into a nice shape and put it into an oven (equip with a connection) to fix its shape and get a cake.</p>
+<p>I hope this has been helpful. Thanks for reading, goodbye!</p>
+<p>(Editing notes: This is an <a href="https://susmitislam.wordpress.com/2021/04/25/a-wannabe-topologists-apology-lets-bake-a-cake/">old post</a> written in 2021 and retrieved from my then-blog.)</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>© Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

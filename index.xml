@@ -8,8 +8,15 @@
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Tue, 24 Jun 2025 23:19:55 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 22:05:59 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A (Wannabe) Topologist&#39;s Apology - Let&#39;s Bake a Cake!</title>
+      <link>https://susmit31.github.io/entropic-legos/posts/topo-cake/</link>
+      <pubDate>Thu, 26 Jun 2025 22:05:59 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/topo-cake/</guid>
+      <description>&lt;h2 id=&#34;gen-topology-brig-connection-maj-manifold&#34;&gt;Gen. Topology, Brig. Connection, Maj. Manifold&lt;/h2&gt;&#xA;&lt;p&gt;The first issue you run into when you&amp;rsquo;re trying to learn topology and differential geometry, if you&amp;rsquo;ve never taken a class in &amp;ldquo;advanced&amp;rdquo; maths before, is the fact that it&amp;rsquo;s studded with definitions, often with no clear motivation. Now of course this wasn&amp;rsquo;t the case when these ideas were being worked out, they just didn&amp;rsquo;t make things up as they pleased. In this series of articles, we&amp;rsquo;ll take a step back from rigorous mathematics and try to come up with intuitive notions that best convey these ideas. Today we&amp;rsquo;ll give a big picture overview of topologies, manifolds, and connections. Intended audience includes those who&amp;rsquo;ve already had some exposure to these but can&amp;rsquo;t quite internalise the ideas and tie them together with a concrete example. If you have no idea at all about any of these things, you might still try reading, but I wouldn&amp;rsquo;t encourage you to, at least before you&amp;rsquo;ve had some proper exposure from any book or lecture.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Absistence and Other Metaphysical Quandaries</title>
       <link>https://susmit31.github.io/entropic-legos/posts/absistence/</link>

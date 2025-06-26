@@ -8,8 +8,29 @@
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Tue, 24 Jun 2025 23:19:55 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jun 2025 22:05:59 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Differential Geometry</title>
+      <link>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</link>
+      <pubDate>Thu, 26 Jun 2025 22:05:59 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>https://susmit31.github.io/entropic-legos/tags/mathematics/</link>
+      <pubDate>Thu, 26 Jun 2025 22:05:59 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/tags/mathematics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topology</title>
+      <link>https://susmit31.github.io/entropic-legos/tags/topology/</link>
+      <pubDate>Thu, 26 Jun 2025 22:05:59 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/tags/topology/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Metaphysics</title>
       <link>https://susmit31.github.io/entropic-legos/tags/metaphysics/</link>
@@ -71,13 +92,6 @@
       <link>https://susmit31.github.io/entropic-legos/tags/mathematical-modelling/</link>
       <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/tags/mathematical-modelling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mathematics</title>
-      <link>https://susmit31.github.io/entropic-legos/tags/mathematics/</link>
-      <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/tags/mathematics/</guid>
       <description></description>
     </item>
     <item>

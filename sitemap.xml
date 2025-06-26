@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://susmit31.github.io/entropic-legos/posts/absistence/</loc>
-    <lastmod>2025-06-24T23:19:55+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/posts/topo-cake/</loc>
+    <lastmod>2025-06-26T22:05:59+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</loc>
+    <lastmod>2025-06-26T22:05:59+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/</loc>
+    <lastmod>2025-06-26T22:05:59+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/mathematics/</loc>
+    <lastmod>2025-06-26T22:05:59+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/posts/</loc>
+    <lastmod>2025-06-26T22:05:59+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/</loc>
+    <lastmod>2025-06-26T22:05:59+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/topology/</loc>
+    <lastmod>2025-06-26T22:05:59+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/posts/absistence/</loc>
     <lastmod>2025-06-24T23:19:55+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/tags/metaphysics/</loc>
     <lastmod>2025-06-24T23:19:55+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/tags/philosophy-of-language/</loc>
-    <lastmod>2025-06-24T23:19:55+06:00</lastmod>
-  </url><url>
-    <loc>https://susmit31.github.io/entropic-legos/posts/</loc>
-    <lastmod>2025-06-24T23:19:55+06:00</lastmod>
-  </url><url>
-    <loc>https://susmit31.github.io/entropic-legos/tags/</loc>
     <lastmod>2025-06-24T23:19:55+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/tags/epistemology/</loc>
@@ -48,9 +60,6 @@
     <lastmod>2025-05-04T16:48:41+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/tags/mathematical-modelling/</loc>
-    <lastmod>2025-05-04T16:48:41+06:00</lastmod>
-  </url><url>
-    <loc>https://susmit31.github.io/entropic-legos/tags/mathematics/</loc>
     <lastmod>2025-05-04T16:48:41+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/tags/symmetry/</loc>
