@@ -2,117 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Entropic Legos</title>
-    <link>http://localhost:1313/entropic-legos/</link>
+    <link>https://susmit31.github.io/entropic-legos/</link>
     <description>Recent content on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Fri, 27 Jun 2025 19:39:25 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/entropic-legos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://susmit31.github.io/entropic-legos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Ontological Status of Time - Preliminary Thoughts</title>
-      <link>http://localhost:1313/entropic-legos/posts/time-prelim/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/time-prelim/</link>
       <pubDate>Fri, 27 Jun 2025 19:39:25 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/time-prelim/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/time-prelim/</guid>
       <description>&lt;h2 id=&#34;what-is-a-clock&#34;&gt;What is a Clock?&lt;/h2&gt;&#xA;&lt;p&gt;A philosopher and a physicist walk into a cafe. The philosopher asks the physicist to define &amp;ldquo;time&amp;rdquo;. The physicist says,&amp;ldquo;simple - &lt;em&gt;that which is measured by a clock&lt;/em&gt;&amp;rdquo;. &amp;ldquo;Cool, but &lt;em&gt;what is a frickin clock?&lt;/em&gt;&amp;rdquo;, replies the exasperated philosopher. (The real fun, however, happens when both of them are the same person.)&lt;/p&gt;&#xA;&lt;p&gt;This post is not to discuss my thoughts on time in an elaborate manner. I&amp;rsquo;ll defer that to a later time when I feel that my ideas have reached their ultimate form. But for now, I&amp;rsquo;d like to drop some hints. I&amp;rsquo;m, for the time being (pun intended and very much apt), a presentist. If I find at some point that it doesn&amp;rsquo;t fit the data, I&amp;rsquo;ll drop it. No attachments to it, I just want to see which hypothesis works better. The time hypothesis doesn&amp;rsquo;t, as I want to make plausible in what follows.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>What Is Quantum Entanglement?</title>
-      <link>http://localhost:1313/entropic-legos/posts/entanglement/</link>
-      <pubDate>Fri, 27 Jun 2025 09:44:16 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/entanglement/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Newtonian Spacetime is Curved! (REPOST)</title>
-      <link>http://localhost:1313/entropic-legos/posts/newton-curved/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/newton-curved/</link>
       <pubDate>Fri, 27 Jun 2025 00:00:00 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/newton-curved/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/newton-curved/</guid>
       <description>&lt;h2 id=&#34;newtonian-gravity-reimagined&#34;&gt;Newtonian Gravity Reimagined&lt;/h2&gt;&#xA;&lt;p&gt;The title probably seems very much against common knowledge.  It might even have come as a shock. Or maybe it just seems like an absurd crackpot hypothesis at best. After all, wasn&amp;rsquo;t not thinking in terms of spacetime curvature the cause of Newton&amp;rsquo;s downfall and Einstein&amp;rsquo;s rise? Doesn&amp;rsquo;t relativity bring curvature to the picture? Well, not exactly. In this post I&amp;rsquo;m going to try to convince you why the self-consistency of Newtonian gravity demands it be thought of as not a force, but as a geometrical phenomenon.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Manifolds, Connections, Topologies - Let&#39;s Bake a Cake! (REPOST)</title>
-      <link>http://localhost:1313/entropic-legos/posts/topo-cake/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/topo-cake/</link>
       <pubDate>Thu, 26 Jun 2025 22:05:59 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/topo-cake/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/topo-cake/</guid>
       <description>&lt;h2 id=&#34;topology-in-cakeland&#34;&gt;Topology in Cakeland&lt;/h2&gt;&#xA;&lt;p&gt;The first issue you run into when you&amp;rsquo;re trying to learn topology and differential geometry, if you&amp;rsquo;ve never taken a class in &amp;ldquo;advanced&amp;rdquo; maths before, is the fact that it&amp;rsquo;s studded with definitions, often with no clear motivation. Now of course this wasn&amp;rsquo;t the case when these ideas were being worked out, they just didn&amp;rsquo;t make things up as they pleased. In this series of articles, we&amp;rsquo;ll take a step back from rigorous mathematics and try to come up with intuitive notions that best convey these ideas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Absistence and Other Metaphysical Quandaries</title>
-      <link>http://localhost:1313/entropic-legos/posts/absistence/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/absistence/</link>
       <pubDate>Tue, 24 Jun 2025 23:19:55 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/absistence/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/absistence/</guid>
       <description>&lt;h2 id=&#34;how-can-nonexistent-objects-be&#34;&gt;How Can Nonexistent Objects &amp;ldquo;Be&amp;rdquo;?&lt;/h2&gt;&#xA;&lt;p&gt;I discussed in a previous post the view of Meinong on levels of ontological being. Meinong&amp;rsquo;s idea drew much ridicule at his time (&amp;ldquo;Meinong&amp;rsquo;s jungle&amp;rdquo;), but I think Meinong&amp;rsquo;s framework is a very valid approach for doing philosophy especially in &amp;ldquo;ordinary language&amp;rdquo;, rather than in the strict formalism mathematics and logic, in which such &amp;ldquo;objects&amp;rdquo; are immediately dismissed. In what follows I&amp;rsquo;ll put forth my framework to elucidate some of the confusing issues on this front.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Philosophy of Religion by Murray and Rea First Thoughts: Chapter 1 - Part 1</title>
-      <link>http://localhost:1313/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</link>
       <pubDate>Sun, 22 Jun 2025 23:42:32 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</guid>
       <description>&lt;h2 id=&#34;god-epistemology-and-ontology&#34;&gt;God: Epistemology and Ontology&lt;/h2&gt;&#xA;&lt;p&gt;The following includes my first thoughts while reading &lt;em&gt;An Introduction to the Philosophy of Religion&lt;/em&gt; by Murray and Rea, largely unfiltered. This is the first part of my collected thoughts on chapter 1, in which rather than discussing directly what has been talked about in the chapter itself, I have written down my perspectives on how to go about solving the epistemological and metaphysical problems associated with the question of God. In the next part, in shaa Allah, I will write about what exactly has been discussed in the chapter and how that fits (or does not) with my framework captured below.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everywhere Yet Nowhere: The Ontological Status of Energy</title>
-      <link>http://localhost:1313/entropic-legos/posts/energy-ontology/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/energy-ontology/</link>
       <pubDate>Fri, 20 Jun 2025 18:37:18 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/energy-ontology/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/energy-ontology/</guid>
       <description>&lt;h2 id=&#34;energy-is-everywhere-or-is-it&#34;&gt;Energy is Everywhere. Or Is It?&lt;/h2&gt;&#xA;&lt;p&gt;We love energy. Our civilisation is built on energy. Each phase in the history of the human civilisation is marked by inventing some radically more efficient way to extract energy from some &amp;ldquo;stored form&amp;rdquo;. From eating fruits and veggies storing energy obtained from the sun to burning the carcasses of them to smashing subatomic particles off of each other, we&amp;rsquo;ve certainly come a long way. We can extract energy &amp;ldquo;hidden&amp;rdquo; in even the remotest corner of the smallest conceivable energy storage - an atom. And with all this energy we power our homes, our offices, our factories, and most importantly, our electronic appliances, including the one we&amp;rsquo;re reading/writing this post on. But &lt;em&gt;what exactly&lt;/em&gt; is energy?&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Blue Blood: &#34;Central&#34; vs &#34;Peripheral&#34; Cyanosis</title>
-      <link>http://localhost:1313/entropic-legos/posts/cyanosis-diff/</link>
-      <pubDate>Sat, 10 May 2025 00:17:17 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/cyanosis-diff/</guid>
-      <description>&lt;h2 id=&#34;blue-blood-central-vs-peripheral-cyanosis&#34;&gt;Blue Blood: &amp;ldquo;Central&amp;rdquo; vs &amp;ldquo;Peripheral&amp;rdquo; Cyanosis&lt;/h2&gt;&#xA;&lt;p&gt;In the beginning of our clinical years, a fairly high-yield topic is that of cyanosis. And teachers LOVE to ask about the various causes of cyanosis, especially divided by the categories of &amp;ldquo;central&amp;rdquo; and &amp;ldquo;peripheral&amp;rdquo;. It might be a pain in the neck to remember all those causes, but understanding the basic pathophys will work better than morphine for that pain. So let&amp;rsquo;s get to it.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Making Castles in the Air: How Econ 101 Butchers Math - Part 1 </title>
-      <link>http://localhost:1313/entropic-legos/posts/symmetry-econ/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</link>
       <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/symmetry-econ/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</guid>
       <description>&lt;h2 id=&#34;supply-and-demand-curves-are-a-scam&#34;&gt;Supply and Demand Curves Are a Scam&lt;/h2&gt;&#xA;&lt;p&gt;I know, I know. I sound like a crackpot theorist from the title. But hear me out for a sec. It&amp;rsquo;s deeper than you think. Here&amp;rsquo;s a taste of what&amp;rsquo;s to come: supply and demand curves should be preserved under some transformations if they are to behave symmetrically, but they aren&amp;rsquo;t. Why should you care though? IDK, since supply and demand curves &amp;ldquo;determine&amp;rdquo; prices, and if the curves aren&amp;rsquo;t sufficiently well-defined we may have no notion of &amp;ldquo;eqilibrium price&amp;rdquo; or no single &amp;ldquo;equilibrium price&amp;rdquo; and so on?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mind Theory Update</title>
-      <link>http://localhost:1313/entropic-legos/posts/mind-theory-update/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/mind-theory-update/</link>
       <pubDate>Mon, 17 Feb 2025 23:40:49 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/mind-theory-update/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/mind-theory-update/</guid>
       <description>&lt;h2 id=&#34;the-consciousness-conundrum&#34;&gt;The Consciousness Conundrum&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been gone from the blog for months. In the meantime, my country has witnessed a successful overthrowing of a tyrant called Sheikh Hasina, among other things. The last time I posted it was about &lt;em&gt;the Zig programming language&lt;/em&gt; and about &lt;em&gt;Plato&amp;rsquo;s Republic&lt;/em&gt;. Because I have the attention span of a little child, I&amp;rsquo;ve obviously still &lt;em&gt;not finished&lt;/em&gt; learning Zig, nor have I finished going through &lt;em&gt;The Republic&lt;/em&gt;. I&amp;rsquo;ve been bouncing from one interest to another like a pinball in a pinball machine - from working with Arduino and ESP32 to building raw logic gates with transistors on a breadboard, from Plato to Wittgenstein, from Hodgkin-Huxley to Hopfield, and from graph theory to category theory - I&amp;rsquo;ve been exploring quite a vast terrain over these past months. And as rare as this may be, I for the first time in my life feel that I&amp;rsquo;m finding a common thread running through all my interests. And it&amp;rsquo;s the consciousness conundrum.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Plato&#39;s Republic In a Nutshell - Book 1</title>
-      <link>http://localhost:1313/entropic-legos/posts/republic-1/</link>
-      <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/republic-1/</guid>
-      <description>&lt;h2 id=&#34;-what-is-the-republic&#34;&gt;# What is the &lt;em&gt;Republic&lt;/em&gt;?&lt;/h2&gt;&#xA;&lt;p&gt;Plato&amp;rsquo;s &lt;em&gt;Republic&lt;/em&gt; is one of the most renowned pieces of Greek philosophy and remains to be one of the most instructive ones of the Socratic dialogues. It delves into the what &lt;em&gt;justice&lt;/em&gt; means, in the precise sense. It is comprised of 10 chapters, called &amp;ldquo;books&amp;rdquo; by Plato. In this post I will try delivering the essence of what goes down in &lt;em&gt;Book 1&lt;/em&gt; of the &lt;em&gt;Republic&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Understanding Plato&#39;s Republic</title>
-      <link>http://localhost:1313/entropic-legos/posts/republic-part-1/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/republic-part-1/</link>
       <pubDate>Fri, 02 Aug 2024 15:13:44 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/republic-part-1/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/republic-part-1/</guid>
       <description>&lt;h2 id=&#34;understanding-platos-republic---e1&#34;&gt;Understanding Plato&amp;rsquo;s Republic - E1&lt;/h2&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;This the first episode in (hopefully) a series of several articles where I narrate my own understanding of &lt;em&gt;The Republic&lt;/em&gt;, the magnum opus of &lt;em&gt;Plato&lt;/em&gt;. In this episode, I discuss about the very initial parts of chapter 1 of the book. I give an overview of what transpires before Thrasymachus (while Socrates&amp;rsquo; dialogues contain a lot of different characters much like a play, the exact names of them are not so important to take note of except for a few prominent figures that play a crucial role in Socrates&amp;rsquo; arguments), the most vocal and prominent interlocutor of Socrates in chapter 1, starts engaging with Socrates. (This covers up to page 14 of the &lt;em&gt;Penguin Classics&lt;/em&gt; translation.)&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Mathtest</title>
-      <link>http://localhost:1313/entropic-legos/posts/mathtest/</link>
-      <pubDate>Sun, 30 Jun 2024 20:45:14 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/mathtest/</guid>
-      <description>&lt;p&gt;Hello world&lt;/p&gt;&#xA;&lt;p&gt;$$P \rightarrow Q \newline&#xA;Q \rightarrow R \newline&#xA;\therefore P \rightarrow R$$&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s one $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Exploring the Zig Programming Language: Part 2</title>
-      <link>http://localhost:1313/entropic-legos/posts/speed-test/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/speed-test/</link>
       <pubDate>Wed, 26 Jun 2024 23:15:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/speed-test/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/speed-test/</guid>
       <description>&lt;h2 id=&#34;zig-is-said-to-be-blazingly-fast-but-what-exactly-is-blazingly-fast&#34;&gt;Zig is said to be &amp;ldquo;blazingly fast&amp;rdquo;. But what exactly is &amp;ldquo;blazingly fast&amp;rdquo;?&lt;/h2&gt;&#xA;&lt;p&gt;Zig is certainly one of the more fun languages I&amp;rsquo;ve coded in. But how fast is it? Let&amp;rsquo;s compare it with some other top contenders, such as C, Rust, and Go. For scale, we will also put to test one of the more popular interpreted languages, Python.&lt;/p&gt;&#xA;&lt;h3 id=&#34;but-how-do-we-measure-their-speed&#34;&gt;But How Do We Measure Their Speed?&lt;/h3&gt;&#xA;&lt;p&gt;As computers are stupendously fast these days, they perform most tasks in the blink of an eye. It&amp;rsquo;s hard to write a piece of code that will be both small (i.e. can be written within a few minutes) and computationally intensive (i.e. require a noticeable amount of execution time). A hack we can use, though, is using a stupid algorithm for a simple task. For example, for our purposes, I&amp;rsquo;ve chosen the recursive computation of the Fibonacci sequence, which has an exponential time complexity (compare this to the dynamic programming approach, which has a linear time complexity). This means, for example, the execution time for calculating the &lt;em&gt;N&lt;/em&gt;-th Fibonacci number with this algorithm will be, say, &lt;em&gt;x&lt;/em&gt; times that of the &lt;em&gt;(N-1)&lt;/em&gt;-th Fibonacci number, and &lt;em&gt;x^2&lt;/em&gt; times that of &lt;em&gt;(N-2)&lt;/em&gt;-th Fibonacci number, and so on. So as we scale the problem upwards, the execution time increases geometrically.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exploring the Zig Programming Language: Part 1</title>
-      <link>http://localhost:1313/entropic-legos/posts/zigshaw/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/zigshaw/</link>
       <pubDate>Mon, 24 Jun 2024 23:36:33 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/zigshaw/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/zigshaw/</guid>
       <description>&lt;h2 id=&#34;writing-a-unix-like-shell-in-zig&#34;&gt;Writing a UNIX-like Shell in Zig&lt;/h2&gt;&#xA;&lt;p&gt;This is the first in (hopefully) a series of posts I intend to make about stuff I try out in the &lt;em&gt;Zig&lt;/em&gt; programming language. After having been exposed to it for around 5 days, I&amp;rsquo;ve started to develop a sort-of love-hate relationship with the language. The syntax, in general, feels great to me. It&amp;rsquo;s low-level, compiled, fast. But on the other hand, the documentation, especially that of the standard library, is horrendous - virtually nonexistent, apart from a cryptic comment for every function, struct or whatever. Existing tutorials are often out-of-date owing to the fact that the language is still hasn&amp;rsquo;t had a full 1.x release, and &amp;ldquo;old&amp;rdquo; unwanted features are apparently being dropped by the devs every now and then.&lt;/p&gt;</description>
     </item>
   </channel>
