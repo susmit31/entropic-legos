@@ -8,14 +8,21 @@
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Fri, 27 Jun 2025 19:39:25 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 00:05:02 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Economic Modelling Done Right - Transactional Invariance In Action</title>
+      <link>https://susmit31.github.io/entropic-legos/posts/symmetry-econ-2/</link>
+      <pubDate>Tue, 01 Jul 2025 00:05:02 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/symmetry-econ-2/</guid>
+      <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;&#xA;&lt;p&gt;In a post several months back, I discussed how the traditional straight-line supply and demand models are limited in their scope. On the basis of symmetry considerations between money and goods, I came up with &amp;ldquo;chart transition maps&amp;rdquo;, so to speak, for going back and forth between a money-space representation of transactions and a goods-space representation. The classical supply-curve thus transformed into a money-space demand curve was a dud, leading me to rejecting the status quo. The &lt;em&gt;transactional invariance transformations&lt;/em&gt; coupled with judiciously considered applications of what I call the &lt;em&gt;principle of transactional symmetry&lt;/em&gt; plus other reasonable assumptions about supply-and-demand behaviour yield different classes of mathematically plausible supply-demand scenarios corresponding to different physical situations. In this post I discuss a few examples of working from the ground up to come up with a few such solution classes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Ontological Status of Time - Preliminary Thoughts</title>
       <link>https://susmit31.github.io/entropic-legos/posts/time-prelim/</link>
       <pubDate>Fri, 27 Jun 2025 19:39:25 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/posts/time-prelim/</guid>
-      <description>&lt;h2 id=&#34;what-is-a-clock&#34;&gt;What is a Clock?&lt;/h2&gt;&#xA;&lt;p&gt;A philosopher and a physicist walk into a cafe. The philosopher asks the physicist to define &amp;ldquo;time&amp;rdquo;. The physicist says,&amp;ldquo;simple - &lt;em&gt;that which is measured by a clock&lt;/em&gt;&amp;rdquo;. &amp;ldquo;Cool, but &lt;em&gt;what is a frickin clock?&lt;/em&gt;&amp;rdquo;, replies the exasperated philosopher. (The real fun, however, happens when both of them are the same person.)&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m, for the time being (pun intended and very much apt), a presentist. If I find at some point that it doesn&amp;rsquo;t fit the data, I&amp;rsquo;ll drop it with no ifs and buts. I just want to see which hypothesis works better. The time hypothesis doesn&amp;rsquo;t, as I want to make plausible in what follows. &lt;strong&gt;This post argues that time is not fundamental but an emergent property of change and memory. I sketch how presentism could survive relativity, reinterpret GR, and set the stage for a future quantum theory of gravity.&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m, for the time being (pun intended and very much apt), a presentist. If I find at some point that it doesn&amp;rsquo;t fit the data, I&amp;rsquo;ll drop it with no ifs and buts. I just want to see which hypothesis works better. The time hypothesis doesn&amp;rsquo;t in my opinion, as I want to make plausible in what follows. &lt;strong&gt;This post argues that time is not fundamental but an emergent property of change and memory. I sketch how presentism could survive relativity, reinterpret GR, and set the stage for a future quantum theory of gravity.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Newtonian Spacetime is Curved! (REPOST)</title>

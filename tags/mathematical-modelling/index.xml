@@ -8,8 +8,15 @@
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Sun, 04 May 2025 16:48:41 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 00:05:02 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/tags/mathematical-modelling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Economic Modelling Done Right - Transactional Invariance In Action</title>
+      <link>https://susmit31.github.io/entropic-legos/posts/symmetry-econ-2/</link>
+      <pubDate>Tue, 01 Jul 2025 00:05:02 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/symmetry-econ-2/</guid>
+      <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;&#xA;&lt;p&gt;In a post several months back, I discussed how the traditional straight-line supply and demand models are limited in their scope. On the basis of symmetry considerations between money and goods, I came up with &amp;ldquo;chart transition maps&amp;rdquo;, so to speak, for going back and forth between a money-space representation of transactions and a goods-space representation. The classical supply-curve thus transformed into a money-space demand curve was a dud, leading me to rejecting the status quo. The &lt;em&gt;transactional invariance transformations&lt;/em&gt; coupled with judiciously considered applications of what I call the &lt;em&gt;principle of transactional symmetry&lt;/em&gt; plus other reasonable assumptions about supply-and-demand behaviour yield different classes of mathematically plausible supply-demand scenarios corresponding to different physical situations. In this post I discuss a few examples of working from the ground up to come up with a few such solution classes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Making Castles in the Air: How Econ 101 Butchers Math - Part 1 </title>
       <link>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</link>
