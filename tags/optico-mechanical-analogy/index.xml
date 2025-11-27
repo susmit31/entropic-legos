@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Physics on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/physics/</link>
-    <description>Recent content in Physics on Entropic Legos</description>
+    <title>Optico-Mechanical Analogy on Entropic Legos</title>
+    <link>https://susmit31.github.io/entropic-legos/tags/optico-mechanical-analogy/</link>
+    <description>Recent content in Optico-Mechanical Analogy on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Thu, 27 Nov 2025 02:44:50 +0000</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/optico-mechanical-analogy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lights, Hamilton, Action! - A Brief Look into How Optics Guided Schroedinger</title>
       <link>https://susmit31.github.io/entropic-legos/posts/hamilton/</link>
       <pubDate>Thu, 27 Nov 2025 02:44:50 +0000</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/posts/hamilton/</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;p&gt;Any beginner in physics who has learnt some quantum mechanics inevitably is struck by a sense of sheer amazement at how Schroedinger came up with his eponymous wave equation that describes nonrelativistic quantum-scale phenomena. Schroedinger, of course, didn&amp;rsquo;t receive his equation in a dream, contrary to the indirect allusion of many texts. Interestingly, much of the groundwork was laid by Sir William Rowan Hamilton, who, based on similarities between optics and what&amp;rsquo;s now called the Hamilton-Jacobi formulation of classical mechanics, suspected that classical mechanics must be the short-wavelength &amp;ldquo;geometrical&amp;rdquo; limit of some overarching wave mechanics theory. In the words of Prof. Jean-Louis Basdevant,&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Newtonian Spacetime is Curved! (REPOST)</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/newton-curved/</link>
-      <pubDate>Fri, 27 Jun 2025 00:00:00 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/newton-curved/</guid>
-      <description>&lt;h2 id=&#34;newtonian-gravity-reimagined&#34;&gt;Newtonian Gravity Reimagined&lt;/h2&gt;&#xA;&lt;p&gt;The title probably seems very much against common knowledge.  It might even have come as a shock. Or maybe it just seems like an absurd crackpot hypothesis at best. After all, wasn&amp;rsquo;t not thinking in terms of spacetime curvature the cause of Newton&amp;rsquo;s downfall and Einstein&amp;rsquo;s rise? Doesn&amp;rsquo;t relativity bring curvature to the picture? Well, not exactly. In this post I&amp;rsquo;m going to try to convince you why the self-consistency of Newtonian gravity demands it be thought of as not a force, but as a geometrical phenomenon.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -8,8 +8,15 @@
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Tue, 01 Jul 2025 00:05:02 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 27 Nov 2025 02:44:50 +0000</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lights, Hamilton, Action! - A Brief Look into How Optics Guided Schroedinger</title>
+      <link>https://susmit31.github.io/entropic-legos/posts/hamilton/</link>
+      <pubDate>Thu, 27 Nov 2025 02:44:50 +0000</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/hamilton/</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;p&gt;Any beginner in physics who has learnt some quantum mechanics inevitably is struck by a sense of sheer amazement at how Schroedinger came up with his eponymous wave equation that describes nonrelativistic quantum-scale phenomena. Schroedinger, of course, didn&amp;rsquo;t receive his equation in a dream, contrary to the indirect allusion of many texts. Interestingly, much of the groundwork was laid by Sir William Rowan Hamilton, who, based on similarities between optics and what&amp;rsquo;s now called the Hamilton-Jacobi formulation of classical mechanics, suspected that classical mechanics must be the short-wavelength &amp;ldquo;geometrical&amp;rdquo; limit of some overarching wave mechanics theory. In the words of Prof. Jean-Louis Basdevant,&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Economic Modelling Done Right - Transactional Invariance In Action</title>
       <link>https://susmit31.github.io/entropic-legos/posts/symmetry-econ-2/</link>

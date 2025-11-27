@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+Lights, Hamilton, Action! - A Brief Look into How Optics Guided Schroedinger | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.152.2">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/hamilton/" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.b7e3a105350d039671d6ab6a352b650e4d9d7b2f801be308fd1538c3b47557f6.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/entropic-legos">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Lights, Hamilton, Action! - A Brief Look into How Optics Guided Schroedinger</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/entropic-legos/tags/physics/">#Physics</a><span></span>
+    <a href="/entropic-legos/tags/optico-mechanical-analogy/">#Optico-Mechanical Analogy</a><span></span>
+    <a href="/entropic-legos/tags/quantum-mechanics/">#Quantum Mechanics</a></dd>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2025-11-27">November 27, 2025</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>9 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="tl-dr">TL; DR</h2>
+<p>Any beginner in physics who has learnt some quantum mechanics inevitably is struck by a sense of sheer amazement at how Schroedinger came up with his eponymous wave equation that describes nonrelativistic quantum-scale phenomena. Schroedinger, of course, didn&rsquo;t receive his equation in a dream, contrary to the indirect allusion of many texts. Interestingly, much of the groundwork was laid by Sir William Rowan Hamilton, who, based on similarities between optics and what&rsquo;s now called the Hamilton-Jacobi formulation of classical mechanics, suspected that classical mechanics must be the short-wavelength &ldquo;geometrical&rdquo; limit of some overarching wave mechanics theory. In the words of Prof. Jean-Louis Basdevant,</p>
+<blockquote>
+<p>&ldquo;[Hamilton] had understood, in 1830, how and in what limits the geometrical optics was an approximation of wave optics&hellip; he made in 1830 the surprising remark that the formalisms of optics and could be unified, and (prophetic vision) that the Newtonian mechanics corresponds to the same limit or approximation, as geometrical optics compared to wave optics.&rdquo;</p>
+</blockquote>
+<p>This is where Schroedinger started, and as you&rsquo;ll see, this is the much more logical way to motivate quantum mechanics from a theoretical standpoint.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>I assume the reader is familiar with Lagrangian and Hamiltonian mechanics. It would help if you&rsquo;re familiar with some classical electrodynamics and optics, the Bohr atomic model and de Broglie waves, too. And of course, I assume you&rsquo;ve at least at some point in your life <em>wondered</em> how Schroedinger&rsquo;s equation arose. You don&rsquo;t need to know all these beforehand to understand the big picture, but these are the topics I won&rsquo;t expand upon and you&rsquo;ll have to look these up if you&rsquo;re not familiar with them.</p>
+<h2 id="in-the-beginning-there-was-light">In The Beginning, There Was Light</h2>
+<p>Refraction and Snell&rsquo;s law is familiar to even the greenest individuals in optics given that it&rsquo;s taught in schools, so I start here. The first thing to notice is the similarity between motion of a particle at the interface between two regions of constant potential and the phenomenon of refraction. I first noticed this while working out massive particle and photon orbits in Schwarzschild geometry, but this generalises extremely well, as you&rsquo;ll see in what follows. You can easily show using principles of energy and momentum conservation that such motion follows the following &ldquo;law&rdquo;:</p>
+<p>$$
+v_1 \sin \theta_1 = v_2 \sin \theta_2
+$$</p>
+<p>which is of course <em>very</em> similar to Snell&rsquo;s law for refraction at an interface between two homogeneous, isotropic dielectrics:</p>
+<p>$$
+n_1 \sin \theta_1 = n_2 \sin \theta_2
+\implies \frac{\sin \theta_1}{v_1} = \frac{\sin \theta_2}{v_2}
+$$</p>
+<p>Despite being very different phenomena, there&rsquo;s a remarkable similarity between the two motions. (We could also apply this line of reasoning to understand curved spaces, but that&rsquo;s a matter for another day.) This alone is fascinating enough on its own right, since this &ldquo;Snell&rsquo;s law&rdquo; for particles allows you to easily draw particle trajectories in all sorts of potential fields by chopping it up into fine slices of constant potential. And perhaps that is what led Hamilton to pursue this beautiful route of unification. But we&rsquo;ll look at another way in which the modern reader might be led to this so-called <em>optical-mechanical analogy</em>.</p>
+<p>Firstly, you might be familiar with <em>Fermat&rsquo;s principle of least time</em> governing the motion of light rays, which gives one of the ways to arrive at Snell&rsquo;s law (the other being by solving Maxwell&rsquo;s equations with the appropriate boundary values):</p>
+<p>$$
+\delta \int \frac{n(\vec{r})}{c} ds(\vec{r}) = \delta \int dt = 0
+$$</p>
+<p>Secondly, governing massive particle motion in relativistic mechanics we have the <em>principle of maximal proper time</em>:</p>
+<p>$$
+\delta \int d\tau = 0
+$$</p>
+<p>or equivalently, the <em>principle of &ldquo;least&rdquo; action</em>, with the relativistic action given by:</p>
+<p>$$
+S := – \int m d\tau
+$$</p>
+<p>While the exact meaning of the time measured in both contexts is different, it would be reasonable to have a hunch about at least a hint of a deeper similarity. The hunch, obviously, turns out to be true, but it will unfold in rather unexpected ways.</p>
+<h2 id="waves-vs-rays-a-first-showdown">Waves vs Rays: A First Showdown</h2>
+<p>Before proceeding, we need to see what I consider a rather beautiful conception: the <strong>eikonal equation for light rays</strong>(eikonal is just the Greek word for &ldquo;related to icons or images&rdquo;, so named because the formation of images by refracting and reflecting surfaces is explained with this theory):</p>
+<p>$$
+\boxed{Eikonal equation for light} \nabla R(\vec{r}) = n(\vec{r}) \hat{u}
+$$</p>
+<p>where the function $R(\vec{r})$ gives, through its contours, the wavefronts of the light wave, $n(\vec{r})$ is the index of refraction, and $\hat{u}$ is the direction of propagation. $R$ is called the <em>eikonal function</em>. This isn&rsquo;t the full wave equation for electromagnetic waves, of course, which is a 2nd-order, 1st-degree PDE of the form:</p>
+<p>$$
+\boxed{EM Wave equation} \nabla^2 E_i = \frac{1}{c^2} \partial^2_t E_i
+$$</p>
+<p>We obtain the Eikonal equation by working with a trial solution:</p>
+<p>$$
+\vec{E} = \vec{E_0} e^(ik_0R - i\omega t)
+$$</p>
+<p>and then taking the short wavelength limit.(For the details, I&rsquo;ll refer you to chapter 9 of the excellent [https://optics.byu.edu/textbook](optics textbook) from Brigham Young University, made available by them for free.)</p>
+<p>Two things you should be asking yourself whenever you see an approxumation are</p>
+<ol>
+<li>Under what conditions is the approximation valid?</li>
+<li>What do we lose by working with the approximation, and what do we retain?</li>
+</ol>
+<p>I&rsquo;ve already told you the answer of question 1. The answer to the first part od question 2 is that we lose the ability to explain diffraction and interference, for example - the phenomena which depend on wavelength. These are not important for monochromatic light moving over really long distances, where the wavelength is constant and much smaller than the scales of motion.</p>
+<p>What about the second part of question 2? We retain a core theory of rays travelling in straight lines so long as the index of refraction doesn&rsquo;t change (see any similarities with Newton&rsquo;s first law?). We can, for example, use the eikonal equation to immediately arrive at Snell&rsquo;s law. And of course, much of the ray optics you learnt in high school (the lens equation and all that stuff) is based on this ray theory of light, i.e. the eikonal equation.</p>
+<p>To summarise, we write the following quip:</p>
+<blockquote>
+<p>Light is an EM wave described by the EM wave equation, but in the short-wavelength limit, we can replace the waves with a simpler ray theory, described by the eikonal equation.</p>
+</blockquote>
+<h2 id="hamiltons-eikonal-equation-for-mechanics">Hamilton&rsquo;s Eikonal Equation for Mechanics</h2>
+<p>When I first learnt Hamilton-Jacobi theory more than 10 years back during my first exposure to analytical mechanics, I found it to be not much more than an obscure theoretical curiosity. It&rsquo;s a formulation of mechanics where the <em>action</em> takes centre stage through the central equation</p>
+<p>$$
+\boxed{\text{Hamilton-Jacobi equation}} H + \frac{\partial S}{\partial t} = 0
+$$</p>
+<p>The conjugate momenta are given by</p>
+<p>$$
+p_k = \frac{\partial S}{\partial q_k}
+$$</p>
+<p>Of course, this immediately gives in the Cartesian coordinates the following result:</p>
+<p>$$
+\nabla S = p \hat{p} = sqrt(2m (E - V)) \hat{p}
+$$</p>
+<p>Do you see where we&rsquo;re going? This is virtually identical to the eikonal equation for light. So we write,</p>
+<p>$$
+\boxed{\text{Eikonal equation for matter}} \nabla S = sqrt(2m (E-V)) \hat{p}
+$$</p>
+<p>where the action $S$ now plays the role of the <em>eikonal function</em>, and $\sqrt(2m (E-V))$ gives the effective &ldquo;refractive index&rdquo; for the wave represented by this. This contains everything you need to describe particle motion in Newtonian physics.</p>
+<p>The wave speed can be calculated by setting the differential of the wavefront to be zero:</p>
+<p>$$
+dS = 0
+$$</p>
+<p>which can be solved for a time-independent Hamiltonian, where the Hamilton-Jacobi equation can be integrated to give
+$$
+S = S_0 - Et
+$$</p>
+<p>and so</p>
+<p>$$
+dS = \nabla S_0 \cdot d\vec{r} - E dt = 0 \implies \vec{u}\cdot\vec{p} = E
+$$</p>
+<p>since the wave&rsquo;s velocity $\vec{u}$ is parallel to the particle momentum $\vec{p}$, this means:</p>
+<p>$$
+u = \frac{E}{p}
+$$</p>
+<p>Now the natural question that <strong>Hamilton</strong> asked in 1830, nearly a century before Schroedinger wrote down his wave equation, or nearly 70 years before anything quantum was ever heard of,</p>
+<blockquote>
+<p>If the eikonal equation for light is the short-wavelength limit of the more accurate wave theory, then is classical mechanics, which gives an eikonal equation for matter, the short-wavelength limit of some deeper wave theory describing matter?</p>
+</blockquote>
+<p>The answer, however, would take a hundred years more.</p>
+<h2 id="hamiltons-vision-realised-the-schroedinger-equation">Hamilton&rsquo;s Vision Realised: The Schroedinger Equation</h2>
+<p>By the 1900s, evidence started to pour in that showed that matter might, like Hamilton suspected, perhaps. In 1926, Schroedinger published a series of papers called <em>Quantization as an Eigenvalue Problem</em>. Here he put forth a wave equation synthesising the ideas of Hamilton and de Broglie&rsquo;s ad-hoc <em>matter waves</em> hypothesis to explain the Bohr atomic model.</p>
+<p>How did he arrive at this? We pick up where Hamilton left off: we try to find a wave equation which gives the matter eikonal in the short-wavelength limit.</p>
+<p>Firstly, it&rsquo;d tremendously help if we used the following restructured EM wave equation guiding our analogy, let&rsquo;s call it the time-independent EM wave equation:</p>
+<p>$$
+\nabla^2 E_i + \frac{n^2 \omega^2}{c^2} E_i = 0
+$$</p>
+<p>Now start working backwards. We know that the eikonal equation for matter gives the action $S$ to be equivalent to the wavefronts of light waves. So similar to the monochromatic light wave ansatz, we choose the following to represent matter waves that solve the as of yet undwtermined matter wave equation:</p>
+<p>$$
+\psi = \psi_0 e^iS/\kappa
+$$</p>
+<p>where \kappa is a constant. Recall that for a time-independent Hamiltonian, the Hamilton-Jacobi equation can be integrated to give</p>
+<p>$$
+S = S_0 - Et
+$$</p>
+<p>which means the wave can also be written</p>
+<p>$$
+\psi = \psi_0 e^[i(S_0/\kappa - E t/\kappa)]
+$$</p>
+<p>Comparing this with the EM wave solution, we get the following equivalent quantities:</p>
+<p>$$
+\frac{E}{\kappa} \cong \omega
+$$</p>
+<p>Now using $u = E / p$ and $\omega = 2\pi c / \lambda n$, we get</p>
+<p>$$
+\lambda = \frac{\kappa}{p}
+$$</p>
+<p>this is of course the famous de Broglie wavelength. So Hamilton&rsquo;s formalism has led us to this identification, which we now use to finalise our time-independent wave equation, where we replace $\omega$ by $pu/\kappa$ and recall that the wave velocity, $u$, must be indetifies with the EM wave velocity, $c/n$:</p>
+<p>$$
+\nabla^2 \psi + \frac{n^2}{\kappa^2} \psi = 0.
+$$</p>
+<p>Recalling that $n = \sqrt(2m (E-V))$, we arrive at the <em>matter wave equation</em> envisioned by Hamilton:</p>
+<p>$$
+\boxed{\text{Hamilton&rsquo;s matter wave equation}}\nabla^2 \psi + \frac{2m(E-V)}{\kappa^2} \psi = 0
+$$</p>
+<p>Sir Hamilton didn&rsquo;t derive this, of course, but it was a relatively straightforward completion of his rudimentary concepts. We now know the constant $\kappa$ is just $\hbar$, the reduces Planck constant. So we see that Hamilton was indeed right to speculate that</p>
+<p>$$
+\lim_{\lambda \rightarrow 0} \text{wave mechanics} = \text{classical mechanics}
+$$</p>
+<p>i.e., classical mechanics is the eikonal limit of the more correct wave description of matter.</p>
+<h2 id="further-reading">Further Reading</h2>
+<p>The literature on this topic is pretty advanced compared to typical undergrad stuff, but you can find it in most graduate-level analytical mechanics books. My favourite is <em>The Variational Principles of Mechanics</em> by <em>Lanczos</em>. Other resources I&rsquo;ve frequently referred to included, you can check out the following list of resources to dive deeper.</p>
+<ol>
+<li>The Variational Principles of Mechanics - C. Lanczos.</li>
+<li>Theoretical Physics Vol. 2 (Analytical Mechanics) and Theoretical Physics Vol. 3 (Quantum Mechanics) - W. Nolting.</li>
+<li>Modern Classical Mechanics - Helliwell and Sahakian.</li>
+<li>Variational Principles in Physics - Basdevant.</li>
+<li>Analytical Mechanics for Relativity and Quantum Mechanics - Johns.</li>
+<li>Principles of Optics - Born and Wolf</li>
+<li>The Physics of Optics - Peatross and Ware.</li>
+</ol>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>© Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>
