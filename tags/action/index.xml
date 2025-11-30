@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Action on Entropic Legos</title>
+    <link>https://susmit31.github.io/entropic-legos/tags/action/</link>
+    <description>Recent content in Action on Entropic Legos</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
+    <webMaster>hugo@example.com (Entropic Legos)</webMaster>
+    <lastBuildDate>Sun, 30 Nov 2025 21:33:37 +0600</lastBuildDate>
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/action/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lights, Hamilton, Action! - Part 2: A Better Way of Understanding Tunnelling</title>
+      <link>https://susmit31.github.io/entropic-legos/posts/hamilton2/</link>
+      <pubDate>Sun, 30 Nov 2025 21:33:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/hamilton2/</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Our dynamics (including its Einsteinian form) has lagged behind optics; it is still at the stage of geometric optics&amp;rdquo; - &lt;em&gt;L. de Broglie&lt;/em&gt;, in his PhD thesis &lt;em&gt;Research on the Theory of Quanta&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;https://susmit31.github.io/entropic-legos/posts/hamilton/&#34;&gt;previous part&lt;/a&gt; of the series, we, following the footsteps of Sir William Rowan Hamilton, showed that classical mechanics is mathematically equivalent to geometric optics and thus naturally extended the particle theory of matter to &lt;em&gt;wave theory of matter&lt;/em&gt;, for which&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+Lights, Hamilton, Action! - Part 2: A Better Way of Understanding Tunnelling | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.152.2">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/hamilton2/" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.b7e3a105350d039671d6ab6a352b650e4d9d7b2f801be308fd1538c3b47557f6.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/entropic-legos">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Lights, Hamilton, Action! - Part 2: A Better Way of Understanding Tunnelling</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/entropic-legos/tags/physics/">#Physics</a><span></span>
+    <a href="/entropic-legos/tags/quantum/">#Quantum</a><span></span>
+    <a href="/entropic-legos/tags/action/">#Action</a><span></span>
+    <a href="/entropic-legos/tags/optico-mechanical-analogy/">#Optico-Mechanical Analogy</a></dd>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2025-11-30">November 30, 2025</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>6 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="tl-dr">TL; DR</h2>
+<blockquote>
+<p>&ldquo;Our dynamics (including its Einsteinian form) has lagged behind optics; it is still at the stage of geometric optics&rdquo; - <em>L. de Broglie</em>, in his PhD thesis <em>Research on the Theory of Quanta</em>.</p>
+</blockquote>
+<p>In the <a href="https://susmit31.github.io/entropic-legos/posts/hamilton/">previous part</a> of the series, we, following the footsteps of Sir William Rowan Hamilton, showed that classical mechanics is mathematically equivalent to geometric optics and thus naturally extended the particle theory of matter to <em>wave theory of matter</em>, for which</p>
+<p>$$
+\boxed{\lim_{\lambda \rightarrow 0} \text{Wave Mechanics = Classical Mechanics} }
+$$</p>
+<p>and thus saw how Hamilton &ldquo;predicted&rdquo; quantum mechanics a hundred years prior to its advent. As in geometrical optics, we forget about the details of the waves from the wave picture when the wavelengths are very small compared to the scales of motion. This allows us to simply describe classical particle trajectories, at the expense of the ability to explain phenomena like diffraction, interference, and importantly, attenuation. In this episode, we show how the quantum phenomenon of tunnelling is naturally understood as the attenuation of matter-waves. I assume the reader is familiar with quantum tunnelling at a basic level.</p>
+<h2 id="classical-mechanics--jpgfied-wave-mechanics">Classical Mechanics = JPGfied Wave Mechanics</h2>
+<p>By now, you should be comfortable with the fact that both in optics and in mechanics we have a <em>wave equation</em> that describes the shape and propagation (and evolution) of waves that looks like:</p>
+<p>$$
+\nabla^2\Psi + k^2\Psi = 0
+$$</p>
+<p>where $k = n\omega / c$ is the so-called <em>wave number</em>, with $n$ being the refractive index (which in the case of mechanics is effectively $n = \sqrt{2m(E-V)} = p$, the classical momentum). Given this, with certain simplifying assumptions such as $\lambda \rightarrow 0$, we obtain the <strong>eikonal equation</strong> which describes geometric optics and classical mechanics:</p>
+<p>$$
+|\nabla S|^2 = n^2
+$$</p>
+<p>So by ignoring the details of the theory that describe phenomena at significant wavelnegths, we obtain the <em>geometric limit</em>. In other words, <strong>classical mechanics is a lossy compression of the (more accurate) theory of wave mechanics</strong>, just like JPEG images are lossy compressions of arrays of pixels. So much like any other lossy compression, we retain the big picture, but quite a few significant details are lost that can be noticed when we &ldquo;zoom in&rdquo;. The &ldquo;big picture&rdquo; that we retain are the Snell&rsquo;s law and Fermat&rsquo;s law and their mechanical equivalents. The details that we lose are the phenomena which are naturally only explainable in the wave picture, and thus where the wavelengths cannot be ignored. These include diffraction, interference, attenuation and so on. Diffraction and interference gave us some of the most foundational experimental evidences that pointed to the wave nature of matter. Attenuation receives much less attention (pun unintendedly intended), despite being an important concept in signal analysis and applied optics. The quantum phenomenon of attenuation of matter waves, despite sounding unfamiliar, is one of the terms from QM that successfully made it to pop culture. That&rsquo;s because nowadays, it&rsquo;s called <strong>quantum tunnelling</strong>.</p>
+<h2 id="what-is-quantum-tunnelling">What is Quantum Tunnelling?</h2>
+<p>You&rsquo;re all familiar with the principle of energy conservation. $E = \frac{P^2}{2m} + V(x)$ is always conserved (under time-translational symmetries of a system, to be pedantic). Since the first term is always $\ge 0$, it follows that the classical particle can never be found at values of $x$ such that $V(x) &gt; E$. This is known as the <em>classically forbidden region</em>. Classical mechanics strictly prohibits particle trajectories from moving into such territories.</p>
+<p>Let&rsquo;s see what quantum mechanics has to say about this. As usual, we operate using the optical-mechanical analogy framework, which is much more intuitive (and insightful) than the typical &ldquo;shut up and solve your Schroedinger&rsquo;s&rdquo; approach.</p>
+<p>Our starting point will firstly be to calculate the refractive index $n$. At once, we run into a problem. Since $V &gt; E$, we have $n = \sqrt{2m(E-V)} = i\sqrt{2m(V-E)}$.<em>The refractive index is imaginary in the classically forbidden region!</em> What would that even mean?</p>
+<p>Well, the geometric-optical concept of the refractive index is about the Snell&rsquo;s law and it tells us the angle by which rays are deflected, so an imaginary refractive index, first and foremost, tells us that the Snell law is no longer applicable - we can no longer simply say how much the trajectory will &ldquo;bend&rdquo;, or if there even is a well-defined trajectory to speak of. What <em>can</em> we infer, then?</p>
+<p>Fortunately, the realm of complex refractive indices is a well-known topic in optics. Let&rsquo;s define the complex refractive index as
+$$
+\mathcal{N} = n + i\kappa.
+$$</p>
+<p>So the concept of a classically forbidden region, where the effective refractive index becomes imaginary, becomes manageable. Then the dispersion relation for a plane-wave solution to the wave equation becomes
+$$
+\mathbf{k} = \frac{{\omega}\mathcal{N}}{c}\hat{k}
+$$
+where $\hat{k}$ is a unit vector in the direction of propagation. The plane wave solution then becomes</p>
+<p>$$
+\Phi = \Phi_0 \exp{i(\mathbf{k}\cdot\mathbf{r} - \omega t)}\newline
+\implies \Phi = \Phi_0 \exp{(-\kappa \hat{k}\cdot\mathbf{r})}\cdot\exp[{i(\mathbf{k_{\text{vac}}}\cdot\mathbf{r} - \omega t)}]\newline
+\implies \Phi = \Phi_{\text{new}}\exp[{i(\mathbf{k_{\text{vac}}}\cdot\mathbf{r} - \omega t)}]
+$$
+where</p>
+<p>$$
+\mathbf{k_{\text{vac}}} \equiv \frac{\omega n}{c} \hat{k}
+$$</p>
+<p>This is an attenuating wave with a decaying amplitude
+$$
+\Phi_{\text{new}}(\mathbf{r}) = \Phi_0 \exp{(-\kappa \hat{k}\cdot\mathbf{r})}
+$$</p>
+<p>Note that the imaginary part of our complex refractive index, $\kappa$, is the only thing that determines the attenuation, while the real part $n$ determines the phase velocity $v_{\ph} = c / n$ of the wave in the &ldquo;medium&rdquo;. What does this mean <em>physically</em>?</p>
+<p>This means firstly that</p>
+<p>$$
+\boxed{\text{for a purely imaginary refractive index, the amplitude}}\newline
+\boxed{\text{ in the classically forbidden region is nonzero,}}
+$$</p>
+<p>and second, this nonzero amplitude decays the further we go from the &ldquo;interface&rdquo;. For light waves, this decaying of the transmitted wave is intuitively clear. For matter waves, this is <strong>quantum tunnelling</strong>. This doesn&rsquo;t certainly substitute for a formal calculation, but notice the simplicity and insightfulness of the argument as opposed to the &ldquo;shut up and solve Schroedinger&rsquo;s&rdquo; approach espoused in typical QM texts.</p>
+<h2 id="remarks">Remarks</h2>
+<p>I&rsquo;ll end this article with my future plans for this series. Since we have already shown how we go from classical-to-quantum, in the next (few) articles I hope (in shaa Allah) to talk a little bit about the JWKB (or semiclassical) approximation, Dirac&rsquo;s Lagrangian formulation of QM, and Feynman&rsquo;s path integral formulation of QM. If the ending feels abrupt, it is, since it&rsquo;s getting quite late and my fingers are not used to typing this much at a stretch, plus I didn&rsquo;t have a clear plan for today&rsquo;s article anyway other than the fact that I wanted to show how tunnelling is nothing magical. Sayonara.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>© Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

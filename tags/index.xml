@@ -8,20 +8,34 @@
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Thu, 27 Nov 2025 02:44:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Nov 2025 21:33:37 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Action</title>
+      <link>https://susmit31.github.io/entropic-legos/tags/action/</link>
+      <pubDate>Sun, 30 Nov 2025 21:33:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/tags/action/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Optico-Mechanical Analogy</title>
       <link>https://susmit31.github.io/entropic-legos/tags/optico-mechanical-analogy/</link>
-      <pubDate>Thu, 27 Nov 2025 02:44:50 +0000</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <pubDate>Sun, 30 Nov 2025 21:33:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/tags/optico-mechanical-analogy/</guid>
       <description></description>
     </item>
     <item>
       <title>Physics</title>
       <link>https://susmit31.github.io/entropic-legos/tags/physics/</link>
-      <pubDate>Thu, 27 Nov 2025 02:44:50 +0000</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <pubDate>Sun, 30 Nov 2025 21:33:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
       <guid>https://susmit31.github.io/entropic-legos/tags/physics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quantum</title>
+      <link>https://susmit31.github.io/entropic-legos/tags/quantum/</link>
+      <pubDate>Sun, 30 Nov 2025 21:33:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/tags/quantum/</guid>
       <description></description>
     </item>
     <item>
