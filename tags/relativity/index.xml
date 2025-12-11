@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Relativity on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/relativity/</link>
+    <link>http://localhost:1313/entropic-legos/tags/relativity/</link>
     <description>Recent content in Relativity on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Fri, 27 Jun 2025 19:39:25 +0600</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/relativity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/entropic-legos/tags/relativity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Ontological Status of Time - Preliminary Thoughts</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/time-prelim/</link>
+      <link>http://localhost:1313/entropic-legos/posts/time-prelim/</link>
       <pubDate>Fri, 27 Jun 2025 19:39:25 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/time-prelim/</guid>
+      <guid>http://localhost:1313/entropic-legos/posts/time-prelim/</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m, for the time being (pun intended and very much apt), a presentist. If I find at some point that it doesn&amp;rsquo;t fit the data, I&amp;rsquo;ll drop it with no ifs and buts. I just want to see which hypothesis works better. The time hypothesis doesn&amp;rsquo;t in my opinion, as I want to make plausible in what follows. &lt;strong&gt;This post argues that time is not fundamental but an emergent property of change and memory. I sketch how presentism could survive relativity, reinterpret GR, and set the stage for a future quantum theory of gravity.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,26 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Optico-Mechanical Analogy on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/optico-mechanical-analogy/</link>
+    <link>http://localhost:1313/entropic-legos/tags/optico-mechanical-analogy/</link>
     <description>Recent content in Optico-Mechanical Analogy on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Sun, 30 Nov 2025 21:33:37 +0600</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/optico-mechanical-analogy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Dec 2025 02:14:19 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/entropic-legos/tags/optico-mechanical-analogy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lights, Hamilton, Action! - Part 3</title>
+      <link>http://localhost:1313/entropic-legos/posts/hamilton3/</link>
+      <pubDate>Wed, 03 Dec 2025 02:14:19 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>http://localhost:1313/entropic-legos/posts/hamilton3/</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Anyone who pauses at the starting point, having deep thoughts about what it all means and muttering the words “ontic” and “epistemic”, is in danger of missing the stunning quantum vistas that await just around the corner. The true meaning of quantum mechanics can be found in the answers it gives about the world we inhabit. - &lt;em&gt;David Tong&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
     <item>
       <title>Lights, Hamilton, Action! - Part 2: A Better Way of Understanding Tunnelling</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/hamilton2/</link>
+      <link>http://localhost:1313/entropic-legos/posts/hamilton2/</link>
       <pubDate>Sun, 30 Nov 2025 21:33:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/hamilton2/</guid>
+      <guid>http://localhost:1313/entropic-legos/posts/hamilton2/</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Our dynamics (including its Einsteinian form) has lagged behind optics; it is still at the stage of geometric optics&amp;rdquo; - &lt;em&gt;L. de Broglie&lt;/em&gt;, in his PhD thesis &lt;em&gt;Research on the Theory of Quanta&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Last time, following the footsteps of Hamilton, we showed that classical mechanics is mathematically equivalent to geometric optics and naturally extended the particle theory of matter to &lt;em&gt;wave theory of matter&lt;/em&gt;, for which&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;\boxed{\lim_{\lambda \rightarrow 0} \text{Wave Mechanics = Classical Mechanics} }&#xA;$$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lights, Hamilton, Action! - A Brief Look into How Optics Guided Schroedinger</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/hamilton/</link>
+      <link>http://localhost:1313/entropic-legos/posts/hamilton/</link>
       <pubDate>Thu, 27 Nov 2025 02:44:50 +0000</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/hamilton/</guid>
+      <guid>http://localhost:1313/entropic-legos/posts/hamilton/</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;[Hamilton] had understood, in 1830, how and in what limits the geometrical optics was an approximation of wave optics&amp;hellip; he made in 1830 the surprising remark that the formalisms of optics and could be unified, and (prophetic vision) that the Newtonian mechanics corresponds to the same limit or approximation, as geometrical optics compared to wave optics.&amp;rdquo; - J.L. Basdevant, &lt;em&gt;Variational Principles in Physics&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Any beginner in physics who has learnt some quantum mechanics inevitably is struck by a sense of sheer amazement at how Schroedinger came up with his eponymous wave equation that describes nonrelativistic quantum-scale phenomena. Schroedinger, of course, didn&amp;rsquo;t receive his equation in a dream, contrary to the indirect allusion of many texts. Interestingly, much of the groundwork was laid by Sir William Rowan Hamilton, who, based on similarities between optics and what&amp;rsquo;s now called the Hamilton-Jacobi formulation of classical mechanics, suspected that classical mechanics must be the short-wavelength &amp;ldquo;geometrical&amp;rdquo; limit of some overarching wave mechanics theory. This is where Schroedinger started, and as you&amp;rsquo;ll see, this is the much more logical way to motivate quantum mechanics from a theoretical standpoint.&lt;/p&gt;</description>
     </item>
   </channel>

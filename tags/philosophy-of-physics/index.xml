@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Philosophy of Physics on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/philosophy-of-physics/</link>
+    <link>http://localhost:1313/entropic-legos/tags/philosophy-of-physics/</link>
     <description>Recent content in Philosophy of Physics on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Fri, 27 Jun 2025 19:39:25 +0600</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/philosophy-of-physics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/entropic-legos/tags/philosophy-of-physics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Ontological Status of Time - Preliminary Thoughts</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/time-prelim/</link>
+      <link>http://localhost:1313/entropic-legos/posts/time-prelim/</link>
       <pubDate>Fri, 27 Jun 2025 19:39:25 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/time-prelim/</guid>
+      <guid>http://localhost:1313/entropic-legos/posts/time-prelim/</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m, for the time being (pun intended and very much apt), a presentist. If I find at some point that it doesn&amp;rsquo;t fit the data, I&amp;rsquo;ll drop it with no ifs and buts. I just want to see which hypothesis works better. The time hypothesis doesn&amp;rsquo;t in my opinion, as I want to make plausible in what follows. &lt;strong&gt;This post argues that time is not fundamental but an emergent property of change and memory. I sketch how presentism could survive relativity, reinterpret GR, and set the stage for a future quantum theory of gravity.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Everywhere Yet Nowhere: The Ontological Status of Energy</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/energy-ontology/</link>
+      <link>http://localhost:1313/entropic-legos/posts/energy-ontology/</link>
       <pubDate>Fri, 20 Jun 2025 18:37:18 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/energy-ontology/</guid>
+      <guid>http://localhost:1313/entropic-legos/posts/energy-ontology/</guid>
       <description>&lt;h2 id=&#34;energy-is-everywhere-or-is-it&#34;&gt;Energy is Everywhere. Or Is It?&lt;/h2&gt;&#xA;&lt;p&gt;We love energy. Our civilisation is built on energy. Each phase in the history of the human civilisation is marked by inventing some radically more efficient way to extract energy from some &amp;ldquo;stored form&amp;rdquo;. From eating fruits and veggies storing energy obtained from the sun to burning the carcasses of them to smashing subatomic particles off of each other, we&amp;rsquo;ve certainly come a long way. We can extract energy &amp;ldquo;hidden&amp;rdquo; in even the remotest corner of the smallest conceivable energy storage - an atom. And with all this energy we power our homes, our offices, our factories, and most importantly, our electronic appliances, including the one we&amp;rsquo;re reading/writing this post on. But &lt;em&gt;what exactly&lt;/em&gt; is energy?&lt;/p&gt;</description>
     </item>
   </channel>

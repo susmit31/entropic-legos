@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quantum Mechanics on Entropic Legos</title>
-    <link>https://susmit31.github.io/entropic-legos/tags/quantum-mechanics/</link>
+    <link>http://localhost:1313/entropic-legos/tags/quantum-mechanics/</link>
     <description>Recent content in Quantum Mechanics on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Thu, 27 Nov 2025 02:44:50 +0000</lastBuildDate>
-    <atom:link href="https://susmit31.github.io/entropic-legos/tags/quantum-mechanics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/entropic-legos/tags/quantum-mechanics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lights, Hamilton, Action! - A Brief Look into How Optics Guided Schroedinger</title>
-      <link>https://susmit31.github.io/entropic-legos/posts/hamilton/</link>
+      <link>http://localhost:1313/entropic-legos/posts/hamilton/</link>
       <pubDate>Thu, 27 Nov 2025 02:44:50 +0000</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>https://susmit31.github.io/entropic-legos/posts/hamilton/</guid>
+      <guid>http://localhost:1313/entropic-legos/posts/hamilton/</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;[Hamilton] had understood, in 1830, how and in what limits the geometrical optics was an approximation of wave optics&amp;hellip; he made in 1830 the surprising remark that the formalisms of optics and could be unified, and (prophetic vision) that the Newtonian mechanics corresponds to the same limit or approximation, as geometrical optics compared to wave optics.&amp;rdquo; - J.L. Basdevant, &lt;em&gt;Variational Principles in Physics&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Any beginner in physics who has learnt some quantum mechanics inevitably is struck by a sense of sheer amazement at how Schroedinger came up with his eponymous wave equation that describes nonrelativistic quantum-scale phenomena. Schroedinger, of course, didn&amp;rsquo;t receive his equation in a dream, contrary to the indirect allusion of many texts. Interestingly, much of the groundwork was laid by Sir William Rowan Hamilton, who, based on similarities between optics and what&amp;rsquo;s now called the Hamilton-Jacobi formulation of classical mechanics, suspected that classical mechanics must be the short-wavelength &amp;ldquo;geometrical&amp;rdquo; limit of some overarching wave mechanics theory. This is where Schroedinger started, and as you&amp;rsquo;ll see, this is the much more logical way to motivate quantum mechanics from a theoretical standpoint.&lt;/p&gt;</description>
     </item>
   </channel>
