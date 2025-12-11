@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topology on Entropic Legos</title>
-    <link>http://localhost:1313/entropic-legos/tags/topology/</link>
+    <link>https://susmit31.github.io/entropic-legos/tags/topology/</link>
     <description>Recent content in Topology on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Thu, 26 Jun 2025 22:05:59 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/entropic-legos/tags/topology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/topology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manifolds, Connections, Topologies - Let&#39;s Bake a Cake! (REPOST)</title>
-      <link>http://localhost:1313/entropic-legos/posts/topo-cake/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/topo-cake/</link>
       <pubDate>Thu, 26 Jun 2025 22:05:59 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/topo-cake/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/topo-cake/</guid>
       <description>&lt;h2 id=&#34;topology-in-cakeland&#34;&gt;Topology in Cakeland&lt;/h2&gt;&#xA;&lt;p&gt;The first issue you run into when you&amp;rsquo;re trying to learn topology and differential geometry, if you&amp;rsquo;ve never taken a class in &amp;ldquo;advanced&amp;rdquo; maths before, is the fact that it&amp;rsquo;s studded with definitions, often with no clear motivation. Now of course this wasn&amp;rsquo;t the case when these ideas were being worked out, they just didn&amp;rsquo;t make things up as they pleased. In this series of articles, we&amp;rsquo;ll take a step back from rigorous mathematics and try to come up with intuitive notions that best convey these ideas.&lt;/p&gt;</description>
     </item>
   </channel>

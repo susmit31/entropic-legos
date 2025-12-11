@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mathematics on Entropic Legos</title>
-    <link>http://localhost:1313/entropic-legos/tags/mathematics/</link>
+    <link>https://susmit31.github.io/entropic-legos/tags/mathematics/</link>
     <description>Recent content in Mathematics on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Tue, 01 Jul 2025 00:05:02 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/entropic-legos/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Economic Modelling Done Right - Transactional Invariance In Action</title>
-      <link>http://localhost:1313/entropic-legos/posts/symmetry-econ-2/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/symmetry-econ-2/</link>
       <pubDate>Tue, 01 Jul 2025 00:05:02 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/symmetry-econ-2/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/symmetry-econ-2/</guid>
       <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;&#xA;&lt;p&gt;In a post several months back, I discussed how the traditional straight-line supply and demand models are limited in their scope. On the basis of symmetry considerations between money and goods, I came up with &amp;ldquo;chart transition maps&amp;rdquo;, so to speak, for going back and forth between a money-space representation of transactions and a goods-space representation. The classical supply-curve thus transformed into a money-space demand curve was a dud, leading me to rejecting the status quo. The &lt;em&gt;transactional invariance transformations&lt;/em&gt; coupled with judiciously considered applications of what I call the &lt;em&gt;principle of transactional symmetry&lt;/em&gt; plus other reasonable assumptions about supply-and-demand behaviour yield different classes of mathematically plausible supply-demand scenarios corresponding to different physical situations. In this post I discuss a few examples of coming up with a few such solution classes from the ground up.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Manifolds, Connections, Topologies - Let&#39;s Bake a Cake! (REPOST)</title>
-      <link>http://localhost:1313/entropic-legos/posts/topo-cake/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/topo-cake/</link>
       <pubDate>Thu, 26 Jun 2025 22:05:59 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/topo-cake/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/topo-cake/</guid>
       <description>&lt;h2 id=&#34;topology-in-cakeland&#34;&gt;Topology in Cakeland&lt;/h2&gt;&#xA;&lt;p&gt;The first issue you run into when you&amp;rsquo;re trying to learn topology and differential geometry, if you&amp;rsquo;ve never taken a class in &amp;ldquo;advanced&amp;rdquo; maths before, is the fact that it&amp;rsquo;s studded with definitions, often with no clear motivation. Now of course this wasn&amp;rsquo;t the case when these ideas were being worked out, they just didn&amp;rsquo;t make things up as they pleased. In this series of articles, we&amp;rsquo;ll take a step back from rigorous mathematics and try to come up with intuitive notions that best convey these ideas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Making Castles in the Air: How Econ 101 Butchers Math - Part 1 </title>
-      <link>http://localhost:1313/entropic-legos/posts/symmetry-econ/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</link>
       <pubDate>Sun, 04 May 2025 16:48:41 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/symmetry-econ/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</guid>
       <description>&lt;h2 id=&#34;supply-and-demand-curves-are-a-scam&#34;&gt;Supply and Demand Curves Are a Scam&lt;/h2&gt;&#xA;&lt;p&gt;I know, I know. I sound like a crackpot theorist from the title. But hear me out for a sec. It&amp;rsquo;s deeper than you think. Here&amp;rsquo;s a taste of what&amp;rsquo;s to come: supply and demand curves should be preserved under some transformations if they are to behave symmetrically, but they aren&amp;rsquo;t. Why should you care though? IDK, since supply and demand curves &amp;ldquo;determine&amp;rdquo; prices, and if the curves aren&amp;rsquo;t sufficiently well-defined we may have no notion of &amp;ldquo;eqilibrium price&amp;rdquo; or no single &amp;ldquo;equilibrium price&amp;rdquo; and so on?&lt;/p&gt;</description>
     </item>
   </channel>

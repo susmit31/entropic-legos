@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+Footnotes to Veritasium - Klein-Gordon, Dirac, and More! | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.152.2">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/veritasium-dirac/" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.5c1fa9bba2d0e854fe30b3d6316ab0114a2a5f25c9a98275badeadb66f2ec725.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/entropic-legos">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Footnotes to Veritasium - Klein-Gordon, Dirac, and More!</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/entropic-legos/tags/quantum-mechanics/">#Quantum Mechanics</a><span></span>
+    <a href="/entropic-legos/tags/physics/">#Physics</a><span></span>
+    <a href="/entropic-legos/tags/relativity/">#Relativity</a></dd>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2025-12-11">December 11, 2025</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>8 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="tldr">TL;DR</h2>
+<blockquote>
+<p>&ldquo;God is a mathematician of a very high order and He used advanced mathematics in constructing the universe.&rdquo; - <em>Paul Adrien Maurice Dirac</em>.</p>
+</blockquote>
+<p>Veritasium recently released a video on the basic wave equation describing spin-1/2 fermions, AKA the Dirac equation,
+$$
+\boxed{(i\hbar\gamma^\mu\partial_\mu - m)\Psi = 0}
+$$
+which to me is the one of the most beautiful equations in all of physics, second only to perhaps the Einstein field equations (or perhaps Hamilton&rsquo;s principle). (I&rsquo;ll say a little about the difference in Veritasium&rsquo;s notation and the covariant notation used here.) In this post we add some technical meat that Veritasium glossed over, left unmentioned, or I thought deserves a bit more space(time), to the best of my knowledge. It&rsquo;s a complicated topic and I don&rsquo;t yet understand all the subtleties so I&rsquo;ll try updating this some time later.</p>
+<h2 id="whats-wrong-with-klein-gordon-and--fock">What&rsquo;s Wrong With Klein-Gordon (and -Fock)?</h2>
+<p>First we write down the KG(F) equation:
+$$
+\partial^\nu\partial_\nu\Psi + \mu^2\Psi = 0
+$$</p>
+<p>simply because I think there&rsquo;s a certain elegance to equations of physics written in covariant notation. Now onto the meaty stuff.</p>
+<h3 id="kg-was-also-schroedingers-equation-in-a-sense">KG was also &ldquo;Schroedinger&rsquo;s Equation&rdquo; in a sense</h3>
+<p>Schroedinger himself had come up with this equation when he was trying out different wave equations for explaining matter-waves, a year before Klein, Gordon and Fock. He abandoned this since it failed to predict the correct energy levels for the Hydrogen atom, and went on to work in the nonrelativistic limit, where he came up with his eponymous equation.</p>
+<h3 id="problems-with-klein-gordon-the-probability-4-current">Problems with Klein-Gordon: The Probability 4-Current</h3>
+<p>Most problems associated with the KG equation can be traced back to one key equation called the continuity equation. Any probabilistic theory of matter must respect some sort of a continuity equation, which simply says that the change in the probability density over time must be due to the &ldquo;probability-fluid&rdquo; flowing out of that region. The derivation is quite simple and here I simply write the four-current for the KG equation:</p>
+<p>$$
+J_\mu = \frac{i\hbar}{2m} \text{Im}(\psi^*\partial_\mu\psi)
+$$</p>
+<p>The root of all problems turns out to be the first-order partial appearing in this equation, which results in negative values for $J_0$ under certain conditions, so $J_0$ cannot be a probability density, something which must be $\ge 0$. We don&rsquo;t have this issue for the spatial components of $J_\mu$ since they represent the probability<em>current</em>, and hence is a 3-vector representing the flow of probability density - so it can be negative just fine. So we want a relativistic wave equation that is first-order in $\partial_0$. Since in relativity, Lorentz-invariance (note for the Pedant: the Dirac equation also encodes translational invariance, and so we say that it&rsquo;s invariant under the $(\frac{1}{2},0)\oplus(0, \frac{1}{2})$ representation of the Poincare group) mixes up time and space, Lorentz-invariance also requires the spatial derivatives to be of the same order as the time derivative. Note that the Schroedinger equation meets the first criterion (first-order in $\partial_t$) but not the second (second-order in $\partial_i$). The KG equation meets the second (spatial and temporal derivatives are of the same order), but not the first.</p>
+<h3 id="how-the-4-current-leads-to-the-dirac-equation">How the 4-Current Leads to the Dirac Equation</h3>
+<p>This partial derivative, the &ldquo;root of all problems&rdquo;, can ironically be alleviated precisely by taking the <em>square-root</em> of the energy equation, which provides an equation first-order in time (and space). This is exactly what the Dirac equation is! (To be pedantic, exactly taking the square root without expanding it in matrix space gives us the <em>Salpeter equation</em>, which is a <em>pseudo-differential</em> equation.) In the video, Derek (name of the guy from Veritasium, not an affectionate nickname for Dirac lol) probably outlines its historical origins when he shows Dirac working out the Dirac matrices aka Gamma matrices, which requires a bit of trial-and-error. Specifically, Derek says that according to Dirac, he all of a sudden had the idea to try out $4\times 4$ matrices. This gives off the impression that it was arbitrary, but it was not. Let&rsquo;s first write down the gamma matrices in terms of the alpha and beta matrices shown in the video:</p>
+<p>$$
+\alpha^i \equiv \gamma^0\gamma^i\newline
+\beta \equiv \gamma^0
+$$</p>
+<p>In this notation, their anticommutator (clifford algebra) can be succinctly written as</p>
+<p>$$
+[\gamma^\mu, \gamma^\nu]_+ = 2\eta^{\mu\nu}𝟙
+$$</p>
+<p>where $\eta^{\mu\nu}$ is the Minkowski metric (inverted but that&rsquo;s the same) and 𝟙 is the $n\times n$ dimensional identity matrix. We&rsquo;ll try finding some restrictions on the value $n$ can take, thereby narrowing our search space for the $\gamma^\mu$ matrices that solve this particular anticommutator algebra. First note that the anticommutator implies that</p>
+<p>$$
+\text{Tr}(\gamma^0) = 0, \text{and}\newline
+(\gamma^0)^2 = 𝟙
+$$</p>
+<p>so that the $\gamma^\mu$ must be <em>even-dimensional</em>. Next, note that in 2D, we have the Pauli matrices we know and love from NRQM spanning $\text{SL}(2,\mathbb{C})$, which we can try out with $\gamma^0 = 𝟙, \gamma^i = \sigma^i$. But this is immediately ruled out due to the anticommutation relation between the Pauli matrices $[\sigma^\mu, \sigma^\nu]_+=2\delta^{\mu\nu}𝟙$, where we get the Kronecker delta instead of the Minkowski metric. So $n=2$ doesn&rsquo;t work. Next we can skip $n=3$ for reasons left as an exercise to the reader. The upshot is that we can solve it in $n=4$ dimensions and that gives us the required first-order relativistic differential wave equation.</p>
+<h3 id="making-kg-work-ignoring-negative-energy-and-negative-probabilities">Making KG work: ignoring negative energy and negative probabilities</h3>
+<p>The negative energy solutions of both Klein-Gordon and Dirac are interpreted as the antiparticle solutions. But it isn&rsquo;t immediately obvious why we should allow them in the first place - it feels unnatural, as it should. We said that the Klein-Gordon equation must be discarded as a relativistic equation for a spinless particle because it leads to negative probability densities. When we work things out, it seems that the negative density arises <em>only when we allow negative energy solutions</em>. So logically we should ask if we can make KG theory work by simply ignoring its negative energy solutions. If so, KG theory would be perfectly fine as a relativistic theory for describing spinless wave functions. But for one crucial reason we can&rsquo;t simply ignore the negative energy solutions and make it all sunshines and rainbows.</p>
+<p>Here&rsquo;s why. So far we&rsquo;ve been writing down the KG and the dirac equations for free particles. In the presence of a potential, the <em>positive-energy solutions can transition into negative-energy states</em>, which of course are negative probability states, the source of our problems. This is what leads to the <em>Klein paradox</em>.</p>
+<p>In other words, the Klein-Gordon equation cannot be salvaged <em>even if</em> we take out the negative energy plane wave solutions out of the solution space. What this means is that there simply is <em>no way of interpreting KG as a consistent single-particle relativistic quantum theory</em>.</p>
+<h3 id="making-kg-truly-work-the-field-interpretation">Making KG (truly) work: the field interpretation</h3>
+<p>The only way to salvage KG theory is to interpret the 4-current $J^\mu$, which as we&rsquo;ve just seen invariably leads to negative $J^0$ and hence can&rsquo;t be taken as a probability density, to be a <em>charge density</em> instead. In other words, the 4-current equation is taken to literally represent a charge-current rather than a probability current. In this case, the KG field $\Psi(\vec{x},t)$ no longer remains a single-particle wavefunction but instead becomes a <em>quantum field</em>. We multiply our previous $J^\mu$ by the elementary charge $e$ to arrive at the charge-density of this KG field:</p>
+<p>$$
+\rho = J^0 = \frac{i\hbar}{2m}\text{Im}(\Phi^*\partial_t\Phi)\newline
+= \frac{i\hbar}{2m} (\Phi^* \partial_t \Phi - \Phi \partial_t \Phi^*)
+$$</p>
+<p>For a complex field $\Phi$, the negative-charge solutions are interpreted as antiparticles. For a real $\Phi$, the charge-density becomes identically zero, and hence they&rsquo;re their own antiparticles.</p>
+<h3 id="how-spin-emerges-out-of-the-dirac-equation">How spin emerges out of the Dirac equation</h3>
+<p>With the level of detail Derek went into in his video, I believe he could have shown this remarkable property of the Dirac equation, which was merely hinted at. The core argument is simple: rotational symmetry of the Dirac particle leads to the conservation of $\vec{J} = \vec{L} + \vec{S}$, where $\vec{L}$ is the angular momentum associated with the motion of the particle. The $\vec{S}$ component, it turns out, is independent of the state of motion and leads to an &ldquo;intrinsic&rdquo; angular momentum associated with all Dirac particles, the components of $\vec{S}$ having eigenvalues $\pm \frac{1}{2}$, thus explaining spin-$\frac{1}{2}$ as a necessary consequence of Poincare invariance. Importantly, though, the solutions to the Dirac equations have <em>separate real estate</em> for spin-up and spin-down particles and antiparticles. Note that since the $\gamma^\mu$ are $4\times 4$, the solutions of Dirac equation $\Psi$ must also be 4-component complex-valued objects. This is called a Dirac (bi-)spinor, with the upper two components representing electrons with spin up and down, and the lower two representing positrons with spin up and down, respectively.</p>
+<h2 id="concluding-words-and-further-reading">Concluding Words and Further Reading</h2>
+<p>I hope I&rsquo;ve been able to add some appetizing footnotes to an excellent expository video. For details on the Dirac and Klein-Gordon equation, my favourite resources are the following:</p>
+<ol>
+<li>At a basic level, I liked the videos from the channel <em>Physics Explained</em>.</li>
+<li>At an intermediate level, the long-form video lectures from the YouTube channel called <em>Nick Heumann University</em>, and from <em>Richard Behiel</em>&rsquo;s channel.</li>
+<li>At a mathematically slightly more advanced (yet remarkably readable) level, lecture notes by Dr. Matthias Lienert. For something a bit more fleshed out physically, I used an old text called <em>Relativistic Quantum Mechanics: Wave Equations</em> by <em>W. Greiner</em> (but I think I should find more modern recommendations to replace this).</li>
+</ol>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>© Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

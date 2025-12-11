@@ -2,26 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Philosophy of Religion on Entropic Legos</title>
-    <link>http://localhost:1313/entropic-legos/tags/philosophy-of-religion/</link>
+    <link>https://susmit31.github.io/entropic-legos/tags/philosophy-of-religion/</link>
     <description>Recent content in Philosophy of Religion on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Sun, 29 Jun 2025 21:53:08 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/entropic-legos/tags/philosophy-of-religion/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The No-Cloning Theorem</title>
-      <link>http://localhost:1313/entropic-legos/posts/no-cloning/</link>
-      <pubDate>Sun, 29 Jun 2025 21:53:08 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/no-cloning/</guid>
-      <description>&lt;h2 id=&#34;yes-or-no&#34;&gt;YES or NO&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Can he destroy the clone&lt;/li&gt;&#xA;&lt;li&gt;Is the clone truly identical&lt;/li&gt;&#xA;&lt;li&gt;How do we distinguish the two&lt;/li&gt;&#xA;&lt;li&gt;If we can&amp;rsquo;t then are they different at all&lt;/li&gt;&#xA;&lt;li&gt;Can the clone destroy him&lt;/li&gt;&#xA;&lt;li&gt;Can he destroy himself&lt;/li&gt;&#xA;&lt;li&gt;Can the clone destroy itself&lt;/li&gt;&#xA;&lt;li&gt;How does the situation compare to identical particles in QM/QFT&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
-    </item>
+    <lastBuildDate>Sun, 22 Jun 2025 23:42:32 +0600</lastBuildDate>
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/philosophy-of-religion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Philosophy of Religion by Murray and Rea First Thoughts: Chapter 1 - Part 1</title>
-      <link>http://localhost:1313/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</link>
       <pubDate>Sun, 22 Jun 2025 23:42:32 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</guid>
       <description>&lt;h2 id=&#34;god-epistemology-and-ontology&#34;&gt;God: Epistemology and Ontology&lt;/h2&gt;&#xA;&lt;p&gt;The following includes my first thoughts while reading &lt;em&gt;An Introduction to the Philosophy of Religion&lt;/em&gt; by Murray and Rea, largely unfiltered. This is the first part of my collected thoughts on chapter 1, in which rather than discussing directly what has been talked about in the chapter itself, I have written down my perspectives on how to go about solving the epistemological and metaphysical problems associated with the question of God. In the next part, in shaa Allah, I will write about what exactly has been discussed in the chapter and how that fits (or does not) with my framework captured below.&lt;/p&gt;</description>
     </item>
   </channel>

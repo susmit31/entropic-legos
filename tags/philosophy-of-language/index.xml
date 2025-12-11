@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Philosophy of Language on Entropic Legos</title>
-    <link>http://localhost:1313/entropic-legos/tags/philosophy-of-language/</link>
+    <link>https://susmit31.github.io/entropic-legos/tags/philosophy-of-language/</link>
     <description>Recent content in Philosophy of Language on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
     <lastBuildDate>Tue, 24 Jun 2025 23:19:55 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/entropic-legos/tags/philosophy-of-language/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/philosophy-of-language/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Absistence and Other Metaphysical Quandaries</title>
-      <link>http://localhost:1313/entropic-legos/posts/absistence/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/absistence/</link>
       <pubDate>Tue, 24 Jun 2025 23:19:55 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/absistence/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/absistence/</guid>
       <description>&lt;h2 id=&#34;how-can-nonexistent-objects-be&#34;&gt;How Can Nonexistent Objects &amp;ldquo;Be&amp;rdquo;?&lt;/h2&gt;&#xA;&lt;p&gt;I discussed in a previous post the view of Meinong on levels of ontological being. Meinong&amp;rsquo;s idea drew much ridicule at his time (&amp;ldquo;Meinong&amp;rsquo;s jungle&amp;rdquo;), but I think Meinong&amp;rsquo;s framework is a very valid approach for doing philosophy especially in &amp;ldquo;ordinary language&amp;rdquo;, rather than in the strict formalism mathematics and logic, in which such &amp;ldquo;objects&amp;rdquo; are immediately dismissed. In what follows I&amp;rsquo;ll put forth my framework to elucidate some of the confusing issues on this front.&lt;/p&gt;</description>
     </item>
   </channel>

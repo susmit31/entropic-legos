@@ -2,19 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quantum Mechanics on Entropic Legos</title>
-    <link>http://localhost:1313/entropic-legos/tags/quantum-mechanics/</link>
+    <link>https://susmit31.github.io/entropic-legos/tags/quantum-mechanics/</link>
     <description>Recent content in Quantum Mechanics on Entropic Legos</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Thu, 27 Nov 2025 02:44:50 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/entropic-legos/tags/quantum-mechanics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Dec 2025 20:29:40 +0600</lastBuildDate>
+    <atom:link href="https://susmit31.github.io/entropic-legos/tags/quantum-mechanics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Footnotes to Veritasium - Klein-Gordon, Dirac, and More!</title>
+      <link>https://susmit31.github.io/entropic-legos/posts/veritasium-dirac/</link>
+      <pubDate>Thu, 11 Dec 2025 20:29:40 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/veritasium-dirac/</guid>
+      <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;God is a mathematician of a very high order and He used advanced mathematics in constructing the universe.&amp;rdquo; - &lt;em&gt;Paul Adrien Maurice Dirac&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Veritasium recently released a video on the basic wave equation describing spin-1/2 fermions, AKA the Dirac equation,&#xA;$$&#xA;\boxed{(i\hbar\gamma^\mu\partial_\mu - m)\Psi = 0}&#xA;$$&#xA;which to me is the one of the most beautiful equations in all of physics, second only to perhaps the Einstein field equations (or perhaps Hamilton&amp;rsquo;s principle). (I&amp;rsquo;ll say a little about the difference in Veritasium&amp;rsquo;s notation and the covariant notation used here.) In this post we add some technical meat that Veritasium glossed over, left unmentioned, or I thought deserves a bit more space(time), to the best of my knowledge. It&amp;rsquo;s a complicated topic and I don&amp;rsquo;t yet understand all the subtleties so I&amp;rsquo;ll try updating this some time later.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Lights, Hamilton, Action! - A Brief Look into How Optics Guided Schroedinger</title>
-      <link>http://localhost:1313/entropic-legos/posts/hamilton/</link>
+      <link>https://susmit31.github.io/entropic-legos/posts/hamilton/</link>
       <pubDate>Thu, 27 Nov 2025 02:44:50 +0000</pubDate><author>hugo@example.com (Entropic Legos)</author>
-      <guid>http://localhost:1313/entropic-legos/posts/hamilton/</guid>
+      <guid>https://susmit31.github.io/entropic-legos/posts/hamilton/</guid>
       <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;[Hamilton] had understood, in 1830, how and in what limits the geometrical optics was an approximation of wave optics&amp;hellip; he made in 1830 the surprising remark that the formalisms of optics and could be unified, and (prophetic vision) that the Newtonian mechanics corresponds to the same limit or approximation, as geometrical optics compared to wave optics.&amp;rdquo; - J.L. Basdevant, &lt;em&gt;Variational Principles in Physics&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Any beginner in physics who has learnt some quantum mechanics inevitably is struck by a sense of sheer amazement at how Schroedinger came up with his eponymous wave equation that describes nonrelativistic quantum-scale phenomena. Schroedinger, of course, didn&amp;rsquo;t receive his equation in a dream, contrary to the indirect allusion of many texts. Interestingly, much of the groundwork was laid by Sir William Rowan Hamilton, who, based on similarities between optics and what&amp;rsquo;s now called the Hamilton-Jacobi formulation of classical mechanics, suspected that classical mechanics must be the short-wavelength &amp;ldquo;geometrical&amp;rdquo; limit of some overarching wave mechanics theory. This is where Schroedinger started, and as you&amp;rsquo;ll see, this is the much more logical way to motivate quantum mechanics from a theoretical standpoint.&lt;/p&gt;</description>
     </item>
   </channel>

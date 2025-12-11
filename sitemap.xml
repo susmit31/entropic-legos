@@ -2,195 +2,165 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/entropic-legos/</loc>
-    <lastmod>2025-12-03T02:14:19+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/</loc>
+    <lastmod>2025-12-11T20:29:40+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/hamilton3/</loc>
-    <lastmod>2025-12-03T02:14:19+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/posts/veritasium-dirac/</loc>
+    <lastmod>2025-12-11T20:29:40+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/optico-mechanical-analogy/</loc>
-    <lastmod>2025-12-03T02:14:19+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/tags/physics/</loc>
+    <lastmod>2025-12-11T20:29:40+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/physics/</loc>
-    <lastmod>2025-12-03T02:14:19+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/posts/</loc>
+    <lastmod>2025-12-11T20:29:40+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/</loc>
-    <lastmod>2025-12-03T02:14:19+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/tags/quantum-mechanics/</loc>
+    <lastmod>2025-12-11T20:29:40+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/quantum/</loc>
-    <lastmod>2025-12-03T02:14:19+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/tags/relativity/</loc>
+    <lastmod>2025-12-11T20:29:40+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/</loc>
-    <lastmod>2025-12-03T02:14:19+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/tags/</loc>
+    <lastmod>2025-12-11T20:29:40+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/action/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/action/</loc>
     <lastmod>2025-11-30T21:33:37+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/hamilton2/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/hamilton2/</loc>
     <lastmod>2025-11-30T21:33:37+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/hamilton/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/optico-mechanical-analogy/</loc>
+    <lastmod>2025-11-30T21:33:37+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/quantum/</loc>
+    <lastmod>2025-11-30T21:33:37+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/posts/hamilton/</loc>
     <lastmod>2025-11-27T02:44:50+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/quantum-mechanics/</loc>
-    <lastmod>2025-11-27T02:44:50+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/updates/</loc>
-    <lastmod>2025-10-06T07:23:26+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/computer-science/</loc>
-    <lastmod>2025-07-01T14:45:22+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/ai-consciousness/</loc>
-    <lastmod>2025-07-01T14:45:22+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/metaphysics/</loc>
-    <lastmod>2025-07-01T14:45:22+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/philosophy/</loc>
-    <lastmod>2025-07-01T14:45:22+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/philosophy-of-mind/</loc>
-    <lastmod>2025-07-01T14:45:22+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/symmetry-econ-2/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/symmetry-econ-2/</loc>
     <lastmod>2025-07-01T00:05:02+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/economics/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/economics/</loc>
     <lastmod>2025-07-01T00:05:02+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/mathematical-modelling/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/mathematical-modelling/</loc>
     <lastmod>2025-07-01T00:05:02+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/mathematics/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/mathematics/</loc>
     <lastmod>2025-07-01T00:05:02+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/philosophy-of-religion/</loc>
-    <lastmod>2025-06-29T21:53:08+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/no-cloning/</loc>
-    <lastmod>2025-06-29T21:53:08+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/ontology/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/ontology/</loc>
     <lastmod>2025-06-27T19:39:25+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/philosophy-of-physics/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/philosophy/</loc>
     <lastmod>2025-06-27T19:39:25+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/relativity/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/philosophy-of-physics/</loc>
     <lastmod>2025-06-27T19:39:25+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/time-prelim/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/time-prelim/</loc>
     <lastmod>2025-06-27T19:39:25+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/entanglement/</loc>
-    <lastmod>2025-06-27T09:44:16+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/curvature/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/curvature/</loc>
     <lastmod>2025-06-27T00:00:00+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/gravity/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/gravity/</loc>
     <lastmod>2025-06-27T00:00:00+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/newton-curved/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/newton-curved/</loc>
     <lastmod>2025-06-27T00:00:00+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/differential-geometry/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</loc>
     <lastmod>2025-06-26T22:05:59+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/topo-cake/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/topo-cake/</loc>
     <lastmod>2025-06-26T22:05:59+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/topology/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/topology/</loc>
     <lastmod>2025-06-26T22:05:59+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/absistence/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/absistence/</loc>
     <lastmod>2025-06-24T23:19:55+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/philosophy-of-language/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/metaphysics/</loc>
     <lastmod>2025-06-24T23:19:55+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/epistemology/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/philosophy-of-language/</loc>
+    <lastmod>2025-06-24T23:19:55+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/epistemology/</loc>
     <lastmod>2025-06-22T23:42:32+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/philosophy-of-religion/</loc>
     <lastmod>2025-06-22T23:42:32+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/energy-ontology/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/cambridge-philosophy-of-religion-c1p1/</loc>
+    <lastmod>2025-06-22T23:42:32+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/posts/energy-ontology/</loc>
     <lastmod>2025-06-20T18:37:18+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/cyanosis-diff/</loc>
-    <lastmod>2025-05-10T00:17:17+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/mechanism/</loc>
-    <lastmod>2025-05-10T00:17:17+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/mechanism-of-clinical-signs/</loc>
-    <lastmod>2025-05-10T00:17:17+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/medicine/</loc>
-    <lastmod>2025-05-10T00:17:17+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/symmetry-econ/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/symmetry-econ/</loc>
     <lastmod>2025-05-04T16:48:41+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/symmetry/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/symmetry/</loc>
     <lastmod>2025-05-04T16:48:41+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/consciousness/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/consciousness/</loc>
     <lastmod>2025-02-17T23:40:49+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/mind-theory-update/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/mind-theory-update/</loc>
     <lastmod>2025-02-17T23:40:49+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/classics/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/philosophy-of-mind/</loc>
+    <lastmod>2025-02-17T23:40:49+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/classics/</loc>
     <lastmod>2024-08-02T15:13:44+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/greek-philosophy/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/greek-philosophy/</loc>
     <lastmod>2024-08-02T15:13:44+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/justice/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/justice/</loc>
     <lastmod>2024-08-02T15:13:44+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/plato/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/plato/</loc>
     <lastmod>2024-08-02T15:13:44+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/republic-1/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/republic/</loc>
     <lastmod>2024-08-02T15:13:44+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/republic/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/republic-part-1/</loc>
     <lastmod>2024-08-02T15:13:44+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/republic-part-1/</loc>
-    <lastmod>2024-08-02T15:13:44+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/mathtest/</loc>
-    <lastmod>2024-06-30T20:45:14+06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/c-cpp/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/c-cpp/</loc>
     <lastmod>2024-06-26T23:15:37+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/speed-test/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/computer-science/</loc>
     <lastmod>2024-06-26T23:15:37+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/golang/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/posts/speed-test/</loc>
     <lastmod>2024-06-26T23:15:37+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/programming/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/golang/</loc>
     <lastmod>2024-06-26T23:15:37+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/python/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/programming/</loc>
     <lastmod>2024-06-26T23:15:37+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/rust/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/python/</loc>
     <lastmod>2024-06-26T23:15:37+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/tags/zig/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/rust/</loc>
     <lastmod>2024-06-26T23:15:37+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/posts/zigshaw/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/tags/zig/</loc>
+    <lastmod>2024-06-26T23:15:37+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/posts/zigshaw/</loc>
     <lastmod>2024-06-24T23:36:33+06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/entropic-legos/categories/</loc>
+    <loc>https://susmit31.github.io/entropic-legos/categories/</loc>
   </url>
 </urlset>
