@@ -95,7 +95,7 @@ Footnotes to Veritasium - Klein-Gordon, Dirac, and More! | Entropic Legos
             
             
                 <dt>reading time</dt>
-                <dd>8 minutes</dd>
+                <dd>9 minutes</dd>
             
         </dl>
     </section>
@@ -124,8 +124,28 @@ $$</p>
 J_\mu = \frac{\hbar}{m} \text{Im}(\psi^*\partial_\mu\psi)
 $$</p>
 <p>The root of all problems turns out to be the first-order partial appearing in this equation, which results in negative values for $J_0$ under certain conditions, so $J_0$ cannot be a probability density, something which must be $\ge 0$. We don&rsquo;t have this issue for the spatial components of $J_\mu$ since they represent the probability<em>current</em>, and hence is a 3-vector representing the flow of probability density - so it can be negative just fine. So we want a relativistic wave equation that is first-order in $\partial_0$. Since in relativity, Lorentz-invariance (note for the Pedant: the Dirac equation also encodes translational invariance, and so we say that it&rsquo;s invariant under the $(\frac{1}{2},0)\oplus(0, \frac{1}{2})$ representation of the Poincare group) mixes up time and space, Lorentz-invariance also requires the spatial derivatives to be of the same order as the time derivative. Note that the Schroedinger equation meets the first criterion (first-order in $\partial_t$) but not the second (second-order in $\partial_i$). The KG equation meets the second (spatial and temporal derivatives are of the same order), but not the first.</p>
+<h3 id="more-problems-with-kg-nonconserved-total-probability">More problems with KG: nonconserved total probability</h3>
+<p>The Schroedinger equation is more commonly written in position space in its familiar form
+$$
+[-\frac{\hbar^2}{2m}\nabla^2 + V(\vec{x})]\psi = i\hbar \partial_t\psi
+$$</p>
+<p>But it is much more simplified in the operator notation
+$$
+\hat{H}|\psi\rangle = i\hbar\partial_t|\psi\rangle
+$$</p>
+<p>where $\hat{H}$ is the Hamiltonian of the system. We call this the <em>abstract Schroedinger equation</em>. In fact, this form is not just a simplified abstraction, but a much more fundamental one as well. That&rsquo;s because this form is <em>necessarily</em> required if we want a wavefunction with conserved probabilities.</p>
+<p>What I mean is that the total probability of all possible outcomes integrated over the entirety of the wavefunction must always equal 1. This necessarily means that the time evolution must be <em>unitary</em>, and so in general an infinitesimal time evolution should look like
+$$
+|\psi(t+\epsilon)\rangle = (I - i\epsilon\hat{A})|\psi(t)\rangle
+$$</p>
+<p>with some self-adjoint operator $\hat{A}$. So we have</p>
+<p>$$
+\partial_t{|\psi\rangle} = -i\hat{A}|\psi\rangle \newline
+\implies \hat{H}\psi\rangle = i\hbar\partial_t{|\psi\rangle}
+$$</p>
+<p>where we&rsquo;ve simply rescaled our self-adjoint operator as $\hat{A} = \hat{H}/\hbar$. The upshot of all this is that while the exact appearance of Schroedinger&rsquo;s differential equation may not be correct relativistically, it is nonetheless true that any probability-conserving wave theory (where the probability is given by the Born rule) must have a time-evolution equation first-order in time according to the abstract Schroedinger equation. Note that this constrains the left hand side of the equation only to be a Hermitian operator and nothing more - it could be absolutely any possible Hermitian operator. But the <em>right hand side must be first-order in time</em>. This, coupled with Poincare symmetry, tells us that the left hand side must be first-order in space.</p>
 <h3 id="how-the-4-current-leads-to-the-dirac-equation">How the 4-Current Leads to the Dirac Equation</h3>
-<p>This partial derivative, the &ldquo;root of all problems&rdquo;, can ironically be alleviated precisely by taking the <em>square-root</em> of the energy equation, which provides an equation first-order in time (and space). This is exactly what the Dirac equation is! (To be pedantic, exactly taking the square root without expanding it in matrix space gives us the <em>Salpeter equation</em>, which is a <em>pseudo-differential</em> equation.) In the video, Derek (name of the guy from Veritasium, not an affectionate nickname for Dirac lol) probably outlines its historical origins when he shows Dirac working out the Dirac matrices aka Gamma matrices, which requires a bit of trial-and-error. Specifically, Derek says that according to Dirac, he all of a sudden had the idea to try out $4\times 4$ matrices. This gives off the impression that it was arbitrary, but it was not. Let&rsquo;s first write down the gamma matrices in terms of the alpha and beta matrices shown in the video:</p>
+<p>Now let&rsquo;s reconsider the 4-current of the KG equation. The partial derivative in the current, the &ldquo;root of all problems&rdquo;, can ironically be alleviated precisely by taking the <em>square-root</em> of the energy equation, which provides an equation first-order in time (and space). This is exactly what the Dirac equation is! (To be pedantic, exactly taking the square root without expanding it in matrix space gives us the <em>Salpeter equation</em>, which is a <em>pseudo-differential</em> equation.) In the video, Derek (name of the guy from Veritasium, not an affectionate nickname for Dirac lol) probably outlines its historical origins when he shows Dirac working out the Dirac matrices aka Gamma matrices, which requires a bit of trial-and-error. Specifically, Derek says that according to Dirac, he all of a sudden had the idea to try out $4\times 4$ matrices. This gives off the impression that it was arbitrary, but it was not. Let&rsquo;s first write down the gamma matrices in terms of the alpha and beta matrices shown in the video:</p>
 <p>$$
 \alpha^i \equiv \gamma^0\gamma^i\newline
 \beta \equiv \gamma^0
