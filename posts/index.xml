@@ -8,8 +8,15 @@
     <language>en-us</language>
     <managingEditor>hugo@example.com (Entropic Legos)</managingEditor>
     <webMaster>hugo@example.com (Entropic Legos)</webMaster>
-    <lastBuildDate>Thu, 11 Dec 2025 20:29:40 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 21:55:01 +0600</lastBuildDate>
     <atom:link href="https://susmit31.github.io/entropic-legos/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plans</title>
+      <link>https://susmit31.github.io/entropic-legos/posts/plans/</link>
+      <pubDate>Sun, 22 Mar 2026 21:55:01 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+      <guid>https://susmit31.github.io/entropic-legos/posts/plans/</guid>
+      <description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;p&gt;So I&amp;rsquo;ve been gone from the blog for a while now and I think I&amp;rsquo;m ready to make a comeback now. This is basically a semi-manifesto for what&amp;rsquo;s cooking and so on.&lt;/p&gt;&#xA;&lt;h2 id=&#34;where-ive-been-and-what-ive-been-up-to&#34;&gt;Where I&amp;rsquo;ve been and what I&amp;rsquo;ve been up to&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve joined civil service of Bangladesh and have been busy. My dad went through a sequence of rather distressing illnesses and that had me occupied as well. In the meantime, I have continued writing a little, albeit on a different platform - Facebook. Not exactly the ideal medium for my rather technical exploratory posts, but this is an experiment I&amp;rsquo;m enjoying so far. On the self-study side of things, I&amp;rsquo;ve been studying QFT for several months, and in particular have developed a liking for topological field theories. Going forward you&amp;rsquo;ll probably see more topological physics posts. Anyway, that aside, I have also been studying condensed matter physics and it&amp;rsquo;s a treasure trove that I&amp;rsquo;ve unfortunately completely ignored the beauty of. I love it and I hate the fact that I never got started with it before. I&amp;rsquo;ve been watching Prof. Steven Simon&amp;rsquo;s lectures and coupling that with David Tong&amp;rsquo;s lecture notes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Footnotes to Veritasium - Klein-Gordon, Dirac, and More!</title>
       <link>https://susmit31.github.io/entropic-legos/posts/veritasium-dirac/</link>

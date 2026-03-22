@@ -10,7 +10,7 @@ Exploring the Zig Programming Language: Part 2 | Entropic Legos
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 
-<meta name="generator" content="Hugo 0.152.2">
+<meta name="generator" content="Hugo 0.158.0">
 
 
 <link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/speed-test/" >
@@ -111,26 +111,26 @@ Exploring the Zig Programming Language: Part 2 | Entropic Legos
 <p>As computers are stupendously fast these days, they perform most tasks in the blink of an eye. It&rsquo;s hard to write a piece of code that will be both small (i.e. can be written within a few minutes) and computationally intensive (i.e. require a noticeable amount of execution time). A hack we can use, though, is using a stupid algorithm for a simple task. For example, for our purposes, I&rsquo;ve chosen the recursive computation of the Fibonacci sequence, which has an exponential time complexity (compare this to the dynamic programming approach, which has a linear time complexity). This means, for example, the execution time for calculating the <em>N</em>-th Fibonacci number with this algorithm will be, say, <em>x</em> times that of the <em>(N-1)</em>-th Fibonacci number, and <em>x^2</em> times that of <em>(N-2)</em>-th Fibonacci number, and so on. So as we scale the problem upwards, the execution time increases geometrically.</p>
 <h2 id="the-code">The Code</h2>
 <p>We will compute the 45-th Fibonacci number as our speed test, using the algorithm mentioned above. We calculate it a total of 5 times and take the average execution time as our comparison metric. Here&rsquo;s the code in Zig.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zig" data-lang="zig"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> std <span style="color:#f92672">=</span> @import(<span style="color:#e6db74">&#34;std&#34;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-zig" data-lang="zig"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> std <span style="color:#f92672">=</span> @import(<span style="color:#e6db74">&#34;std&#34;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> stdout <span style="color:#f92672">=</span> std.io.<span style="color:#a6e22e">getStdOut</span>();
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() <span style="color:#f92672">!</span><span style="color:#66d9ef">void</span>{
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> start_time<span style="color:#f92672">:</span> <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.<span style="color:#a6e22e">microTimestamp</span>();
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> N<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">45</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> start_time: <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.<span style="color:#a6e22e">microTimestamp</span>();
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> N: <span style="color:#66d9ef">u32</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">45</span>;
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> loop_count <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> last<span style="color:#f92672">:</span> <span style="color:#66d9ef">u64</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> last: <span style="color:#66d9ef">u64</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>;
 </span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	last <span style="color:#f92672">=</span> <span style="color:#a6e22e">loop</span>(loop_count, N);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> end_time<span style="color:#f92672">:</span> <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.<span style="color:#a6e22e">microTimestamp</span>();
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> duration<span style="color:#f92672">:</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">=</span> @as(<span style="color:#66d9ef">f32</span>,@floatFromInt(end_time <span style="color:#f92672">-</span> start_time)) <span style="color:#f92672">/</span> std.math.<span style="color:#a6e22e">pow</span>(<span style="color:#66d9ef">f32</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">6</span>);
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> avg<span style="color:#f92672">:</span> <span style="color:#66d9ef">f32</span> <span style="color:#f92672">=</span> duration <span style="color:#f92672">/</span> @as(<span style="color:#66d9ef">f32</span>, @floatFromInt(loop_count));
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> end_time: <span style="color:#66d9ef">i64</span> <span style="color:#f92672">=</span> std.time.<span style="color:#a6e22e">microTimestamp</span>();
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> duration: <span style="color:#66d9ef">f32</span> <span style="color:#f92672">=</span> @as(<span style="color:#66d9ef">f32</span>,@floatFromInt(end_time <span style="color:#f92672">-</span> start_time)) <span style="color:#f92672">/</span> std.math.<span style="color:#a6e22e">pow</span>(<span style="color:#66d9ef">f32</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">6</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">const</span> avg: <span style="color:#66d9ef">f32</span> <span style="color:#f92672">=</span> duration <span style="color:#f92672">/</span> @as(<span style="color:#66d9ef">f32</span>, @floatFromInt(loop_count));
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">try</span> stdout.<span style="color:#a6e22e">writer</span>().<span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Completed recursive calculation of the first {d} Fibonacci numbers using ZIGLANG.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">{d}-th Fibonacci number: {d}.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Algorithm time complexity: exponential.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Iterated {d} times. Total required time: {d:.3}s. Average required time: {d:.3}s.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, .{N, N, last, loop_count, duration, avg});
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">fib_recursive</span>(n<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">fib_recursive</span>(n: <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (n<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">or</span> n<span style="color:#f92672">==</span><span style="color:#ae81ff">2</span>) {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span>	} <span style="color:#66d9ef">else</span> {
@@ -138,8 +138,8 @@ Exploring the Zig Programming Language: Part 2 | Entropic Legos
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">loop</span>(n_loop<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>, n_fib<span style="color:#f92672">:</span> <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> (<span style="color:#ae81ff">1</span>..n_loop<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">|</span>_<span style="color:#f92672">|</span>{
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">loop</span>(n_loop: <span style="color:#66d9ef">u32</span>, n_fib: <span style="color:#66d9ef">u32</span>) <span style="color:#66d9ef">u64</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">..</span>n_loop<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">|</span>_<span style="color:#f92672">|</span>{
 </span></span><span style="display:flex;"><span>		_ <span style="color:#f92672">=</span> <span style="color:#a6e22e">fib_recursive</span>(n_fib);
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>
