@@ -14,9 +14,16 @@
 		
 		
 		
-			<lastBuildDate>Tue, 26 May 2026 22:32:52 +0600</lastBuildDate>
+			<lastBuildDate>Thu, 11 Jun 2026 20:47:48 +0600</lastBuildDate>
 		
 			<atom:link href="https://susmit31.github.io/entropic-legos/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Lie, Exterior, Covariant and All That: Differential Geometry Redux</title>
+				<link>https://susmit31.github.io/entropic-legos/posts/dgnut/</link>
+				<pubDate>Thu, 11 Jun 2026 20:47:48 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/posts/dgnut/</guid>
+				<description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Definitions are not made in a vacuum, they have a historical context and reason, often being made in response to some mathematical or scientific problem, or because someone sees a clever way of generalizing earlier results&amp;hellip;inextricably linked to the reasoning used in theorems; often alternate definitions are tried and dropped when it is realized that they don’t have quite the right properties&amp;rdquo; - &lt;em&gt;Michael Nielsen&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The quote above by the prominent quantum physicist Michael Nielsen captures well my frustration about much of advanced mathematical books / lectures. Differential geometry is hard. Some people make it even harder by throwing a bunch of abstract yet precise definitions that in the end magically gives us what we want. In the spirit of some of my previous posts, I try to give a mathematically accurate yet conceptual tour of the subject that would better elucidate your formal studies of the subject. The unifying question we&amp;rsquo;ll try to answer is one that kept bugging me no matter how many times I came back to studying DG - why do we have so many &lt;em&gt;different concepts of differentiation of the same fields&lt;/em&gt; in differential geometry? We&amp;rsquo;ll see that in trying to answer this, we&amp;rsquo;ll have shed light on much of the landscape of differential geometry. (P.S.: The title of the post is a gentle hat-tipping to one of my favourite vector calc books when I was younger called &lt;em&gt;Div, Grad, Curl and All That&lt;/em&gt; by Schey.)&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>QFT Redux: A Zoomed-Out View of Quantum Field Theory - Part 1</title>
 				<link>https://susmit31.github.io/entropic-legos/posts/qft-redux/</link>

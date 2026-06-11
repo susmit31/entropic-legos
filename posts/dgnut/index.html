@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+Lie, Exterior, Covariant and All That: Differential Geometry Redux | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.163.0">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/dgnut/" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.5c1fa9bba2d0e854fe30b3d6316ab0114a2a5f25c9a98275badeadb66f2ec725.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/entropic-legos">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Lie, Exterior, Covariant and All That: Differential Geometry Redux</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/entropic-legos/tags/maths/">#Maths</a><span></span>
+    <a href="/entropic-legos/tags/differential-topology/">#Differential Topology</a><span></span>
+    <a href="/entropic-legos/tags/differential-geometry/">#Differential Geometry</a><span></span>
+    <a href="/entropic-legos/tags/yang-mills/">#Yang-Mills</a><span></span>
+    <a href="/entropic-legos/tags/general-relativity/">#General Relativity</a></dd>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2026-06-11">June 11, 2026</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>15 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="tl-dr">TL; DR</h2>
+<blockquote>
+<p>&ldquo;Definitions are not made in a vacuum, they have a historical context and reason, often being made in response to some mathematical or scientific problem, or because someone sees a clever way of generalizing earlier results&hellip;inextricably linked to the reasoning used in theorems; often alternate definitions are tried and dropped when it is realized that they don’t have quite the right properties&rdquo; - <em>Michael Nielsen</em>.</p>
+</blockquote>
+<p>The quote above by the prominent quantum physicist Michael Nielsen captures well my frustration about much of advanced mathematical books / lectures. Differential geometry is hard. Some people make it even harder by throwing a bunch of abstract yet precise definitions that in the end magically gives us what we want. In the spirit of some of my previous posts, I try to give a mathematically accurate yet conceptual tour of the subject that would better elucidate your formal studies of the subject. The unifying question we&rsquo;ll try to answer is one that kept bugging me no matter how many times I came back to studying DG - why do we have so many <em>different concepts of differentiation of the same fields</em> in differential geometry? We&rsquo;ll see that in trying to answer this, we&rsquo;ll have shed light on much of the landscape of differential geometry. (P.S.: The title of the post is a gentle hat-tipping to one of my favourite vector calc books when I was younger called <em>Div, Grad, Curl and All That</em> by Schey.)</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The most important prerequisite is <em>NOT being a mathematician</em>.</p>
+<p>That said, I&rsquo;d add a disclaimer before the rest of the prereqs - this is <em>not</em> a differential geometry primer. I give an intuitive yet mostly mathematically correct view of the mathematical landscape of DG, but you&rsquo;ll be able to get the most of it <em>only if</em> you come in familiar enough with the specific ideas. What do I mean by &ldquo;familiar enough&rdquo;? That is, you should have at least at some point in your life seen the exact definitions and formulas I&rsquo;m talking about, because I&rsquo;m too lazy to write them down in LaTeX. And I also hope you have seen a little bit of graph theory. Rather than laying out the rest of the prereqs, I <em>leave it as an exercise</em> for you to figure out whether you have the prereqs through the following litmus test.</p>
+<p><strong>Litmus test</strong>: What do we mean by a topological manifold? What additional structures do we need to equip a set with to call it a manifold? What is a diffeomorphism? What is the rank of the Riemann tensor? What sorts of objects (and how many of them) do you need to put into it to get a number? What are the natural objects over which integration on manifolds can be defined? Why does the Lie bracket tell you whether two vector fields can form a coordinate grid?</p>
+<p>You don&rsquo;t need to know the answers off the top of your head, but if you can look it up and it makes sense, then you&rsquo;re ready for the ride ahead. I&rsquo;ll probably give a bird&rsquo;s eye view of each of these anyway, but with the heads up out of our way, we now dive right in.</p>
+<h2 id="smooth-manifold--dough">Smooth Manifold = Dough</h2>
+<p>Let&rsquo;s start with a set (of points). We&rsquo;ll call them &ldquo;vertices&rdquo; for the time being, for reasons that will become clearer in a moment. What is a topology on this set? It is a collection of &ldquo;open sets&rdquo;, i.e. a declaration of which points are neighbours to which points. So this collection of open sets gives us a relation with which we can join two vertices if they are related under this relation. By joining up vertices that belong to the same open subsets of the original set, we&rsquo;ve now transformed our original set of points into an unweighted, directed <em>graph</em> (in the sense of graph theory, as in <em>connected graphs</em>, for example). Because it&rsquo;s unweighted, and because it&rsquo;s a graph, it doesn&rsquo;t really matter at what angles the edges are drawn, or what their lengths are. In other words, it has <em>unbounded malleability</em>, in a way. So we&rsquo;ll take an extremely malleable object as our <em>prototypical topological space - a dough</em>. So remember,</p>
+<p>$$
+\text{Topological space = set + neighbourhoods = dough}
+$$</p>
+<p>This becomes a <em>topological manifold</em> when one can come up with an <em>atlas with continuous and bijective charts</em>. Now the chart transition maps, maps that tell us how to go from one chart to another when we have an overlap, are maps from a Euclidean space to another Euclidean space, and so we can do (potentially multivariable) calculus on them plain and simple. When these chart transition maps are also <em>smooth</em>, i.e. infinitely differentiable, we have a <em>smooth (topological) manifold</em>. Now our dough naturally looks smooth, and as an exercise you can make some dough and come up with an atlas for it if you&rsquo;re feeling adventurous. Let&rsquo;s call it Mr. Dough, with a big-D, to differentiate with the dough that we called a topological space. So</p>
+<p>$$
+\text{Smooth manifold = topological space + smooth transition maps = Mr. Dough}
+$$</p>
+<p>So Mr. Dough is what mathematicians would call a smooth manifold.</p>
+<h2 id="mr-dough-is-a-symbol">Mr. Dough Is A Symbol</h2>
+<p>So you already know that Mr Dough is like the Bat-Man - it&rsquo;s meant to be a symbol. It&rsquo;s no specific dough. All smooth doughs connected by a diffeomorphism are Mr Dough. In other words, you can bend, twist, grow and shrink Mr Dough any way you please, as long as you do it smoothly. Mathematicians would call this <em>diffeomorphism invariance</em>. Mr Dough is thus a symbol of diffeomorphism invariance. Or, more poetically, Mr Dough is a symbol of boundless malleability. This boundless malleability means two things:</p>
+<ol>
+<li>There&rsquo;s no concept of distance between points. Any (nonzero) distance is just as good as any other (nonzero) distance, by virtue of being smooth. If there&rsquo;s no particular concept of distance, there&rsquo;s also no particular way of measuring angles, since you can grow and shrink the angle as you please while preserving diffeomorphism invariance.</li>
+<li>There&rsquo;s no concept of parallelism. This I&rsquo;ll expand on a little later.</li>
+</ol>
+<h2 id="smack-that-bundle">Smack That (Bundle)</h2>
+<p>Now assign your quantity of interest to each point on Mr Dough. This is a field. Depending on what you assigned, you may have a scalar, vector, tensor or a spinor field, or something even more exotic. But in general, they&rsquo;ll belong to some vector space, and this results in what&rsquo;s called a <em>vector bundle</em>. In physics-land, they&rsquo;re just better called fields, so I will call them fields from now on. To go back to the question we started with, how do we differentiate such structures defined on Mr Dough and how do all our familiar notions of differentiation (specifically, Lie, exterior, and covariant) correspond to such differentiating?</p>
+<h2 id="what-is-differentiation">What IS Differentiation?</h2>
+<p>Basically we take a look at the fields at very closely separated points and take the difference between them. Here&rsquo;s the problem - in this dough, there&rsquo;s no exact notion of &ldquo;very closely separated&rdquo; - we&rsquo;d need a metric for that. A bare manifold has the notion of closeness built-in, yes, but it&rsquo;s only qualitative. You can replace this &ldquo;very closely separated&rdquo; with a oft-dreaded epsilon-delta definition if you wish to, doesn&rsquo;t change a thing - I can just blow up the epsilons and deltas without changing Mr Dough.</p>
+<p>This is a general problem while defining operations on a smooth manifold. We must define it in a way that respects diffeomorphism invariance. So as we do our bendings and twistings and growings and shrinkings, these operations should not change what they spit out. In absence of a metric, the plain old &ldquo;take two infinitesimally separated points and take the difference between the fields defined in these two&rdquo; recipe fails. So we need a way to come up with a specific notion of &ldquo;closely separated&rdquo; in the absence of a metric.</p>
+<p>There&rsquo;s yet another deeper issue. The problem of comparing vectors from different vector spaces. How do we know how which vectors defined at two different tangent spaces correspond to each other? How do we take the difference between the field values at two closely separated points, once we have settled on a notion of &ldquo;close separation&rdquo;?</p>
+<p>How do we solve these issues? How do we define a derivative that survives the malleability of Mr Dough?</p>
+<h2 id="para-metrising-without-really-metrising">(Para-)Metrising without (Really) Metrising</h2>
+<p>There&rsquo;s one very simple recipe if we have a bare smooth manifold to take differences between closely separated points. We just draw a bunch of integral curves, assign some parametrisation to them, and that allows us to define &ldquo;closely separated&rdquo; operationally as two points lying on the same integral curve separated by an infinitesimal parameter distance. As long as we don&rsquo;t have a metric, there&rsquo;s no specific preferred integral curves or parametrisation of choice, so there&rsquo;s no specific notion of closely separated. This is the stage on which Lie derivatives operate.</p>
+<p>With the parametrising integral curves projected on Mr Dough, we can define a <em>flow</em> generated by these integral curves. They <em>guide</em> our differentiation project in its entirety. Firstly, they give us a canonical and quantitative notion of closeness. Remember the second problem we had in the last section - we have no out-of-the-box way of telling how two vectors taken out of two different tangent spaces of Mr Dough are the same. This flow gives us a way. We simply draw the integral curves of the vector field we&rsquo;re looking to differentiate, and drag the points on the curve along the parametrising integral curves for an infinitesimal parameter distance. This <em>Lie dragged</em> vector field gives us the second piece of the puzzle - sameness across tangent spaces.</p>
+<h2 id="not-gonna-lie-how-to-lie">Not Gonna Lie: How to Lie</h2>
+<p>So how do we take the Lie derivative of a vector field $v$?</p>
+<ol>
+<li><strong>What we need</strong>: An auxiliary vector field $u$, that parametrises the manifold.</li>
+<li><strong>What we do</strong>: Let $v$ flow infinitesimally along the integral curves of $u$ to generate a Lie-dragged version of $u$. Take the difference between the Lie-dragged field and $v$ at the point of interest. That is the derivative of $v$ along the flow lines of $u$, $\mathcal{L}_u v$.</li>
+<li><strong>What we get</strong>: A <em>directional</em> derivative</li>
+</ol>
+<p>Note that Mr Dough is still that cute-as-a-button, malleable-as-hell piece of gooey deliciousness that we had before. We haven&rsquo;t hardened him up, we haven&rsquo;t made a cookie out of him. We can choose the parametrising field as per our need and redo the whole shtick and &ldquo;malleably differentiate&rdquo;. It&rsquo;s our same old smooth manifold without any additional structure. This is why, strictly speaking, Lie derivatives belong to differential <em>topology</em>, rather than differential <em>geometry</em>, since we don&rsquo;t need any metric.</p>
+<p>But we do need to bring in that auxiliary parametrising field, one that sets up sign posts on the manifold and defines a direction of differentiation.</p>
+<p>What if we don&rsquo;t want to bring that in? Can we still differentiate? (Playing &ldquo;<em>Tony Stark was able to build this IN A CAVE! With a box of SCRAPS!</em>&rdquo; in my head rn lol)</p>
+<h2 id="differentiating-on-a-manifold-in-a-cave-with-a-box-of-scraps---the-exterior-derivative">Differentiating on a Manifold, &ldquo;In a Cave, With a Box of Scraps&rdquo; - The Exterior Derivative</h2>
+<p>This is like the Mark-I Iron Man suit - not the most aesthetically pleasing, but it gets the bare minimum job done best utilising what it has. I assume you already know about forms and Stokes&rsquo; theorem. If you do, you also know how the exterior derivative is defined. Most likely you&rsquo;re saying either &ldquo;it&rsquo;s the only operation definable on forms that preserves antisymmetry and the Leibniz rule&rdquo; or &ldquo;it&rsquo;s just taking an antisymmetric componentwise partial derivative&rdquo;. They would be correct computationally, but they completely bypass the proper geometric picture it tries to convey.</p>
+<p>The right picture to have in mind is in terms of Stokes&rsquo; theorem. The exterior derivative tells us to look around the point in question, and sum up the values of the field on the faces of an infinitesimal parallelepiped around that point. Dividing by the volume of the parallelepiped, we get a notion of how the field is changing around the point in question. Recall that our familiar operations from vector calculus of gradient, divergence, and curl all either directly or through Hodge duality are manifestations of exterior differentiation. The gradient is, in fact, a case where both the Lie derivative and the exterior derivative answer the exact same question, and so there&rsquo;s no surprise that the gradient of a scalar field is the same as its Lie derivative. Divergence captures a notion of diverging from (or converging to) the point in question, while curl captures a notion of rotation around the point in question. While the exact amount of diverging or rotating would change with diffeomorphisms, the fact that a field diverges (or converges) or rotates (or not) doesn&rsquo;t change with such transformations. As you can see, the exterior derivative captures diffeomorphism-invariant properties of change of the field by taking a 360-degree view around the point.</p>
+<p>So in summary, for exterior differentiation:</p>
+<ol>
+<li><strong>What we need</strong>: A bare smooth manifold. Plug-and-play, no setup required.</li>
+<li><strong>What we do</strong>: Computationally the most straightforward way is taking an antisymmetric componentwise partial derivative.</li>
+<li><strong>What we get</strong>: A 360-degree sum-up of how things are changing around any point on the manifold.</li>
+</ol>
+<p>After the dust settles, we&rsquo;ll still have our same old Mr Dough. Thus the exterior derivative, like its Lie cousin, is also a tool from the realm of differential topology.</p>
+<p>What if we don&rsquo;t want a 360-degree overview? What if we want to look at a specific direction and say &ldquo;how much does my field change if I move by some amount in different directions?&rdquo;</p>
+<p>Well, the exterior derivative no longer fits the bill, for obvious reasons, since it takes a panoramic view. Neither does Lie, because we&rsquo;d need different parametrising fields to look at different directions, and even then, there&rsquo;s no correspondence between the parameter distances of two separate parametrisations. It turns out that there&rsquo;s simply no way out for Mr Dough here. He must toughen up.</p>
+<h2 id="putting-the-dough-in-the-oven">Putting the Dough in the Oven</h2>
+<p>Once again, eyes on the prize - what are we looking to answer right now? We want to take any field defined on the manifold, go to any point on the manifold, and then differentiate the field in the direction of our choosing. For this, we need something to tell us how to compare vectors from two different tangent spaces - those of neighbouring points. Let&rsquo;s say we&rsquo;re going from point $p$ to point $q$. We need something to tell us that as we transport ourselves from $p$ to $q$, $v \in T_pM$ is to be identified with some $v&rsquo; \in T_qM$. We say that $v&rsquo;$ is the <em>parallel transported</em> version of $v$ as we go from $T_pM$ to $T_qM$.</p>
+<p>Note that parallel transport is <em>not</em> diffeomorphism-invariant. As Mr Dough twists and bends, this <em>canonical</em> scheme of forming a <em>connection</em> between neighbouring tangent spaces changes. As such, this canonical scheme of parallel transporting is called a <em>connection</em>. Imagine Mr Dough endowed with some parallel transport structure and bend and twist him in different ways, you see that the parallel transported vector from $p$ to $q$ rocks and rolls with diffeomorphisms. There&rsquo;s no way to define parallel transport which is preserved under diffeomorphisms.</p>
+<p>Once we&rsquo;ve settled on a way to define parallel transport, our Mr Dough no longer remains. He&rsquo;s now become a rough, tough chunk of dough that&rsquo;s still a little malleable, but the malleability is constrained by the connection. He&rsquo;s now Mr Hardening Dough. He&rsquo;s not yet Mr Cookie, but he&rsquo;s no longer Mr Dough, too.</p>
+<p>$$
+\text{Mr Hardening Dough = Smooth Mfd + Connection}
+$$</p>
+<p>It&rsquo;s hardening, but not yet completely hardened. This partial solidification thanks to the parallel transport aparatus has three <em>huge</em> implications.</p>
+<ol>
+<li>We now have a notion of <em>curvature</em>. This is why curvature is always defined on manifolds with connections, even in the absence of a metric. We parallel transport a vector on a loop and come back to the same point. If we&rsquo;re not left with our starting vector, the manifold is curved, by an amount proportional to the deviation.</li>
+<li>We now have a canonical notion of differentiation, called <em>covariant differentiation</em>. We simply take the difference $F(q) - \text{PT}_{p\to q}(F(p))$. Where</li>
+</ol>
+<p>$$\text{PT}_{p\to q}$$ denotes parallel transporting from $p$ to $q$.
+3. We have a notion of <em>straight lines</em> on the manifold. These are lines whose tangent at all points along its length coincides with its parallel transported version.</p>
+<p>This ends our tour of the derivative zoo. So far, we&rsquo;ve repeatedly emphasised the fact that our ideas are completely metric-independent. We&rsquo;ve been working on a manifold where we don&rsquo;t care how to measure angles between (and thus lengths of) vectors. We may or may not know how to, the ideas discussed so far just don&rsquo;t care for the most part. The partial solidification done by the connection is fine, but it cannot equip the manifold with a completely rigid structure.</p>
+<h2 id="mr-dough-becomes-mr-cookie-the-metric-as-the-oven">Mr Dough becomes Mr Cookie: The Metric as the Oven</h2>
+<p>The metric completely solidifies Mr Dough. Irrespective of a connection being there, the metric also <em>induces</em> a preferred connection, called the <em>Levi-Civita connection</em>. How does it do so?</p>
+<p>Remember how the connection defined straight lines? Given two points, if a line joining them is such that the tangent is <em>autoparallelly transported</em>, it is straight under that connection. Now the metric gives us a way to measure distances, and that means we can measure all the lines joining any two points. And we generally expect that the straight line joining the two points will also be the shortest one (except for pseudo-Riemannian manifolds, where we expect the converse). So a metric naturally picks out a notion of straightness, which we can use to define a canonical connection - the Levi-Civita connection.</p>
+<h2 id="call-it-a-day">Call it a Day</h2>
+<p>I&rsquo;m tired. I&rsquo;ll add stuff later if I think something up or edit if something feels off. Hope the big picture comes across as nicely as I intended. This has been borne of countless hours of viewing lectures and working through materials on GR, DG, QFT, Yang-Mills and so on. I&rsquo;ll namedrop some of my favourites when I feel like it. G&rsquo;night.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>© Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

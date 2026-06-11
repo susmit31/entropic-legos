@@ -1,24 +1,41 @@
-
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://susmit31.github.io/entropic-legos/</loc>
-    <lastmod>2026-05-26T22:32:52+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</loc>
+    <lastmod>2026-06-11T20:47:48+06:00</lastmod>
   </url><url>
-    <loc>https://susmit31.github.io/entropic-legos/tags/physics/</loc>
-    <lastmod>2026-05-26T22:32:52+06:00</lastmod>
+    <loc>https://susmit31.github.io/entropic-legos/tags/differential-topology/</loc>
+    <lastmod>2026-06-11T20:47:48+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/</loc>
+    <lastmod>2026-06-11T20:47:48+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/general-relativity/</loc>
+    <lastmod>2026-06-11T20:47:48+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/posts/dgnut/</loc>
+    <lastmod>2026-06-11T20:47:48+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/maths/</loc>
+    <lastmod>2026-06-11T20:47:48+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/posts/</loc>
+    <lastmod>2026-06-11T20:47:48+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/</loc>
+    <lastmod>2026-06-11T20:47:48+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/yang-mills/</loc>
+    <lastmod>2026-06-11T20:47:48+06:00</lastmod>
+  </url><url>
+    <loc>https://susmit31.github.io/entropic-legos/tags/physics/</loc>
     <lastmod>2026-05-26T22:32:52+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/posts/qft-redux/</loc>
     <lastmod>2026-05-26T22:32:52+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/tags/quantum/</loc>
-    <lastmod>2026-05-26T22:32:52+06:00</lastmod>
-  </url><url>
-    <loc>https://susmit31.github.io/entropic-legos/tags/</loc>
     <lastmod>2026-05-26T22:32:52+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/posts/two-paths/</loc>
@@ -86,9 +103,6 @@
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/posts/newton-curved/</loc>
     <lastmod>2025-06-27T00:00:00+06:00</lastmod>
-  </url><url>
-    <loc>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</loc>
-    <lastmod>2025-06-26T22:05:59+06:00</lastmod>
   </url><url>
     <loc>https://susmit31.github.io/entropic-legos/posts/topo-cake/</loc>
     <lastmod>2025-06-26T22:05:59+06:00</lastmod>

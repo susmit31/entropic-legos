@@ -14,9 +14,44 @@
 		
 		
 		
-			<lastBuildDate>Tue, 26 May 2026 22:32:52 +0600</lastBuildDate>
+			<lastBuildDate>Thu, 11 Jun 2026 20:47:48 +0600</lastBuildDate>
 		
 			<atom:link href="https://susmit31.github.io/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Differential Geometry</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</link>
+				<pubDate>Thu, 11 Jun 2026 20:47:48 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Differential Topology</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/differential-topology/</link>
+				<pubDate>Thu, 11 Jun 2026 20:47:48 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/differential-topology/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>General Relativity</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/general-relativity/</link>
+				<pubDate>Thu, 11 Jun 2026 20:47:48 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/general-relativity/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Maths</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/maths/</link>
+				<pubDate>Thu, 11 Jun 2026 20:47:48 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/maths/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Yang-Mills</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/yang-mills/</link>
+				<pubDate>Thu, 11 Jun 2026 20:47:48 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/yang-mills/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Physics</title>
 				<link>https://susmit31.github.io/entropic-legos/tags/physics/</link>
@@ -120,13 +155,6 @@
 				<link>https://susmit31.github.io/entropic-legos/tags/gravity/</link>
 				<pubDate>Fri, 27 Jun 2025 00:00:00 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
 				<guid>https://susmit31.github.io/entropic-legos/tags/gravity/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Differential Geometry</title>
-				<link>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</link>
-				<pubDate>Thu, 26 Jun 2025 22:05:59 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-				<guid>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</guid>
 				<description></description>
 			</item>
 			<item>
