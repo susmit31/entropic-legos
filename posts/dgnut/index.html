@@ -168,15 +168,25 @@ $$</p>
 <p>$$
 \text{Mr Hardening Dough = Smooth Mfd + Connection}
 $$</p>
-<p>It&rsquo;s hardening, but not yet completely hardened. This partial solidification thanks to the parallel transport aparatus has three <em>huge</em> implications.</p>
+<p>It&rsquo;s hardening, but not yet completely hardened. This partial solidification thanks to the parallel transport apparatus has three <em>huge</em> implications.</p>
 <ol>
-<li>We now have a notion of <em>curvature</em>. This is why curvature is always defined on manifolds with connections, even in the absence of a metric. We parallel transport a vector on a loop and come back to the same point. If we&rsquo;re not left with our starting vector, the manifold is curved, by an amount proportional to the deviation.</li>
-<li>We now have a canonical notion of differentiation, called <em>covariant differentiation</em>. We simply take the difference</li>
+<li>We now have a canonical notion of differentiation, called <em>covariant differentiation</em>. Conceptually, we simply take the difference</li>
 </ol>
 <p>$$F(q) - \text{PT}_{p\to q}(F(p)) $$</p>
-<p>Where $\text{PT}_{p\to q}$ denotes parallel transporting from $p$ to $q$, for some field $F$.</p>
+<p>Where $\text{PT}_{p\to q}$ denotes parallel transporting from $p$ to $q$, for some field $F$. When evaluated using the Christoffel symbols defined above, we end up with a deriative operator that looks like</p>
+<p>$$
+\nabla_\mu \equiv \partial_\mu + \Gamma_\mu
+$$</p>
+<p>where the $\Gamma_\mu$ are matrix-valued connection coefficients, one $4\times4$ matrix for each basis direction (which reduce to their familiar form once we write it out elementwise, $\Gamma^\alpha_{\boldsymbol{\beta}\sigma}$).</p>
+<ol start="2">
+<li>We now have a notion of <em>curvature</em>. This is why curvature is always defined on manifolds with connections, even in the absence of a metric. We parallel transport a vector on a loop and come back to the same point. If we&rsquo;re not left with our starting vector, the manifold is curved, by an amount proportional to the deviation. The components of the curvature are most simply quantified as the commutator of the covariant derivative:</li>
+</ol>
+<p>$$
+F_{\mu\nu} = [\nabla_\mu, \nabla_\nu]
+$$</p>
+<p>where again, the above expression yields a matrix-valued expression due to how we&rsquo;ve defined $\nabla_\mu$. When we take the individual components of this matrix, we get our familiar Riemann curvature tensor $R^\alpha_{\beta\mu\nu}$.</p>
 <ol start="3">
-<li>We have a notion of <em>straight lines</em> or <em>geodesics</em> on the manifold. These are lines whose tangent at all points along its length coincides with its parallel transported version.</li>
+<li>We have a notion of <em>straight lines</em> or <em>geodesics</em> on the manifold. These are lines whose tangent at all points along its length coincides with its parallel transported version. Or succinctly, they are lines which are <em>autoparallel</em>. This, when stated through the Christoffel symbol equations, yields a <em>geodesic equation</em>.</li>
 </ol>
 <p>So to sum up the covariant derivative,</p>
 <ol>
