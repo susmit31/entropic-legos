@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+Fibres All the Way Down: The Tangled Tales of Curved Spacetimes Before Einstein | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.165.0">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/cartan/" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.5c1fa9bba2d0e854fe30b3d6316ab0114a2a5f25c9a98275badeadb66f2ec725.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/entropic-legos">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Fibres All the Way Down: The Tangled Tales of Curved Spacetimes Before Einstein</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/entropic-legos/tags/relativity/">#Relativity</a><span></span>
+    <a href="/entropic-legos/tags/physics/">#Physics</a><span></span>
+    <a href="/entropic-legos/tags/differential-geometry/">#Differential Geometry</a></dd>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2026-08-25">August 25, 2026</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>10 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="tldr">TL;DR</h2>
+<p>While the curved spacetime of Einstein is widely known and loved, the geometrical properties of the spacetime conceived of by his predecessors is much less so. Pre-Einsteinian Spacetime, owing to the absolute nature of time, naturally endows itself with fibre bundle structure with time as the base space and Euclidean 3-space as the fibres. In this article, I attempt to give a whirlwind tour of such pre-Einsteinian conceptions in modern differential geometric parlance, going from the trivial (and &ldquo;absolute&rdquo;) Aristotelian bundle to the nontrivial (and &ldquo;relative&rdquo;) Galilean bundle, ultimately culminating in the Newton-Cartan bundle, and illustrate how this bundle gives rise to the distinctive features of Newtonian spacetime and explain the geometrical differences between itself and Einsteinian spacetime, while showing that curvature of spacetime is not something relativistic and is rather a consequence of embracing the principle of equivalence. This isn&rsquo;t a historical account of how our theories of gravity evolved - since Newton-Cartan theory actually came <em>after</em> GR, but an exploration of how physics might have unfolded in a universe where the language of differential geometry and fiber bundles had been spoken by Aristotle, Galileo, and Newton.</p>
+<h2 id="pre-requisites">Pre-requisites</h2>
+<p>This is essentially a top-to-bottom, complete rehash of a blog post I wrote years ago about this same topic. Back then, however, I wasn&rsquo;t aware of so many of the important and beautiful subtleties which I wish to explore here. I assume familiarity with general relativity at an intermediate level along with an understanding of affine spaces and fibre bundles (and a level of familiarity with gauge theories would help by contributing to &ldquo;mathematical maturity&rdquo;). In particular, you should understand how Euclidean geometry (in n-dimensions) takes place on an affine space $\mathbb{E}^n$. You should also understand how a (bundle) connection determines &lsquo;horizontal&rsquo; sections of a bundle, thereby equipping it with a natural notion of &lsquo;straightness&rsquo; (which amounts to the concept of &lsquo;parallelism&rsquo; in case of a tangent bundle). We&rsquo;ll express fibre bundles in the notation $(E, M, F)$, where $E$ = the total space or the <em>entire</em> space, $M$ = the base space, and $F$ = the fibres of the bundle. As with my other posts, I will focus on delivering the conceptual story underneath the equations rather than actually writing them down myself, which you can look up rather easily in any book you please.</p>
+<h2 id="spacetime-with-a-preferred-connection-aristotelian-spacetime">Spacetime with A Preferred Connection: Aristotelian Spacetime</h2>
+<p>Aristotle&rsquo;s absolute spacetime dominated scientific thinking for nearly two millennia. He conceived of both space <em>and</em> time as absolute entities. This means that the Aristotelian notion of spacetime was the product space $\mathbb{E}^1\times\mathbb{E}^3$. This is modelled as the trivial fibre bundle $(\mathbb{E}^4, \mathbb{E}^1, \mathbb{E}^3)$, where the time axis $\mathbb{E}^1$ is our base space and on top of each point of this base space, i.e. at each instant of time, we have a copy of the fibre $\mathbb{E}^3$, which is the same for every point in the bundle. Each spacetime event is assigned a time through the canonical projection map $\pi : E\to M$ such that $\pi(x, y, z, t) = t$.</p>
+<p>Because the structure group of Aristotelian spacetime is $\text{SO(3)}$ which doesn&rsquo;t mix space and time, we have a canonical decomposition, $E \cong \mathbb{E}^1 \times \mathbb{E}^3$. The preferred, absolute rest frame manifests as the canonical product decomposition of this spacetime, or equivalently, a preferred flat connection. (Note that instead of using $\mathbb{R}^1$ and $\mathbb{R}^3$ we&rsquo;re using $\mathbb{E}^1$ and $\mathbb{E}^3$, since there is no preferred origin (zero) in Aristotelian spacetime, i.e. it is an affine space.)</p>
+<h2 id="no-preferred-inertial-frame-galilean-spacetime">No Preferred Inertial Frame: Galilean Spacetime</h2>
+<p>Galileo was the first to realise that space cannot possibly be absolute, as, for examples, observers in uniform motion have a different notion of spatial position than observers at rest (with respect to some chosen frame). We have no way of telling whether a point we label as $p$, for example, is the same point in space that it was a few moments ago, since in all frames but mine, it isn&rsquo;t. In Galileo&rsquo;s own words,</p>
+<blockquote>
+<p>&ldquo;Shut yourself up with some friend in the main cabin below decks on some large ship, and have with you some flies, butterflies, and other small flying animals&hellip; hang up a bottle that empties drop by drop into a wide vessel beneath it&hellip; have the ship proceed with any speed you like, so long as the motion is uniform and not fluctuating this way and that&hellip; The droplets will fall&hellip; into the vessel beneath without dropping toward the stern, although while the drops are in the air the ship runs many spans&hellip; the butterflies and flies will continue their flights indifferently toward every side, nor will it ever happen that they are concentrated toward the stern, as if tired out from keeping up with the course of the ship&hellip;&rdquo;&quot;</p>
+</blockquote>
+<p>The absence of a preferred frame of reference means that the Galilean group, the symmetry group of Galilean spacetime, also contains boosts, in addition to the $\text{SO(3)}$ transformations, which complicates matters since boosts mix up space and time. This means that spacetime, if it has bundle structure, is not canonically trivial, since there is no canonical product decomposition, as in the Aristotelian case. In the language of connections, this means that there is no unique notion of parallelism across different fibres - the fibre $\mathbb{E}^3$ associated with one point in the base space has no natural identification with any other fibre. Every inertial observer associates with the spacetime an equally valid, but different, flat connection with a vanishing torsion.</p>
+<h2 id="equivalence-principle-tides-and-curved-spacetime">Equivalence Principle, Tides, and Curved Spacetime</h2>
+<p>In 1923, the brilliant French mathematician Elie Cartan, influenced by Einstein&rsquo;s general relativity and his own work on differential geometry, noticed that curved spacetime wasn&rsquo;t, strictly speaking, a consequence of relativity, but rather a consequence of the principle of equivalence - the proportional relationship between gravitational and inertial mass. This would mean that Newtonian spacetime, when incorporating this principle, also becomes curved! The argument is rather straightforward. The equivalence principle implies that there&rsquo;s no way of distinguishing between a freely falling frame and an inertial frame. This means that our connection now must allow geodesics that don&rsquo;t coincide with Euclidean straight lines. The tidal effects of Newtonian gravity provide us with geodesic deviation, then, which in turn implies a nonzero curvature. Neat!</p>
+<p>So now that we have a curved spacetime manifold, we can study particle world-lines on it. The free-fall geodesics are, as described above, what we perceive as gravitational effects - apparently accelerating bodies which are merely following straight lines in this curved geometry. Inertial geodesics are seen in asymptotically flat regions of the spacetime, where straightness coincides with Euclidean straightness. Any deviation of the worldline from the geodesics is due to the action of forces upon the particle, with the curvature of the world line giving us an exact quantification of the force per unit mass.</p>
+<p>Note that due to the presence of an absolute time, we still have the fibre bundle structure we had in Aristotle&rsquo;s spacetime. The spacetime has gained some additional structure yes, but is nothing fundamentally different. I keep stressing this point because this is worth stressing a thousand times over - the essence of pre-relativistic notions of spacetime lied in an absolute notion of time, which manifests mathematically as the fibre bundle structure of the manifold.</p>
+<p>Now on to some more stuff worth mulling over. In GR you&rsquo;ve seen metrics and connections discussed in a rather intertwined fashion. If I&rsquo;ve mentioned a curvy connection for Newtonian spacetime, where&rsquo;s its metric?</p>
+<p>Well you see, there is none. There&rsquo;s no nondegenerate metric that you can assign to Newtonian spacetime. The culprit, once again, is the absolute notion of time, which, despite Galilean relativity, still doesn&rsquo;t mix with space. The absolute notion of time means that the time interval along a world-line must be measured by a 1-form $\tau_a$ as $dt = \tau_a dx^a$, while spatial distances are measured on each fibre by a spatial metric $h_{ab}$ defined by $dl^2 = h_{ab}dx^a dx^b$, where $h^{ab}\tau_a = 0$. This is a rather curious state of affairs if you&rsquo;ll recall your elementary school GR. In elementary school GR, we learn that the metric uniquely defines a compatible connection and vice-versa, one that you may have heard being called the &ldquo;Levi-Civita connection&rdquo;, satisfying $\nabla \bm{g} = 0$. We don&rsquo;t have such luxury in Newtonian spacetime. While Newtonian gravity determines the straight lines of the geometry and thus the connection on the manifold, it doesn&rsquo;t allow us to assign meaningful spacetime distances.</p>
+<p>This, by the way, illustrates an important point I was hinting at earlier - connections and metrics are related, but not the same. Many elementary school GR courses fail to convey this important notion, which now you see has some nontrivial consequences.</p>
+<p>Now despite my no-formalism policy, for completeness, I&rsquo;ll state the formal structure of Newton-Cartan spacetime, including its field equation, which you GR folks likely haven&rsquo;t seen before.</p>
+<h3 id="axioms-of-newton-cartan-gravity">Axioms of Newton-Cartan Gravity</h3>
+<ol>
+<li>Spacetime is a Newtonian manifold $(M, h, \tau, \nabla)$ with fibre bundle structure, the base space $\mathbb{E}^1$ encoding the notion of absolute time.</li>
+<li>Ideal clocks measure time as defined by $\tau$, and ideal rods measure spatial lengths as defined by the metric $h$.</li>
+<li>Free particles move on timelike geodesics of the manifold induced by the Newton-Cartan connection, $\nabla$.</li>
+<li>The Ricci curvature of the manifold is given by the Newton-Cartan field equations $$R_{ab} = 4\pi G\rho \tau_a \tau_b$$</li>
+</ol>
+<p>Those of you who remember kindergarten physics will note that the right hand side of Poisson&rsquo;s equation, $\nabla^2\Phi = 4\pi G\rho$ makes a cameo here. Where&rsquo;s the left hand side then? As I said before, there is no unique connection $\nabla$ satisfying the compatibility conditions $\nabla h = 0$ and $\nabla \tau = 0$. When you expand the equations out in component form, you find that the connection coefficients satisfying these conditions have a gauge freedom. This gauge freedom encodes the gravitational potential, and this, through the derivatives of the connection coefficients, finds itself tucked neatly into the left hand side as $R_{00} = \nabla^2\Phi$.</p>
+<h2 id="comparison-with-einstein-gravity">Comparison with Einstein Gravity</h2>
+<p>If you recall your elementary school GR, you&rsquo;ve already noted the differences and similarities, and some of these I&rsquo;ve reiterated a dozen times already. But it&rsquo;s well worth repeating and compiling them all here.</p>
+<ol>
+<li><strong>Global Topology</strong>: Newton-Cartan spacetime is a manifold with fibre bundle structure with absolute time providing the base space. Einsteinian spacetime has no absolute time, and thus no way of splitting it into fibres - it&rsquo;s a manifold without fibre bundle structure.</li>
+<li><strong>Metric</strong>: Newton-Cartan spacetime has no non-degenerate metric that is compatible with the connection, or equivalently, no unique connection satisfying metric compatibility. Time is measured via a temporal 1-form, spatial distances via a spatial metric of nonempty kernel. On the contrary, Einsteinian spacetime has a unique connection preserving lengths during parallel transport ($\nabla g =0$), the so-called Levi-Civita connection.</li>
+<li><strong>Causal structure</strong>: Absolute simultaneity fibres determined by $\tau_a dx^a = 0$ determine the causal structure of Newton-Cartan spacetime, with no absolute speed limit, while the causal structure of Einsteinian spacetime is determined by its null cones $g_{ab} dx^a dx^b = 0$, with speed limit $c$.</li>
+<li><strong>Field equation</strong>:
+a. Newton-Cartan: $R_{\mu\nu} = 4\pi G \rho , \tau_\mu \tau_\nu$
+b. Einstein: $R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}$</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>Well, that&rsquo;s all I have to say on this for now. Like Kaluza-Klein theories, although not our best theory of gravity, Newton-Cartan opens our eyes to a whole new way of doing physics. Well, GR does that too, to a great extent, but for some reason there&rsquo;s an aura of mystique around it that keeps you from truly feeling the generality, utility, and pervasiveness of geometric thinking. Hope I&rsquo;ve given you something to ruminate on.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>© Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

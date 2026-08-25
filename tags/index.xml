@@ -14,14 +14,28 @@
 		
 		
 		
-			<lastBuildDate>Thu, 11 Jun 2026 20:47:48 +0600</lastBuildDate>
+			<lastBuildDate>Tue, 25 Aug 2026 11:23:24 +0600</lastBuildDate>
 		
 			<atom:link href="https://susmit31.github.io/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Differential Geometry</title>
 				<link>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</link>
-				<pubDate>Thu, 11 Jun 2026 20:47:48 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<pubDate>Tue, 25 Aug 2026 11:23:24 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
 				<guid>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Physics</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/physics/</link>
+				<pubDate>Tue, 25 Aug 2026 11:23:24 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/physics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Relativity</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/relativity/</link>
+				<pubDate>Tue, 25 Aug 2026 11:23:24 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/relativity/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -53,13 +67,6 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Physics</title>
-				<link>https://susmit31.github.io/entropic-legos/tags/physics/</link>
-				<pubDate>Tue, 26 May 2026 22:32:52 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-				<guid>https://susmit31.github.io/entropic-legos/tags/physics/</guid>
-				<description></description>
-			</item>
-			<item>
 				<title>Quantum</title>
 				<link>https://susmit31.github.io/entropic-legos/tags/quantum/</link>
 				<pubDate>Tue, 26 May 2026 22:32:52 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
@@ -78,13 +85,6 @@
 				<link>https://susmit31.github.io/entropic-legos/tags/quantum-mechanics/</link>
 				<pubDate>Thu, 11 Dec 2025 20:29:40 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
 				<guid>https://susmit31.github.io/entropic-legos/tags/quantum-mechanics/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Relativity</title>
-				<link>https://susmit31.github.io/entropic-legos/tags/relativity/</link>
-				<pubDate>Thu, 11 Dec 2025 20:29:40 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-				<guid>https://susmit31.github.io/entropic-legos/tags/relativity/</guid>
 				<description></description>
 			</item>
 			<item>
