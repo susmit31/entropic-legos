@@ -14,9 +14,16 @@
 		
 		
 		
-			<lastBuildDate>Tue, 25 Aug 2026 11:23:24 +0600</lastBuildDate>
+			<lastBuildDate>Tue, 29 Sep 2026 20:42:37 +0600</lastBuildDate>
 		
 			<atom:link href="https://susmit31.github.io/entropic-legos/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>In Another Dimension I would Be Yours: Navier-Stokes Existence, Uniqueness and Regularity in 2D</title>
+				<link>https://susmit31.github.io/entropic-legos/posts/navier-stokes-2d/</link>
+				<pubDate>Tue, 29 Sep 2026 20:42:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/posts/navier-stokes-2d/</guid>
+				<description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;&#xA;&lt;p&gt;OpenAI has taken the world by storm and by now, everyone and their grandmother knows that the 3D Navier-Stokes problem, unsolved for a century by human beings, has been solved by a silicon-based ghost. The upshot is that it is possible to develop a finite-time singularity in an initially smooth fluid flow acted upon by a smooth and bounded external force everywhere. In other words, the equation may produce a blowup of the fluid even when there should have been none. What fewer people and their grandmothers know is that the same problem, in 2 spatial dimensions, gives a drastically different behaviour &amp;ndash; well-behaved initial conditions always lead to well-behaved fluid flow. In today&amp;rsquo;s post, we explore what the mathematical theories of partial differential equations and functional analysis have to say about 2D fluid dynamics, the difference between the 3D and the 2D Euler (Navier-Stokes) equations, and why a wacky effect called &amp;ldquo;vortex-stretching&amp;rdquo; leads to finite-time blowup in 3D, but not in 2D.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Fibres All the Way Down: The Tangled Tales of Curved Spacetimes Before Einstein</title>
 				<link>https://susmit31.github.io/entropic-legos/posts/cartan/</link>

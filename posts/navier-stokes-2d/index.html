@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+In Another Dimension I would Be Yours: Navier-Stokes Existence, Uniqueness and Regularity in 2D | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.165.0">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/navier-stokes-2d/" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.5c1fa9bba2d0e854fe30b3d6316ab0114a2a5f25c9a98275badeadb66f2ec725.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/entropic-legos">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>In Another Dimension I would Be Yours: Navier-Stokes Existence, Uniqueness and Regularity in 2D</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2026-09-29">September 29, 2026</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>10 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="tldr">TL;DR</h2>
+<p>OpenAI has taken the world by storm and by now, everyone and their grandmother knows that the 3D Navier-Stokes problem, unsolved for a century by human beings, has been solved by a silicon-based ghost. The upshot is that it is possible to develop a finite-time singularity in an initially smooth fluid flow acted upon by a smooth and bounded external force everywhere. In other words, the equation may produce a blowup of the fluid even when there should have been none. What fewer people and their grandmothers know is that the same problem, in 2 spatial dimensions, gives a drastically different behaviour &ndash; well-behaved initial conditions always lead to well-behaved fluid flow. In today&rsquo;s post, we explore what the mathematical theories of partial differential equations and functional analysis have to say about 2D fluid dynamics, the difference between the 3D and the 2D Euler (Navier-Stokes) equations, and why a wacky effect called &ldquo;vortex-stretching&rdquo; leads to finite-time blowup in 3D, but not in 2D.</p>
+<h2 id="pre-requisites">Pre-Requisites</h2>
+<p>Though like all my other posts, this is going to be mostly a high-level conceptual review of some highly technical literature which I myself have yet to fully work out, I still need you to go into this knowing quite a bit of stuff. The list below may be incomplete, but I consider these to be essential before diving in, and so you may look them up before proceeding further. More on prerequisites and further reading <a href="#further-reading">below</a>.</p>
+<ol>
+<li>I assume you are familiar with the incompressible Navier-Stokes and Euler equations from fluid dynamics, know what each of the terms mean, and have seen them in the vorticity formulation.</li>
+<li>Are familiar with basic functional analysis concepts, such as $L^p$-<em>norms, Lipschitz</em> and <em>Log-Lipschitz continuity</em>, maybe a little familiarity with <em>Sobolev spaces</em> etc.</li>
+<li>Are familiar with some basic results on the existence, uniqueness and boundedness of solutions for differential equations.</li>
+<li>Are familiar with basic tensor operations and notations, e.g. index gymnastics, summation convention, Kronecker delta, $\epsilon_{ijk}$ etc. I may switch back and forth from vector and tensor notations depending on ease of typing.</li>
+</ol>
+<h2 id="act-1-navier-stokes-and-euler-in-2d">Act 1: Navier-Stokes and Euler in 2D</h2>
+<p>For the sake of completeness and beautification (and perhaps establishing notation), I&rsquo;ll include the Navier-Stokes equations in their full 3D form for once, before embarking on our full journey.</p>
+<p>$$
+\begin{aligned}
+\boxed{ -\vec{\nabla} p + \mu \nabla^2\vec{v} + f_{\text{ext}}=\rho \frac{D \vec{v}}{Dt} = \rho\left[\partial_t \vec{v} + (\vec{v}\cdot\vec{\nabla})\vec{v}\right]}\
+\end{aligned}
+$$</p>
+<p>along with the incompressibility condition
+$$
+\mathbb{\nabla}\cdot{\mathbb{v}}=0
+$$</p>
+<p>We&rsquo;ll for the time being focus solely on the Euler equation, i.e. where the viscosity $\mu = 0$, with $f_{ext} = 0$:</p>
+<p>$$
+\partial_t\vec{v} + (\vec{v}\cdot\vec{\nabla})\vec{v} + \nabla p = 0
+$$</p>
+<p>Taking the curl of this equation, and recalling that the vorticity field of the fluid is defined $\vec{\omega} := \nabla \times \vec{v}$, we obtain the <strong>Euler equations in vorticity form</strong>:
+$$
+\partial_t \vec{\omega} + (\vec{v}\cdot\nabla) \vec{\omega} = (\vec{\omega}\cdot\nabla) \vec{v}
+$$</p>
+<p>or more compactly, using the material derivative $\frac{D}{Dt} := \partial_t + v^i \partial_i$ and the Einstein summation convention,
+$$
+\textit{\textbf{Euler equations: vorticity form}}
+$$</p>
+<p>$$
+\boxed{
+\frac{D\vec{\omega}}{Dt} = (\omega^i\partial_i) \vec{v}
+} \text{  } (1)
+$$</p>
+<p>where the vorticity, in tensor notation, can be written
+$$
+\omega^k := (\nabla\times\vec{v})^k= \epsilon^{ijk}\partial_i v_j
+$$</p>
+<p>I&rsquo;ll also remind you that since we&rsquo;re working in Euclidean space, vectors and their dual covectors have identical components, and so in this case, upstairs and downstairs indices mean the same thing and are just used as notational devices for keeping track of what is to be summed over.</p>
+<p>Now, let&rsquo;s see how we interpret eqn. 1. The term on the left hand side gives the material derivative of the vorticity, so it tells us the rate of change of the vorticity <em>for a particular fluid particle</em>. The right hand side can be rearranged as
+$$
+\omega^i\partial_i v^j = (\partial_i v^j) \omega^i
+$$</p>
+<p>which in matrix notation becomes
+$$
+(\partial v)^T\mathbb{\omega}
+$$</p>
+<p>In other words, the right hand side of the Euler equation is a linear transformation of the vorticity &ldquo;vector&rdquo;, which due to the left hand side equals the rate of change of the vorticity of any fluid particle. This is called the <em>vortex-stretching</em> term, since this is what contributes to the growth of vorticity. Note that since the viscosity term in Navier-Stokes is only a diffusion term, it alone cannot contribute to the growth of the vorticity, even if $\mu \neq 0$, so that the vortex-stretching term is the sole determinant of growth of vorticity.</p>
+<h2 id="act-2-the-magic-of-2d">Act 2: The Magic of 2D</h2>
+<p>It&rsquo;s a simple exercise to show that for 2-dimensional flows, the vortex-stretching term becomes identically zero, so the evolution of vorticity is then</p>
+<p>$$
+\frac{D\omega}{Dt} = 0
+$$</p>
+<p>where we&rsquo;ve dropped the vector notation since for 2D flows, vorticity is of the form $\vec{\omega} = \omega \hat{k}$, i.e. the vorticity, if it&rsquo;s nonzero, always points along the z-axis. This implies that <strong>vorticity is conserved along particle trajectories for 2D flows</strong>. This means that the $L^\infty$-norm under the flow map is also conserved,</p>
+<p>$$
+\lVert\omega(t)\rVert_{\infty} = \lVert\omega_0\rVert_\infty
+$$</p>
+<p>, i.e., 2D Euler flows can at best rearrange vorticites without changing them. So we seem to have found a good reason to expect that an initially smooth 2D Euler flow will not blow up in finite time. Since 2D Navier-Stokes simply adds a diffusion term which will merely act to smooth out the distribution even further, we also heuristically expect that this will continue to apply to the full 2D Navier-Stokes equations with a nonzero diffusion term. Now is it sufficient for guaranteeing unique solutions, i.e. given two particles starting at the same point in the flow, can we guarantee that they will move in the same way at all times?</p>
+<h2 id="act-3-yudovich-theory-ensures-existence-and-uniqueness">Act 3: Yudovich Theory Ensures Existence and Uniqueness</h2>
+<p>For there to be unique particle trajectory for a unique starting position and a velocity field, we want there to be some sort of a bound on how velocities on nearby points can differ. As long as nearby points cannot differ by too much, they also cannot diverge by too much as the flow goes on. For example, you&rsquo;ll recall from ODE theory that if the solution exhibits Lipschitz continuity,
+$$
+\lvert u(x,t) - u(y,t) \rvert \leq L(t) \lvert x - y \rvert
+$$</p>
+<p>then it is unique, for some function of time $L(t)$. So to settle the question of uniqueness, we&rsquo;ll have to see what sort of continuity the Euler solution embodies.</p>
+<p>First up, note that since $\partial_i v^i = 0$ due to incompressibility, we have that $\vec{v} = \nabla\times\vec{\psi}$ for some $\vec{\psi}$. This is called a <em>stream function</em>. Again, since the flow itself is 2D, the stream function can effectively be treated as a scalar since it always points the same way. This allows us to write down a Poisson-equation for the stream function where the vorticity acts as a source term, which in turn gives a Biot-Savart solution for the velocity field:</p>
+<p>$$
+u(x) = \frac{1}{2\pi}\int \frac{(x-y)^\perp}{\lvert x-y \rvert ^2} \omega(y) dy
+$$</p>
+<p>This, for $\omega \in L^\infty$, ends up yielding</p>
+<p>$$
+\lvert u(x) - u(y) \rvert \lesssim \lvert x-y \rvert \times(1 - \log \lvert x - y \rvert)
+$$</p>
+<p>This sort of continuity is called <em>Log-Lipschitz continuity</em>, which is a weaker version of continuity than <em>Lipschitz</em>. So we don&rsquo;t have Lipschitz continuity after all. But can we still retain uniqueness? Turns out even log-Lipschitz is sufficient to guarantee uniqueness. <strong>So particles moving along a 2D Euler flow will always have a uniquely determined trajectory.</strong></p>
+<h2 id="act-4-smoothness-in-2d">Act 4: Smoothness in 2D</h2>
+<p>We&rsquo;ve already done most of the groundwork. Now all that is left is to finish things up by demonstrating that a runaway growth of the vorticity and the velocity fields is impossible under Euler flow. To show this, we must show that the partial derivatives of these fields are bounded, which we now proceed to do.</p>
+<p>First up, we formally introduce the flow map, which we had alluded to previously:
+$$
+X(a, t) := \text{position of a particle at time t, which was  initially at position a}\newline
+X(a, 0) = a
+$$</p>
+<p>so that</p>
+<p>$$
+\dot{X} = v(X(a,t), t)\text{ }\text{ &mdash;&mdash;&mdash;&ndash; }(2)\newline
+$$</p>
+<p>Now since $D_t \omega = 0$ in our 2D flow, we have
+$$
+\omega(X(a,t),t) = \omega_0(a)
+$$</p>
+<p>and</p>
+<p>$$
+\omega(x,t) = \omega_0 (X^{-1}(x,t))\newline
+\implies \omega = \omega_0 \circ X^{-1}\newline
+\implies \nabla\omega = \nabla (\omega_0 \circ X^{-1})\newline
+\implies \nabla\omega = (DX^{-1}(x,t))^T\text{ }\nabla \omega_0(X^{-1}(x,t))\newline
+$$</p>
+<p>which finally yields the bounds
+$$
+\lvert \nabla\omega \rvert \lesssim \lvert DX^{-1}\rvert \lvert \nabla\omega_0\rvert
+$$</p>
+<p>where the notation $DF$ is taken to mean &ldquo;the Jacobian matrix of F&rdquo;. The above bound implies that whether $\nabla \omega$ blows up at a later time depends on the Jacobian of the flow map. Recall that the flow map&rsquo;s dynamics is given by eqn. (2) above, so we next turn to see whether we can find a bound for its Jacobian from there:</p>
+<p>$$
+\dot{X} = v(X, t)
+$$</p>
+<p>Now we differentiate both sides with respect to the initial position $a$. From the LHS we get
+$$
+\partial_a (\dot{X}) = \frac{d}{dt}(\partial_a X) = \frac{d}{dt}(DX)
+$$</p>
+<p>and from the RHS, using multivariable chain rule,</p>
+<p>$$
+\partial_a v(X(a,t),t) = \nabla v(X,t) DX.
+$$</p>
+<p>So we get</p>
+<p>$$
+\frac{d}{dt} DX = \nabla v(X,t) DX \newline
+\implies \frac{d}{dt} \lvert DX \rvert \lesssim \lvert \nabla v \rvert \lvert DX \rvert
+$$</p>
+<p>So physically, this bound means that the velocity gradients determine the deformation map&rsquo;s Jacobian determinant, and previously we saw that this determinant in turn determined the vorticity gradients. So we&rsquo;ve found a feedback loop between the velocity and the vorticity gradients, and showing that one of them is bounded would then suffice to conclude that the fields themselves don&rsquo;t blow up over finite time. Since we already know that $\lVert \omega(t)\rVert_\infty =M$ for some constant $M$, we&rsquo;d like to have, say, $\lVert\nabla v\rVert_\infty \lesssim \lVert\omega\rVert_\infty$. But the Biot-Savart kernel actually yields a more logarithmic dependence between the gradients:</p>
+<p>$$
+\lVert \nabla v \rVert_\infty \lesssim C\left[1 + \log (1 + \lVert\nabla \omega\rVert_\infty) \right]
+$$</p>
+<p>so even if there is an enormously fast-varying vorticity gradient, $\nabla v$ varies at best logarithmically. That&rsquo;s further good news &ndash; runaway explosion seems even less likely now. Finally, if we can put a finite bound on $\lVert\nabla\omega\rVert_\infty$, we&rsquo;ll be done. We start with $D_t \omega = 0$ and take its gradient:</p>
+<p>$$
+\partial_t \nabla\omega + u^i \partial_i \nabla\omega + (\nabla v)^T (\nabla \omega) = 0 \newline
+\implies D_t \nabla\omega = -(\nabla v)^T (\nabla\omega) \newline
+\implies D_t |\nabla\omega| \lesssim |\nabla v| |\nabla\omega| \newline
+$$</p>
+<p>$$
+\implies \frac{d}{dt}\lVert\nabla\omega\rVert_\infty \lesssim \lVert\nabla v\rVert_\infty \lVert \nabla\omega \rVert_\infty\newline
+$$</p>
+<p>$$
+\implies \frac{d}{dt}\lVert\nabla\omega\rVert_\infty \lesssim C \lVert\nabla\omega\rVert_\infty \left[1 + \log (1 + \lVert\nabla\omega\rVert_\infty)\right]
+$$</p>
+<p>The last inequality places the bound on $\lVert\nabla\omega\rVert_\infty$ at:</p>
+<p>$$
+\lVert\nabla\omega(t)\rVert_\infty \lesssim \exp (C_1 e^{C_2 t}) &lt; \infty \text{ }\text{ }\forall t
+$$</p>
+<p>So <strong>runaway growth is impossible for a 2D Euler flow</strong>.</p>
+<p>This is something to revel at. Although we&rsquo;ve seen a relatively restricted version of the full, much harder 3D problem, this is no small feat. We started with the fact that there was no vortex-stretching in 2D, which led to our key equation $D_t \omega = 0$, which we&rsquo;ve used repeatedly throughout our above uniqueness and regularity arguments. And at the end, we&rsquo;ve managed to see how this suffices to put a strictly finite bound onto the gradients, thereby ensuring the absence of a finite-time blowup. The full 2D Navier-Stokes proof, by the way, is very similar, and as we&rsquo;ve already argued heuristically before, the viscosity term adds diffusion to the vorticity and the velocity fields, so that its effect is smoothing them out, and as such the full 2D NS equation has no mechanism for runaway blowup either.</p>
+<h2 id="further-reading">Further Reading</h2>
+<p>Much of the argument I&rsquo;ve taken from the <a href="https://math.stanford.edu/~ryzhik/STANFORD/STANF272-15/notes-272-15.pdf">Second Course in PDEs</a> Stanford math lecture notes. Specifically, 2D Euler is dealt with in chapter 6. Good overviews on functional analysis and PDE theory can be found in the <em>Function Spaces</em> and the <em>Partial Differential Equations</em> chapters of <em>Princeton Companion to Mathematics</em>. General fluid dynamics references I&rsquo;ve read don&rsquo;t cover this, and at any rate this is strictly speaking a maths topic anyway. But my favourite resources for the physics are <em>Acheson&rsquo;s Elementary Fluid Dynamics</em>, <a href="https://davidtong.org/teaching/fluid-mechanics/">David Tong&rsquo;s lecture notes</a>, and <em>Feynman Lectures volume 2</em>, chapters 39-42.</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>© Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>
