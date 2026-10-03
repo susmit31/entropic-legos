@@ -14,9 +14,37 @@
 		
 		
 		
-			<lastBuildDate>Tue, 25 Aug 2026 11:23:24 +0600</lastBuildDate>
+			<lastBuildDate>Tue, 29 Sep 2026 20:42:37 +0600</lastBuildDate>
 		
 			<atom:link href="https://susmit31.github.io/entropic-legos/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Differential-Equations</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/differential-equations/</link>
+				<pubDate>Tue, 29 Sep 2026 20:42:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/differential-equations/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mathematical-Physics</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/mathematical-physics/</link>
+				<pubDate>Tue, 29 Sep 2026 20:42:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/mathematical-physics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Maths</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/maths/</link>
+				<pubDate>Tue, 29 Sep 2026 20:42:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/maths/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Millennium-Prize</title>
+				<link>https://susmit31.github.io/entropic-legos/tags/millennium-prize/</link>
+				<pubDate>Tue, 29 Sep 2026 20:42:37 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/tags/millennium-prize/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Differential Geometry</title>
 				<link>https://susmit31.github.io/entropic-legos/tags/differential-geometry/</link>
@@ -50,13 +78,6 @@
 				<link>https://susmit31.github.io/entropic-legos/tags/general-relativity/</link>
 				<pubDate>Thu, 11 Jun 2026 20:47:48 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
 				<guid>https://susmit31.github.io/entropic-legos/tags/general-relativity/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Maths</title>
-				<link>https://susmit31.github.io/entropic-legos/tags/maths/</link>
-				<pubDate>Thu, 11 Jun 2026 20:47:48 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
-				<guid>https://susmit31.github.io/entropic-legos/tags/maths/</guid>
 				<description></description>
 			</item>
 			<item>
