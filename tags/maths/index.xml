@@ -14,9 +14,16 @@
 		
 		
 		
-			<lastBuildDate>Tue, 29 Sep 2026 20:42:37 +0600</lastBuildDate>
+			<lastBuildDate>Thu, 08 Oct 2026 12:36:08 +0600</lastBuildDate>
 		
 			<atom:link href="https://susmit31.github.io/entropic-legos/tags/maths/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Motivating De Rham Cohomology: Random Topology Rants for Physicists Ep. 1</title>
+				<link>https://susmit31.github.io/entropic-legos/posts/cohomology/</link>
+				<pubDate>Thu, 08 Oct 2026 12:36:08 +0600</pubDate><author>hugo@example.com (Entropic Legos)</author>
+				<guid>https://susmit31.github.io/entropic-legos/posts/cohomology/</guid>
+				<description>&lt;h2 id=&#34;tl-dr&#34;&gt;TL; DR&lt;/h2&gt;&#xA;&lt;p&gt;A lot of relativity texts (and even some differential geometry texts) briefly mention de Rham cohomology in relation with the differentiable structure of a (smooth) topological manifold, saying something like &amp;ldquo;de Rham cohomology captures which of the closed forms on the manifold are exact and that reflects the global topology of the manifold.&amp;rdquo; Which is good, because men sad, men see topology, men happy. But these intros don&amp;rsquo;t end up making you happy, since they leave out the rather simple algebraic topology ideas underlying it, which makes it very easy to see how the de Rham cohomology of a manifold, among other things, tells us the number of n-dimensional &amp;ldquo;holes&amp;rdquo; in the manifold. We review briefly how homology groups are defined for capturing the idea of n-dimensional holes in a general topological space, briefly review differential forms, and then construct de Rham cohomology groups of smooth manifolds as the duals of the homology groups with respect to integration of forms on n-dimensional chains. After we see this duality, we immediately see what, if anything, &amp;ldquo;closed&amp;rdquo; and &amp;ldquo;exact&amp;rdquo; forms have to do with &amp;ldquo;holes&amp;rdquo; in a space.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>In Another Dimension I Would Be Yours: Navier-Stokes Existence, Uniqueness and Regularity in 2D</title>
 				<link>https://susmit31.github.io/entropic-legos/posts/navier-stokes-2d/</link>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+Motivating De Rham Cohomology: Random Topology Rants for Physicists Ep. 1 | Entropic Legos
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+<meta name="generator" content="Hugo 0.165.0">
+
+
+<link rel="canonical" href="https://susmit31.github.io/entropic-legos/posts/cohomology/" >
+
+
+
+
+<link href="/entropic-legos/css/style.min.5c1fa9bba2d0e854fe30b3d6316ab0114a2a5f25c9a98275badeadb66f2ec725.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/entropic-legos">
+                <span>entropic-legos@susmit31 ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="https://susmit31.github.io/entropic-legos/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Motivating De Rham Cohomology: Random Topology Rants for Physicists Ep. 1</h1>
+    
+    
+    <section class="postMetadata">
+        <dl>
+            
+                
+<dt>tags</dt>
+<dd><span></span>
+    <a href="/entropic-legos/tags/maths/">#Maths</a><span></span>
+    <a href="/entropic-legos/tags/algebraic-topology/">#Algebraic-Topology</a><span></span>
+    <a href="/entropic-legos/tags/mathematical-physics/">#Mathematical-Physics</a><span></span>
+    <a href="/entropic-legos/tags/differential-geometry/">#Differential-Geometry</a></dd>
+            
+            
+            
+            
+                <dt>published</dt>
+                
+                <dd><time datetime="2026-10-08">October 8, 2026</time></dd>
+            
+            
+                <dt>reading time</dt>
+                <dd>16 minutes</dd>
+            
+        </dl>
+    </section>
+    
+    <div>
+        <h2 id="tl-dr">TL; DR</h2>
+<p>A lot of relativity texts (and even some differential geometry texts) briefly mention de Rham cohomology in relation with the differentiable structure of a (smooth) topological manifold, saying something like &ldquo;de Rham cohomology captures which of the closed forms on the manifold are exact and that reflects the global topology of the manifold.&rdquo; Which is good, because men sad, men see topology, men happy. But these intros don&rsquo;t end up making you happy, since they leave out the rather simple algebraic topology ideas underlying it, which makes it very easy to see how the de Rham cohomology of a manifold, among other things, tells us the number of n-dimensional &ldquo;holes&rdquo; in the manifold. We review briefly how homology groups are defined for capturing the idea of n-dimensional holes in a general topological space, briefly review differential forms, and then construct de Rham cohomology groups of smooth manifolds as the duals of the homology groups with respect to integration of forms on n-dimensional chains. After we see this duality, we immediately see what, if anything, &ldquo;closed&rdquo; and &ldquo;exact&rdquo; forms have to do with &ldquo;holes&rdquo; in a space.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Does the following describe you? If not, RUN FAST, RUN FAR!</p>
+<ol>
+<li>You know about differential forms and how they&rsquo;re used to define integration on manifolds.</li>
+<li>You have seen &ldquo;closed&rdquo; and &ldquo;exact&rdquo; forms before, perhaps also a mention of Poincare&rsquo;s lemma.</li>
+<li>You are familiar with exterior differentiation.</li>
+<li>You understand generalised Stokes&rsquo; theorem on manifolds.</li>
+<li>You are familiar with basic point-set topological notions, e.g. topology, manifolds etc.</li>
+<li>You are familiar with the notation used for commonly encountered topological spaces such as $S^1, S^2, T^2 \equiv S^1 \times S^1$ etc.</li>
+<li>You are familiar with basic (abstract) algebraic terminology, e.g. homomorphisms and their images and kernels, isomorphisms, quotient groups etc.</li>
+</ol>
+<h2 id="homology-theory-a-cursory-glance">Homology Theory: A Cursory Glance</h2>
+<h3 id="what-is-a-hole">What is a hole?</h3>
+<p>Before importing new mathematical tools, it&rsquo;s always necessary to motivate it. What exactly is the problem we&rsquo;re trying to solve? How do existing tools help, and where do they fall short? What is the minimal amount of additional &ldquo;structure&rdquo; that you need to start dealing with this problem?  What can you say about the problem from an intuitive POV? And how would you formalise those intuitions? For today&rsquo;s discussion, we are concerned with the concept of n-dimensional holes in a space. What does it mean for a space to have a hole? What do we mean by n-dimensional holes?</p>
+<p>Loosely speaking, it&rsquo;s a hole you can capture with an n-dimensional rope, as shown in the following figure, where I use my outstanding drawing skills to show that a 1-D rope can capture a hole in the plane $R^2$.</p>
+<p><img src="../../hole.jpeg" alt=""></p>
+<p>Or in other words, by &ldquo;n-D hole&rdquo;, we mean &ldquo;a hole bounded by an n-dimensional boundary&rdquo;. As you can verify in the above figure again, the hole in the middle is indeed bounded by $S^1$.</p>
+<p>What about higher dimensions? For example, $S^2$, the &ldquo;hollow ball&rdquo;, is a 2-surface enclosing a cavity. So we say that $S^2$ has a 2-dimensional hole.</p>
+<p>Okay. Now how on earth are we to detect such holes?</p>
+<p>An astute reader will probably propose something like the following. Take all possible closed n-surfaces within the manifold, and then see if any of them enclose a &ldquo;gap&rdquo; in the space.</p>
+<p>But note that we&rsquo;ve been visualising things from the perspective of a higher dimensional space. In our above figure, we see that gap as merely part of $R^2$ that is inaccessible perhaps to the inhabitants of that space, but not to us. How does an inhabitant of the space detect that there is such a &ldquo;gap&rdquo;, if he cannot ever even access such points in the first place?</p>
+<p><img src="../../hole.jpeg" alt=""></p>
+<p>Well, let&rsquo;s look at this new figure and see if we can figure a way out of this predicament. We show two different loops. In one instance, they enclose the hole, in the other, they don&rsquo;t. This suggests that the inhabitants may have the following idea: a &ldquo;gap&rdquo; is identified by looking at a closed loop that isn&rsquo;t the boundary of anything. The figures outside of the holes labelled 1 and 1&rsquo; are areas bounded by closed loops and can, for example, be painted in a different colour by say a painter in this space Mr. 2dolf. However, as Mr. 2dolf will swear on his life to testify, the loops labelled 2 and 2&rsquo; do not enclose anything in such a way, and their &ldquo;insides&rdquo; cannot be painted simply because they don&rsquo;t have none! They are <em>closed loops that aren&rsquo;t the boundaries of anything in the space</em> (up to homotopy). Now that we have a clear idea about what we mean by a &ldquo;gap&rdquo;, we restate our simple plan for identifying holes in spaces:</p>
+<blockquote>
+<p><strong>Take all possible closed n-surfaces within the manifold, and then see if any of them enclose a &ldquo;gap&rdquo; in the space</strong></p>
+</blockquote>
+<p>where by &ldquo;gaps&rdquo;, we mean closed loops that aren&rsquo;t the boundaries of anything.</p>
+<p>That&rsquo;s it. That&rsquo;s the core idea behind homology theory. Simple, isn&rsquo;t it? Now we&rsquo;ll go ahead and formalise this notion.</p>
+<h2 id="defining-homology-groups">Defining Homology Groups</h2>
+<h3 id="step-1-n-chains-and-n-cycles">Step 1: n-Chains and n-Cycles</h3>
+<p>For our purposes, we&rsquo;ll loosely define n-chains as (integer) linear combinations of n-dimensional &ldquo;line segments&rdquo;. A chain is called a cycle if it starts and ends at the same place. So examples: a 0-chain would be simply a point. A 1-chain would be a line segment in the usual sense. a 2-chain would be a &ldquo;plane segment&rdquo;, for example (the interior of) a triangle, and so on. The space of all chains forms an abelian group we&rsquo;ll denote $C_n$.</p>
+<h3 id="step-2-partial_k">Step 2: $\partial_k$</h3>
+<p>Now we introduce the boundary operator for n-chains, $\partial_k: C_k \to C_{k-1}$, which eats a k-chain and spits out its ((k-1)-dimensional) boundary. For example, in the following figure, the 1-chain $L$ has boundary $\partial L := b - a$, whereas the 2-chain labelled $T$ has boundary $\partial T := x + y +z$. (Note that for assigning signs to the boundary elements, we have to choose a particular orientation for the chains)</p>
+<p><img src="../../xxx.jpg" alt=""></p>
+<p>Now note something very important. $\partial T$ is a <em>closed</em> chain, i.e. a cycle. So we have a very important criterion defining cycles or closed chains in general:</p>
+<p>$$
+\boxed{\partial X = 0} \text{ for any cycle X}
+$$</p>
+<p>which implies that in general, boundaries of boundaries are zero, i.e.</p>
+<p>$$
+\boxed{\partial^2 X = 0} \text{ for any k-chain X}
+$$</p>
+<p>Now a more carefully written version of this idea would specifically say</p>
+<p>$$
+\partial_{k-1}(\partial_k X) = 0 \newline
+\implies  \partial_{k-1} \circ\partial_k = 0
+$$</p>
+<p>where X is a k-chain, since $\partial_k X$ is a (k-1)-chain.</p>
+<h3 id="step-3-defining-h_k-x">Step 3: Defining $H_k (X)$</h3>
+<p>Now we&rsquo;re well equipped to formalise our hole-dsecribing algorithm. Let&rsquo;s reiterate what we agreed upon as a good enough starting point for our formalisation:</p>
+<blockquote>
+<p><strong>Take all possible closed k-surfaces within the manifold, and then see if any of them enclose a &ldquo;gap&rdquo; in the space</strong></p>
+</blockquote>
+<p>Now what on earth would we mean by this in precise mathematical language? Let&rsquo;s dissect the above line and wrap as much up as possible within our newfound notational baggage.</p>
+<ol>
+<li>&ldquo;All possible closed n-surfaces&rdquo;. Well, what are they? They&rsquo;re just k-D submanifolds $M$ of our space X such that $\partial_k M = 0$.</li>
+<li>&ldquo;Gap in the space&rdquo;. How do we capture gaps? By looking at cycles that are <em>not</em> the boundaries of anything. How do we get them? By first figuring out cycles that <em>are</em> the boundaries of something. k-D chains can only ever bound (k+1)-chains. So in other words, we want the image of the map $\partial_{k+1}: C_{k+1} \to C_{k}$, and after we have that, we simply &ldquo;mod them out&rdquo; from the space of all cycles in our space to get the ones that wrap around the holes.</li>
+</ol>
+<p>So now let&rsquo;s rephrase our original recipe for holes in this airtight mathematical language:</p>
+<blockquote>
+<p>In an n-D manifold X, take all k-D (k &lt; n) submanifolds $M$ such that $\partial M = 0$. Then from this space, mod out the subset which describe boundaries of (k+1)-submanifolds. We thus get our k-th homology group of X.</p>
+</blockquote>
+<p>Or using much more economical language:</p>
+<p>$$
+\text{k-th homology group of X, }\newline
+\boxed{H_k(X)\equiv \ker(\partial_n) / \text{im}(\partial_{n+1})}
+$$</p>
+<p>And what is the number of holes in our space? It&rsquo;s clear that</p>
+<p>$$
+\text{\# Holes in X} = \dim H_k(X)
+$$</p>
+<p>Okay, now with our arsenal ready to fire, let&rsquo;s see them in action. Don&rsquo;t worry &ndash; I ain&rsquo;t taking you through exact computations. But all the ideas introduced so far will help us get a reasonably accurate intuitive picture about the computations involved.</p>
+<h3 id="example-1-h_1s1">Example 1: $H_1(S^1)$</h3>
+<p>We&rsquo;re asking for 1-dimensional holes enclosed by the circle $S^1$. There&rsquo;s just one, as we can immediately see (use your imagination you respected sloth) in an imagined figure. What does our formal language tell us about this hole? Let&rsquo;s see. $H_1(S^1)$ is defined to be the space of 1-D chains with zero boundary, i.e. 1-D cycles, on the sphere, modded out by the space of objects that actually enclose some 2-D chains, which is none, so no modding is required at all. So that means our homology group just equals the group of 1-cycles on $S^1$. This is isomorphic to $\Z$, since such a cycle is uniquely determined by its winding number $n$ and the direction of winding (clockwise or counterclockwise). So we have ${H_1(S^1) \simeq \Z}$.</p>
+<h3 id="example-2">Example 2</h3>
+<h4 id="2a-h_1rn-for-n-ge-2">2a: $H_1(\R^n)$ (for $n \ge 2$)</h4>
+<p>We approach similarly as example 1 (again requesting my respected readers to use their imaginations since I am writing this section the last and don&rsquo;t have the energy to draw something up rn ($=$right now, not to be confused with $\R^n$)). Here we have the opposite extreme. Since there is no hole in $R^n$, <em>every</em> 1-cycle is the boundary of some 2-chain. Therefore, $\ker(\partial_n) = \text{im}(\partial_{n+1})$, and so the first homology group of $R^n$ is the trivial group with just the zero element: $\boxed{H_1(\R^n) = 0}$.</p>
+<h4 id="2b-h_1s2">2b: $H_1(S^2)$</h4>
+<p>The argument proceeds identically to example 2a, so we obviously have $\boxed{H_1(S^2) = 0}$, i.e., the first homology group of the 2-sphere is also trivial.</p>
+<h4 id="2c-h_2s2">2c: $H_2(S^2)$</h4>
+<p>This problem looks like example 2b, but in fact is isomorphic to example 1. In fact, I&rsquo;ll tell you the general result right now: $\boxed{H_n(S^n) \simeq \Z}$</p>
+<h3 id="example-3-h_1t2">Example 3: $H_1(T^2)$</h3>
+<p>$\boxed{H_1(T^2) \simeq \Z}</p>
+<h3 id="example-4-h_0x-for-arbitrary-x">Example 4: $H_0(X)$ for arbitrary $X$</h3>
+<p>This is not a trick question! There indeed is a zeroth homology group for any topological space. What does it mean to have holes with zero-dimensional boundaries? Let&rsquo;s carefully reason through our original definition then. $H_0 (X) = \ker\partial_0 / \text{im}\partial_1$. Start with the &ldquo;numerator&rdquo; in this quotient. We are to take 0-chains with no boundaries first. What does it mean? Well, every point in the space is a 0-chain, and no point has any boundary whatever. So it&rsquo;s basically the entirety of $X$. What about the &ldquo;denominator&rdquo;? It says to take every 0-chain that is the boundary of some 1-chain, and mod $X$ out by their equivalence class. This would simply be the points at the &ldquo;edges&rdquo; of $X$. This means it simply measures <em>the number of connected components $X$ has!</em> Here&rsquo;s an exercise for you. Try reasoning through this sketch for, say, $X = \large\sqcup\normalsize_{i=1}^n D^2$, where $\sqcup$ is used to denote a disjoint union.</p>
+<p>Okay, so I hope you&rsquo;ve seen enough examples to get a feel for homology groups, how we compute them, and what they represent. Now it&rsquo;s time to turn to differential forms and see how they relate to the homology groups of a topological manifold.</p>
+<h2 id="stokes-theorem-and-the-de-rham-map">Stokes&rsquo; Theorem and The de Rham Map</h2>
+<p>When I introduced the $\partial$ notation for boundaries, I hope this rang a bell in your minds &ndash; this is the same notation that appears in Stokes&rsquo; theorem!</p>
+<p>$$
+\text{ Stokes&rsquo; theorem } \newline\boxed{\int_R d\omega = \int_{\partial R}\omega}
+$$</p>
+<p>where $\omega$ is a k-form, and $R$ is some k-dimensional submanifold. If you did, then well done. If not, well now you know. Now the integration domain, generally speaking, is some submanifold $M$ of our space $X$. So in fact we can  use this integration operation to define a simple &ldquo;inner product&rdquo; between k-chains and k-forms:</p>
+<p>$$
+\langle \omega, M \rangle := \int_M \omega
+$$</p>
+<p>This allows us to define a <em>dual space</em> of <em>k-cochains</em> (not to be confused with cocaine) given a space of <em>k-chains</em>. And as the above equation illustrates, these <strong>cochains are just differential k-forms!</strong> So in general, adopting the $\star$-notation to denote taking a dual (if you know about the Hodge star operation, this has nothign to do with the Hodge star as you should immediately be able to see; it&rsquo;s simply convenient notational device), for every k-chain $M$ we have a k-cochain or a k-form $\omega$ such that:</p>
+<p>$$
+\star M = \omega
+$$</p>
+<p>This is the crux of the idea behind cohomology, so let&rsquo;s digest this a little more slowly. First we&rsquo;ll recap what we did with our homology groups. We took our k-cycles, which are closed k-chains $\in C_k$ that get mapped to $0$ by $\partial_k$, and modded them out by those k-cycles that actually enclosed some (k+1)-chain. What the above inner product gives us is a canonical prescription for going from the k-chains $C_k$ to the k-forms $\Omega^k$ and vice-versa. Let&rsquo;s call this dualisation map the de Rham &ldquo;dictionary&rdquo;. If this map exists and is well-defined, then, we get not just a standard way of going back and forth between the two seemingly different ways of describing the manifold, but we also get clear <strong>insights into how the topological structure of the manifold (described by the homology groups) dictate the possible field configurations on it.</strong></p>
+<p>Anyway, assuming we have the de Rham dictionary at hand, let&rsquo;s now put it to use.</p>
+<h2 id="hole-detecting-algorithm-using-differential-forms">Hole-Detecting Algorithm Using Differential Forms</h2>
+<p>Previously, we detected k-dimensional holes of $X$ using k-chains, which naturally formed a vector space we called $H_k(X) \equiv \ker(\partial_k)/\text{im}(\partial_{k+1})$. In plain terms, we argued that by locating the space of all k-cycles and then identifying all the elements in them that form boundaries of a (k+1)-chain, we arrive at a vector space which describes the k-dimensional holes in $X$. Now we use the de Rham dictionary and translate our hole-detecting algorithm into differential forms lingo.</p>
+<h3 id="which-forms-correspond-to-cycles-bounding-higher-dimensional-chains">Which Forms Correspond to Cycles Bounding Higher Dimensional Chains?</h3>
+<p>Which cycles $M$ describe boundaries of higher dimensional objects $W$? It is precisely those that can be written as $M = \partial W$, where $W$ is a (k+1)-chain. Again, to help us translate to forms, we&rsquo;d <em>better call Stokes</em>:</p>
+<p>$$
+\int_M \omega = \int_{\partial M} \lambda = \int{\partial^2 W} \lambda = 0
+$$</p>
+<p>where $\lambda$ is a (k-1)-form such that $\omega = d\lambda$, and the last equality follows since $\partial^2 W = 0$ for any chain $W$. In other words, $\omega$ is a cochain that&rsquo;s dual to the chain $M$ that is a boundary. Such forms $\omega := d\lambda$ should then be called, appropriately, <em>coboundaries</em>. But since they, in forms-space, represent <em>exact</em> differentials, they are called exact. So anyway, we see that the image of $\partial_{k+1}$ (which includes $M$ in the above context) corresponds with the image of $d_{k-1}$, i.e.</p>
+<p>$$
+\star\text{im}(\partial_{k+1}) = \text{im}(d_{k-1})
+$$</p>
+<h3 id="which-forms-correspond-to-cycles-or-closed-chains">Which Forms Correspond to Cycles or Closed Chains?</h3>
+<p>Recall the mathematical criterion we set for detecting cycles $M \subset X$:
+$$
+\partial M = 0
+$$</p>
+<p>To see which forms $\omega$ are dual to these cycles, we invoke our handy old friend Stokes:
+$$
+\int_{\partial M} \omega = \int_M d\omega,
+$$</p>
+<p>but since $\partial M = 0$,
+$$
+\int_M d\omega = 0.
+$$</p>
+<p>This means that the forms $\omega$ such that $d\omega = 0$ throughout $M$ will be dual to the cycle $M$. In other words, they are <strong>cocycles</strong>, or, wait for it, <strong>co-(closed chains)</strong>. <em>This is why a form which has a vanishing exterior derivative is called &ldquo;closed&rdquo;</em>, as they imply that they&rsquo;re cochains to a closed submanifold! If you&rsquo;re like me, you&rsquo;ve looked at every GR book ever and wondered why &ldquo;closed&rdquo; forms are called so. The &ldquo;exact&rdquo; forms are exact differentials so it makes sense, but there&rsquo;s no logical explanation behind calling closed forms &ldquo;closed&rdquo;. Now you know!</p>
+<p>So what we&rsquo;ve found is that k-forms which differentiate to zero are dual to the k-cycles, i.e.</p>
+<p>$$
+\star\ker(\partial_k) = \ker(d_k)
+$$</p>
+<p>where $d_k$ denotes the exterior derivative acting on k-forms (to return a (k+1)-form).</p>
+<h2 id="lo-and-behold-your-k-th-de-rham-cohomology-group">Lo and Behold! Your k-th de Rham Cohomology Group!</h2>
+<p>With all the ingredients in place, we now are well prepared to translate our k-th homology group into the language of differential forms. The k-th de Rham cohomology group of a manifold $X$, labelled $H^k_{dR}(X)$, is the dual vector space of the k-th homology group of $X$, i.e.,</p>
+<p>$$
+H^k_{dR}(X) = \star H_k(X)\newline
+\implies H^k_{dR}(X) = \star(\ker(\partial_k)/\text{im}(\partial_{k+1}))\newline
+$$</p>
+<p>which using our results from the previous sections becomes, drum rolls please,
+$$
+\implies \boxed{H^k_{dR}(X) = \ker(d_k)/\text{im}(d_{k-1})}
+$$</p>
+<p>or in words,</p>
+<p>$$
+\text{k-th de Rham cohomology group of } X = \text{Closed Forms modulo Exact Forms}
+$$</p>
+<h2 id="putting-the-lingo-to-good-use">Putting The Lingo to Good Use</h2>
+<h3 id="intuiting-the-poincare-lemma">Intuiting the Poincare Lemma</h3>
+<p>I&rsquo;ll choose a statement of the lemma such that you&rsquo;ll immediately see why it&rsquo;s true if you remember our homology group examples.</p>
+<blockquote>
+<p>On $M = \R^n$ , closed implies exact.</p>
+</blockquote>
+<p><em>Tell me why?</em> in the comments.</p>
+<h3 id="betting-your-life-on-betti-numbers">Betting Your Life On Betti Numbers</h3>
+<p>Here&rsquo;s a paragraph from Prof. David Tong&rsquo;s otherwise excellent set of lecture notes on GR.</p>
+<p><img src="../../tong-betti.jpeg" alt="tong-betti"></p>
+<p>As it stands, you&rsquo;d be scratching your head all all day and still fail to compute a single Betti number even for the simplests of spaces, let alone the Euler characteristic. Also, isn&rsquo;t the Euler characteristic supposed to look like $\chi = V-E+F$? But now that you know that cohomology groups are simply dual spaces of homology groups, you immediately see that the $p$-th Betti number just captures the number of $p$-dimensional holes in $X$! So using our results from homology computations, we have
+$$
+B_0(X) = \text{\# connected components of }X,\newline
+B_1(X) = \text{\#1-D holes in }X,\newline
+.\newline
+.\newline
+.\newline
+$$</p>
+<p>and so on. And it&rsquo;s also plainly obvious now that the Euler characteristic defined above is the same thing as primary school Euler characteristic $V-E+F = 2$ for convex 2-surfaces.</p>
+<h2 id="references">References</h2>
+<p>I used the following resources in preparation for writing this piece, in no particular order, with relevant chapters mentioned alongside. You can consult these for further details and see if what I&rsquo;ve been saying checks out. My recommendations are based on the postulate that you know everything mentioned in the <a href="#prerequisites">pre-requisites</a>, so I won&rsquo;t suggest anything for that background material, but for everything else discussed above I will drop in a few bibliographic comments. Also, to get a proper appreciation for cohomology theory and much of algebraic topology in general, it is very helpful (and for most modern texts, essential) to know some category theory. Enjoy.</p>
+<ol>
+<li>Hatcher, <em>Algebraic Topology</em>. Chapters 2 and 3 are the relevant ones, with 2 discussing homology theory and 3 discussing cohomology. It should suffice to read chapter 2 only up to the section on simplicial homology along with a working knowledge of the definition of a category and a functor to jump into chapter 3, which discusses cohomology proper. Note that since the book deals with general topological spaces as opposed to manifolds, it doesn&rsquo;t cover deRham cohomology.</li>
+<li>Lee, <em>Introduction to Topological Manifolds</em>. Chapters 17 and 18 discuss de Rham.</li>
+<li>Nakahara, <em>Geometry, Topology, and Physics</em>. Chapter 6 contains a highly detailed and thorough intro to de Rham cohomology.</li>
+<li>Zhou, <em>Lecture Notes on Geometry and Topology</em>. Chapter 6, section 6.7 discusses de Rham cohomology in a fairly compact manner, touching briefly upon many of the points I have covered here.</li>
+<li>Tong, <em>General Relativity: University of Cambridge Part III Mathematical Tripos</em> lecture notes. Section 2.4.3 introduces de Rham cohomology.</li>
+</ol>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>© Susmit Islam. Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme</span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>
